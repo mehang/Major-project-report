@@ -1,0 +1,72 @@
+\newpage
+\section{INTRODUCTION}
+\pagenumbering{arabic}
+
+\subsection{Background}
+
+\par Due to the rapid development in the music industry, there has been an increasing amount of work in the area of automatic genre classification
+of music in audio format. One of the prime area focused on by MIR is the Automatic Classification of such music based on signal analysis. Such systems
+can be used as a way to evaluate features describing music content as well as a way to structure large collections of music.\\
+\par The presence of huge amount of data in music databases can be a perfectly applicable area. Music is complex in nature not only due to its origination
+but also due to the evolution of music in the technological era. So it requires specialized representations, abstraction and processing techniques for effective
+analysis, evaluation and classification that are fundamentally different form those used for other mediums and tasks.\\
+
+\subsection{Motivation}
+The presence of numerous genre is a source of confusion and more often than not people are overwhelmed with the sheer vastness of music available. As
+such, the primary motivation is to make it easier for people to classify music (based on genre and/or mood) so that they can find songs suited to their
+own tastes.\\ 
+\par It can also lay the foundation for figuring out ways to represent similarity between two musical pieces and in the making of a
+good recommendation system.\\ 
+
+\subsection{Problem Statement}
+Though the project is focused on music classification based genre and mood, we focused only on consolidating the genre part for this mid-term
+milestone. The mood based classification has been left for the next semester. Although the number of genres present worldwide is huge, we have
+restricted ourselves to five major genres which are: Rock, Pop, Classical, Jazz and Hiphop.\\ 
+\par The choice of these genres is based on their being sufficiently distinguishable from each other. Choosing some genre that’s very unique and
+abnormal might have made them more distinguishable and easier to classify but it would have been harder to find quality data/works for those genre.
+So, we chose these genre with availability of musical pieces in mind too.
+
+\subsection{Objectives}
+\begin{enumerate}[i.)]
+        \item To study and implement different preprocessing steps involved in extracting features from audio data.
+        \item To implement suitable classification algorithm for various features of the song
+        \item To cross validate the result and analyze the efficiency of the algorithms used.
+\end{enumerate}
+
+\subsection{Significance and Scope}
+
+\subsubsection{Significance}
+Music classification based on genre is the current topic on hype in the musical sector. Music Information Retrieval(MIR) has put on a huge interest
+in this sector. The availability of huge music databases can be well organized by use of such classification system. 
+
+\subsubsection{Scope of work}
+\begin{enumerate}[i)]
+        \item The project will work on classifying music based on genre and mood. More specifcally, the classifcation will be done on western music only as the data
+                is more easily available and lots of works have been done in the past for it. Also, only five genres will be used for genre classifcation:
+                \begin{itemize}
+                        \item Rock
+                        \item Pop
+                        \item Classical
+                        \item Jazz
+                        \item Hiphop
+                \end{itemize}
+
+        \item The mood based classifcation will use the Thayer model, a two dimensional model based on Energy and Stress:
+
+                \begin{itemize}
+                        \item High Energy, High Stress = Anxious/Frantic
+
+                        \item High Energy, Low Stress = Exuberance
+
+                        \item Low Energy, High Stress = Depression
+
+                        \item Low Energy, Low Stress = Contentment
+                \end{itemize}
+
+        \item Also, it is entirely possible for a song or a piece of music to fall into multiple genre or moods. The characteristics that defne the genre
+                and the mood may change within the song itself with one part showing seeming to belong to one class while other parts may seem to belong to
+                an entirely diferent class. The project will not cover such issues. In other words, multiple-tagging will not be done.
+
+        \item The classification will work only on mp3 files. No other fle format will be supported in the initial release/version.
+
+\end{enumerate}
