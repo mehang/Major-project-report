@@ -2,20 +2,21 @@
 \section*{ABSTRACT}
 \addcontentsline{toc}{section}{\numberline{} ABSTRACT}
 
-This progress report details the work completed and remaining work to be done for the final year project titled “Music Classification System
-Based on Genre and Mood” as of the end of the mid-term session. The project is part for the curriculum for the subject Major Project under
-the course of final year of B.E. in Computer Engineering.
-\par The overall aim of the project is to develop a system capable of classifying music based on Genre and mood with the availability of large
-number of digital media and the disorder introduced being the primary motivation.  
-\par The methodology used is that of a modular system consisting of two main stages. The first stage involves the preprocessing of the raw audio
-data resulting in the extraction of a number of features: Intensity, MFCC, rhythm, pitch. Each feature extractor reduces the information content
-in the raw data to a vector in a small number of dimensions. 
-\par In the second stage, the set of feature vectors are classified(indexed) into certain clusters by the use of certain algorithms: K-means and
-Artificial Neural Networks. 
-\par The work completed includes feature extraction of Intensity, MFCC and rhythmic features and the implementation of the K-means Clustering Algorithm.
-Currently, the accuracy of the system (~46 per cent) is pretty bad but it is sure to be improved further in the coming days.
-\par The work to be done includes mood based classification, implementation of the ANN and extraction of the Pitch feature. Apart from those
-tasks, we will also be optimizing the parts already completed and also analyzing and validating the individual components and the overall
-results.\\
+This report describes and documents all the aspects and working functionality of our final year project titled “Music Classification System
+Based on Genre and Mood”. The project is part for the curriculum for the subject Major Project under the course of final year of B.E. in Computer Engineering.
+As the title itself describes the overall aim of the project is to develop a system capable of classifying music based on Genre and mood, with the availability of large
+number of digital media and the disorder introduced being the primary motivation.\\  
+\\
+The methodology used is that of a modular system consisting of two main stages. The first stage involves the preprocessing of the raw audio
+data resulting in the extraction of a number of features pertaining to music signal: Intensity, MFCC, rhythm, pitch. Each feature extractor
+reduces the information content in the raw data to a vector in a small number of dimensions. Or in other words we can say that feature extractor 
+analyses the music signal and extracts its respective features compatible for further processing. It requires intensive knowledge of digital signal
+analysis and processing, signal sampling,etc. The second stage comprises of all the machine learning portion. In it, the set of feature vectors are classified(indexed) into certain clusters
+by the use of certain algorithms: K-means, Support Vector Machines and  Artificial Neural Networks. This technically requires knowledge of all those respective algorithms.\\ 
+\\
+This report also documents our approach towards the system development following the various aspects of Software Engineering. UML diagrams have been
+used to model the entire system and ERD diagrams have been used to show the relationship between the various entities in our system and iterative 
+development method was chosen for the development of our system. Java language along with spring framework was used to build our whole system along
+with the GUI.\\
 
 

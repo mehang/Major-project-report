@@ -6,47 +6,47 @@
 \contentsline {section}{\hbox to\@tempdima {\hfil } \fontsize {14pt}{0pt}\selectfont LIST OF TABLES}{VIII}
 \contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 1}INTRODUCTION}{1}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.1}Background}{1}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.2}Motivation}{1}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.3}Problem Statement}{1}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.4}Objectives}{2}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.5}Significance and Scope}{2}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.5.1}Significance}{2}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.5.2}Scope of work}{2}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 2}LITERATURE REVIEW}{4}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.1}Human Audio Perception}{4}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.2}Audio Processing}{5}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.3}Classification}{6}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4}Factors affecting accuracy}{7}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 3}METHODOLOGY}{8}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.1}System Block Diagram}{8}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2}Data Collection}{9}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3}Feature Extraction}{9}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.1}Overview}{9}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.2}Overview of JAVA sampled package and AudioSystem class}{10}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.3}Audio Sampling}{13}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.4}Timbral Features}{14}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.5}Rhythmic Features}{17}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.6}Intensity Features}{18}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.7}Feature Outputs}{19}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4}K-means Clustering}{20}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.1}Overview}{20}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.2}Algorithm}{20}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.3}Initialization method}{21}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.4}Distance Metric}{21}
-\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.5}Reading the Data Points}{22}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 4}IMPLEMENTATION}{23}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}DEVELOPMENT METHODS}{24}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}PROBLEM FACED AND SOLUTION}{25}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}RESULTS AND VALIDATION}{26}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.1}Results Overview}{26}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.2}Validation Process}{26}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.3}Results and Discussion}{27}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 8}FUTURE SYSTEM ENHANCEMENT}{29}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.1}Feature Extraction}{29}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.2}K-means Clustering}{29}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.3}Artificial Neural Network and Mood Based Classification}{29}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.4}Application Development}{30}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.5}Gantt Chart}{31}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 9}CONCLUSION}{32}
-\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{33}
-\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.2}Overview}{3}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.3}Problem Statement}{5}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.4}Motivation}{5}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.5}Aims and Objectives}{6}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.6}Scope of Project}{6}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.7}Organization of Report}{7}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 2}LITERATURE REVIEW}{10}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.1}Human Audio Perception}{10}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.2}Audio Processing}{11}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.3}Classification}{12}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4}Factors affecting accuracy}{13}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 3}METHODOLOGY}{14}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.1}System Block Diagram}{14}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2}Data Collection}{15}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3}Feature Extraction}{15}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.1}Overview}{15}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.2}Overview of JAVA sampled package and AudioSystem class}{16}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.3}Audio Sampling}{19}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.4}Timbral Features}{20}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.5}Rhythmic Features}{23}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.6}Intensity Features}{24}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.3.7}Feature Outputs}{25}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4}K-means Clustering}{26}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.1}Overview}{26}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.2}Algorithm}{26}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.3}Initialization method}{27}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.4}Distance Metric}{27}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.5}Reading the Data Points}{28}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 4}IMPLEMENTATION}{29}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}DEVELOPMENT METHODS}{30}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}PROBLEM FACED AND SOLUTION}{31}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}RESULTS AND VALIDATION}{32}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.1}Results Overview}{32}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.2}Validation Process}{32}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.3}Results and Discussion}{33}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 8}FUTURE SYSTEM ENHANCEMENT}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.1}Feature Extraction}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.2}K-means Clustering}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.3}Artificial Neural Network and Mood Based Classification}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.4}Application Development}{36}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.5}Gantt Chart}{37}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 9}CONCLUSION}{38}
+\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{39}
+\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{41}

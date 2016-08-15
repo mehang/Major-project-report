@@ -4,43 +4,141 @@
 
 \subsection{Background}
 
-\par Due to the rapid development in the music industry, there has been an increasing amount of work in the area of automatic genre classification
-of music in audio format. One of the prime area focused on by MIR is the Automatic Classification of such music based on signal analysis. Such systems
+Music can be literally defined as the combination of soothing sounds. A more complex definition of music can be, a complex amalgam of 
+melody, harmony, rhythm, timbre and silence in a particular structure. Music if an art form and cultural activity whose medium is sound and silence. It's a 
+form of entertainment that puts sounds together in a way that people like or find interesting. To form a music, requirement of musical instruments are not necessary,
+for example a cappella, barbershop, choral, scat, plainsong, isicathamiya,etc.
+A group a person can simply sing in rhythm and form a music. Sometimes musician may use their voice to make noises similar to a musical intrument.
+Music gives the feeling of relaxation. For some people it momentarily stops the flow of time and
+for some it is a means of passage of time. We can find many music lovers all around the world. Its seems a bit abnormal if a person has no taste in
+music at all. Some might say a guitar is necessary to form a song or music, some might say a piano is a must, but some musicians may find music
+find in the chirping of bird, running water of river or even whistling of train.\\ 
+\\
+The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation),
+dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound). Different styles
+or types of music may emphasize, de-emphasize or omit some of these elements. Music is performed with a vast range of instruments and with 
+vocal techniques ranging from singing to rapping, and there are solely intrumental pieces, solely vocal pieces. The creation, performance, significance,
+and even the definition of music vary according to culture and social context.\\
+\\
+We may date the advent of music to be centuries year old. We can point it out due to the fact of presence of tribal music which has been passed on
+from generation to generation like the ancient African bushman tribal song, Nepalese traditional/cultural song from each race,etc. But however music can
+be complex. Though some may present a pattern in themselves like a chorus or say rift, some may have an uneven flow. Its perplex nature can not only due to 
+its origination but also due to the evolution of music in different technological era. We have seen the evolution of music from legendary classical 
+Beethoven symphonies to modern day hiphop which is widely popular among the youths nowadays. We have seen the rise of different genres like classical, rock,
+pop, metal,etc. and yet we may even don't know many of others at all and more may be yet too come like lately we have seen the rise of techno music.\\ 
+\\
+It is not likely for a single person to listen to each and every genre present out there let alone all those songs. Every person may acquire a different taste 
+in music. Some may like clasical music while come may like rock music, it's based on their choice. So a person may probably only distinguish a particular unknown song 
+if those song were to belong to his/her genre of choice and the same goes for the mood. So realising this problem, there has been a increasing amount of research
+and work done in the music sector for the automatic classification of song based on genre. Though classification based on genre has been a popular one,
+classification based on mood catching the sight of many people lately.\\
+\\
+With the advent of networks and internet, the number of songs are increasing exponentially throughout the internet. Website like soundcloud, youtube, facebook,etc. 
+has given a platform for people to pursue their interest in music by forming like groups, composing and releasing songs, sharing songs,etc.
+Internet has made it possible for worldwide connection of whole world and it has harnessed the music industry. Because of internet only the
+popularity of music artists has been increasing all around the world. Their music have now been able to reach each and every corner of the world.
+This freedom of music throughout the internet has lead to increasing amount of songs and their databases.
+Due to these rapid development in the music industry, there has been an increasing amount of work in the area of automatic genre classification
+of music in audio format. A serious factor behind this automation can be considered as the increasing number of millions of records by different 
+artist every year. A simple automation in classification would be much suited than a hand-to-hand task by human and its applicability can be huge.
+Moreover, there might be conflict regarding genre and mood issue based on the perception of a human being. So regarding these
+issues MIR(Music Information Retrieval) has primarily focused on automation of classification of such music based on signal analysis. Such systems
 can be used as a way to evaluate features describing music content as well as a way to structure large collections of music.\\
-\par The presence of huge amount of data in music databases can be a perfectly applicable area. Music is complex in nature not only due to its origination
-but also due to the evolution of music in the technological era. So it requires specialized representations, abstraction and processing techniques for effective
-analysis, evaluation and classification that are fundamentally different form those used for other mediums and tasks.\\
 
-\subsection{Motivation}
-The presence of numerous genre is a source of confusion and more often than not people are overwhelmed with the sheer vastness of music available. As
-such, the primary motivation is to make it easier for people to classify music (based on genre and/or mood) so that they can find songs suited to their
-own tastes.\\ 
-\par It can also lay the foundation for figuring out ways to represent similarity between two musical pieces and in the making of a
-good recommendation system.\\ 
+
+\subsection{Overview}
+Throughout the evolution of music, the music industry took a different path and the difference in nature, flow of music, it's tempo, etc. is 
+huge and quite complicated. It lead to the evolution of different numerous genre. The presence of numerous genre is a source of confusion and more often
+than not people are overwhelmed with the sheer vastness of music available. We humans can most of the times easily categorize simple song based on genre
+or mood by simply listening and analysing few sample of similar song based on similarity but we are never truly able to understand its nature or
+features distinction. So we can sometimes never able to recognize them correctly in case of genre and mood. There are songs out there for
+example Bohemian Rhapsody, which we can never really point it out to a distinct genre and mood.\\
+\\
+Moreover the advent of internet has escalated the popularity of music and various artists. Nowadays everyone wants to be a singer. They want to become famous.
+So, various sites like soundcloud, youtube, facebook,etc. has provided them the perfect platform for sharing their songs. Not only for some novice
+singers but also for whole popular artist and whole music industry it has provided the perfect platform for sharing the music and growing itself.
+This has lead to release of millions of songs and increase in database of the system. So given the today world in computerized technological era,
+automation is nowadays seen as a popular subject in every field. There is being development of automation in every field like riding cars, manufacturing factories,
+etc. This popularity has affected the music industry too. Realising the potential of its applicability, there has been number of research in this sector/field.
+Numbers of research paper are being published regarding the automation of classification of music with research paper \cite{Tzanetakis1992} published by George Tzanetakis and Perry Cook
+being one of the first in this field with the primary motivation to make it easier for people to classify music (based on genre and/or mood)
+so that they can find songs suited to their own tastes. It can also lay the foundation for figuring out ways to represent similarity
+between two musical pieces and in the making of a good recommendation system.\\
+\\
+Given the perplexing nature of music, music classification requires specialized representations, abstraction and processing techniques for effective
+analysis, evaluation and classification that are fundamentally different form those used for other mediums and tasks. So focusing on these issues
+we created a music classification system which is web based application used for classifying music. We did not limit ourselves only to genre which is
+the burning issue in the music industry but we made our effort for the music classification based on mood too. In music industry there is a vast
+number of different genre. Most of the previous work were limited to four different genres. So, to challenge ourselves we took five different genres
+for our classification system, namely:-
+\begin{itemize}
+        \item Classical
+        \item Jazz
+        \item Rock
+        \item Pop
+        \item Hiphop
+\end{itemize}
+Our application took a song as an input from the user computer and classified to its genre based on feature extracted and learning of the system.\\ \\ Similar procedure was taken for classification of song based on mood. Until now not much research were done on music classification based on mood.
+So we made our classification system to classify that same song based on mood which was truly based on signal analysis and not lyrical features.
+For classification based on mood, we mapped the song among two dimensions: 
+\begin{itemize}
+        \item Energy
+        \item Stress
+\end{itemize}
+So based upon the energy and stress level, our song is classified as:
+\begin{itemize}
+        \item High Energy, High Stress = Anxious/Frantic
+        \item High Energy, Low Stress = Exuberance
+        \item Low Energy, High Stress = Depression
+        \item Low Energy, Low Stress = Contentment
+\end{itemize}
+So, we can say that our system first extracted the required features based on the signal analysis and it's manipulation, and then used 
+those features to classify it among one of the combination of five different genres and 4  different mood using the machine learning algorithm
+which is already trained on dataset.\\
+
 
 \subsection{Problem Statement}
-Though the project is focused on music classification based genre and mood, we focused only on consolidating the genre part for this mid-term
-milestone. The mood based classification has been left for the next semester. Although the number of genres present worldwide is huge, we have
-restricted ourselves to five major genres which are: Rock, Pop, Classical, Jazz and Hiphop.\\ 
-\par The choice of these genres is based on their being sufficiently distinguishable from each other. Choosing some genre that’s very unique and
-abnormal might have made them more distinguishable and easier to classify but it would have been harder to find quality data/works for those genre.
-So, we chose these genre with availability of musical pieces in mind too.
+The evolution of music and its origination has presented us with many different genres. The advent and popularity of internet and networking
+has escalated the market and rise of music industry. Given the popularity of music industry, thousands of new artist are emerging every year. 
+People are releasing song everytime as their hooby or part-time career. So we can see there are millions of songs out there world wide and is
+continuously increasing every year. Internet has huge contribution for it's rise. With that much of released songs, the size of database is also 
+increasing every year. Since the subject of genre and mood depends on people's perception, it has really been a tedious job to create a quite standard 
+one.\\ 
+\\
+So we built a music classification system based on genre and mood. The choice of these genres is based on their being sufficiently distinguishable from each other.
+Choosing some genre that’s very unique and abnormal might have made them more distinguishable and easier to classify but it would have been harder
+to find quality data/works for those genre. So, we chose these genre with availability of musical pieces in mind too. We chose to work on 
+classification based on mood too because not many work had been done in the past regarding this field. But we can see this field has a wide 
+scope of applicability. It can be used as a song recommendation system based on genre and that typical mood which the user is listening
+too as it is certain that the user will possibly like similar song with the similar melody. For now we are currently trying to tackle the issue of
+music classification based on genre and mood and not abiding to its applications. 
 
-\subsection{Objectives}
-\begin{enumerate}[i.)]
+
+\subsection{Motivation}
+The presence of numerous number of different genres has presented tedious job for music industry. It has become
+a source of confusion and more often than not people are overwhelmed with the sheer vastness of music available.
+So, the primary motivation is to make it easier for people to classify music based on genre. Not only
+genre but classification based on mood has also now intrigued many people. Combined these two will provide 
+or make a solid foundation for figuring out ways to represent similarity between two musical pieces and build a good recommendation
+system for music lovers who are passionate about their music and also their choices.\\
+\\
+It can futher tackle the issue of automated music database management with large number.  It can especially be useful 
+in those cases with unknown label-genre and mood. Music player developers can then be able to make a smart playlist based on the genre 
+and mood of some samples of song the user was currently or recently listening to. This would save a lot of time of user who had to
+otherwise manually maintain his/her playlist everytime based on his current mood and genre of choice.
+
+\subsection{Aims and Objectives}
+\begin{itemize}
         \item To study and implement different preprocessing steps involved in extracting features from audio data.
-        \item To implement suitable classification algorithm for various features of the song
+        \item To implement suitable classification algorithm for various features of the song.
         \item To cross validate the result and analyze the efficiency of the algorithms used.
-\end{enumerate}
+        \item To extend the compatibility of the system with different types of music formats like wav,au,etc. along with mp3 format.
+        \item To create a web based application for music classification based on genre and mood.
+\end{itemize}
 
-\subsection{Significance and Scope}
 
-\subsubsection{Significance}
-Music classification based on genre is the current topic on hype in the musical sector. Music Information Retrieval(MIR) has put on a huge interest
-in this sector. The availability of huge music databases can be well organized by use of such classification system. 
-
-\subsubsection{Scope of work}
-\begin{enumerate}[i)]
+\subsection{Scope of Project}
+\begin{enumerate}[(i)]
         \item The project will work on classifying music based on genre and mood. More specifcally, the classifcation will be done on western music only as the data
                 is more easily available and lots of works have been done in the past for it. Also, only five genres will be used for genre classifcation:
                 \begin{itemize}
@@ -67,6 +165,44 @@ in this sector. The availability of huge music databases can be well organized b
                 and the mood may change within the song itself with one part showing seeming to belong to one class while other parts may seem to belong to
                 an entirely diferent class. The project will not cover such issues. In other words, multiple-tagging will not be done.
 
-        \item The classification will work only on mp3 files. No other fle format will be supported in the initial release/version.
+        \item The classification will work on various music file formats like mp3, au, wav,etc.
 
 \end{enumerate}
+
+\subsection{Organization of Report}
+This report describes and details the design and methodology of building a music classification system based on genre and method. As this report consists
+documentations relating to different field during development of a standard software product, hence the whole report is effectiely broke down to 9 chapters.\\
+\\
+Chapter one is intended to introduce the project by simply presenting a brief background of the project field which is music and music industry, the motivation which drove 
+us to pursue the field, the overview of the problem statement and objective of the project and at last the scope of our project.\\
+\\
+Chapter two presents the literature review. It provides us the collective effort that has been done in the past in our project field. Since our
+project is music classification based on genre and mood, so at first we start by brief history of Music Information Retrieval(MIR) and music classification.
+We give a general review of past activities and research on music classification based on both genre and mood. We describe the procedures involved in and
+the quality of the datasets that we have acquired for the project/system. We analyze the different features involved in the classification.
+We try to distinguish and analyze the most prominent ones which have been mostly used throughout the time period until now in all research. ALong with the features we also try to 
+we analyze different types of classification algorithms involved in it.\\
+\\
+Chapter three describes the theoretical background. In it, we explain about the different selected features involved in our system. We also explain about the working details about the 
+various classification algorithms involved in our system. We also describe about the testing procedures and validation mechanism involved in our system. So to be exact
+we explain about the cross-validation procedure and all the measures of performance done like precision, recall, fmeasure,etc.\\
+\\
+Chapter four is all about the system analysis done at perspective of software engineering. It describe about the requirement specification which is
+high level requirement, functional requirement and non functional requirement. It also involves feasibility assessment which contains operational feasibility, 
+technical feasibility and economic feasibility.\\
+\\
+Chapter five involves system design. First there is overview of whole system design, then we describe about the system and its various components. It is then followed
+by a series of use case diagram, component diagram, activity diagram and sequence diagram.\\
+\\
+Chapter six describes about the system development which means all the methodology involved like data pre-processing and work-flow. We describe about different tools and environment involved.
+We also list out all the problem faced during the entire system development and the way to tackle them.\\
+\\
+Chapter seven involves the result and analysis process. Since our music classification is based on genre and mood, so we analyze the accuracy involved in each with each feature involved and also with 
+different classifiers involved and we present our perception based on the result. After that there is description of final product which is the finalized features and models involved and user interface
+created.\\
+\\
+Finally, in chapter eight we present our conclusion. We present our view based on the result and analysis and give our insights on future enhancement of the system.\\
+\\
+Along with all these there are list of references and bibliography relating to project which is included at last. There is also appendix provided which gives all the analysis
+and design diagrams which have been developed during the project.\\
+
