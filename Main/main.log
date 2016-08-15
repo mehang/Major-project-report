@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  16 AUG 2016 00:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  16 AUG 2016 01:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -161,19 +161,19 @@ LaTeX Warning: Label `fig:figure7' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 107.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -301,22 +301,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--18
  []
 
 ) (../Acknowledgement/acknowledgement.tex [2]
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
@@ -328,17 +333,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--16
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--21
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
@@ -433,12 +438,12 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
 
@@ -447,21 +452,66 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--114
+Underfull \hbox (badness 10000) in paragraph at lines 101--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--128
+Underfull \hbox (badness 10000) in paragraph at lines 118--129
 
  []
 
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
 
  []
 
-[8]) (../Literature Review/literaturereview.tex [9]
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+[7] [8]) (../Literature Review/literaturereview.tex [9]
 <resources/humanear.jpg, id=60, 761.84625pt x 287.0725pt>
 File: resources/humanear.jpg Graphic file (type jpg)
 
@@ -478,8 +528,8 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [10 <./resources/humanear.jpg>] [11] [12])
-(../System Development and Methodology/systemdevelopmentandmethodology.tex
-[13] [14] <resources/system.jpg, id=78, 429.40425pt x 499.8675pt>
+(../Theoretical Background/theoreticalbackground.tex [13] [14]
+<resources/system.jpg, id=78, 429.40425pt x 499.8675pt>
 File: resources/system.jpg Graphic file (type jpg)
 
 <use resources/system.jpg>
@@ -613,9 +663,9 @@ File: resources/kmeans.png Graphic file (type png)
 <use resources/kmeans.png>
 Package pdftex.def Info: resources/kmeans.png used on input line 347.
 (pdftex.def)             Requested size: 223.586pt x 430.61008pt.
-) (../Implementation/implementation.tex [28 <./resources/kmeans.png>]) (../Deve
-lopment Methods/developmentmethods.tex [29])
-(../Problem Faced and Solution/problemfacedandsolution.tex [30])
+) (../System Analysis/systemanalysis.tex [28 <./resources/kmeans.png>]) (../Sys
+tem Design/systemdesign.tex [29])
+(../System Development/systemdevelopment.tex [30])
 (../Result and Analysis/resultandanalysis.tex [31]
 <resources/result11.jpg, id=145, 165.61874pt x 170.13562pt>
 File: resources/result11.jpg Graphic file (type jpg)
@@ -650,20 +700,8 @@ Overfull \hbox (2.38774pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-) (../Future System Enhancement/futuresystemenhancement.tex [34 <./resources/re
-sult22.jpg> <./resources/result33.jpg>] [35] [36]
-<resources/ganttchart.jpg, id=164, 243.309pt x 168.63pt>
-File: resources/ganttchart.jpg Graphic file (type jpg)
-
-<use resources/ganttchart.jpg>
-Package pdftex.def Info: resources/ganttchart.jpg used on input line 49.
-(pdftex.def)             Requested size: 483.69684pt x 335.27272pt.
-
-Overfull \hbox (42.67911pt too wide) in paragraph at lines 49--50
- [][] 
- []
-
-) (../Conclusion/conclusion.tex [37 <./resources/ganttchart.jpg>]
+) (../Conclusion and Future Enhancements/conclusionandfutureenhancements.tex
+[34 <./resources/result22.jpg> <./resources/result33.jpg>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -671,14 +709,14 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 )
-(../Reference and Bibliography/referencebibliography.tex [38]
+(../Reference and Bibliography/referencebibliography.tex [35]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
- [39])
-(../Appendix/appendix.tex [40]) [41
+ [36])
+(../Appendix/appendix.tex [37]) [38
 
 ] (./main.aux)
 
@@ -690,13 +728,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 305 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2709 strings out of 493304
- 39395 string characters out of 6139871
- 108301 words of memory out of 5000000
- 6032 multiletter control sequences out of 15000+600000
+ 2699 strings out of 493304
+ 39083 string characters out of 6139871
+ 108294 words of memory out of 5000000
+ 6027 multiletter control sequences out of 15000+600000
  29231 words of font info for 64 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,43p,478b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,43p,478b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -706,10 +744,10 @@ t/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (49 pages, 980106 bytes).
+Output written on main.pdf (46 pages, 523553 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
+ 204 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

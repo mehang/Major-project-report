@@ -34,19 +34,13 @@
 \contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.3}Initialization method}{27}
 \contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.4}Distance Metric}{27}
 \contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.5}Reading the Data Points}{28}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 4}IMPLEMENTATION}{29}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}DEVELOPMENT METHODS}{30}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}PROBLEM FACED AND SOLUTION}{31}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}RESULTS AND VALIDATION}{32}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 4}SYSTEM ANALYSIS}{29}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}SYSTEM DESIGN}{30}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}SYSTEM DEVELOPMENT}{31}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}RESULTS AND ANALYSIS}{32}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.1}Results Overview}{32}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.2}Validation Process}{32}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.3}Results and Discussion}{33}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 8}FUTURE SYSTEM ENHANCEMENT}{35}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.1}Feature Extraction}{35}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.2}K-means Clustering}{35}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.3}Artificial Neural Network and Mood Based Classification}{35}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.4}Application Development}{36}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.5}Gantt Chart}{37}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 9}CONCLUSION}{38}
-\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{39}
-\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{41}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 8}CONCLUSION}{35}
+\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{36}
+\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{38}
