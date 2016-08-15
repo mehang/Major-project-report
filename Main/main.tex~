@@ -6,8 +6,7 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
-\usepackage{longtable}
-
+\usepackage{acro}
 \pagestyle{myheadings} \setcounter{secnumdepth}{3} \setcounter{tocdepth}{3}
 \renewcommand{\bibname}{\normalfont\fontsize{14pt}{0pt}\selectfont\bfseries REFERENCES}
 \renewcommand{\listfigurename}{\fontsize{14pt}{0pt}\selectfont LIST OF FIGURES}
@@ -115,7 +114,7 @@
 
 \input{../Copyright/copyright}
 
-\input{../Acknowledgment/acknowledgment}
+\input{../Acknowledgement/acknowledgement}
 
 \input{../Abstract/abstract}
 
@@ -134,8 +133,6 @@
 \addcontentsline{toc}{section}{\numberline{} \listtablename}
 \listoftables{\thispagestyle{fancy}}
 %\restoregeometry
-
-\input{../"List of Symbols"/listofsymbols}
 
 \input{../Introduction/introduction}
 

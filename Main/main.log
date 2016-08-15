@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  16 AUG 2016 01:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  16 AUG 2016 02:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -146,6 +146,24 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen116
 \titlewidthfirst=\dimen117
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count92
+\LTcapwidth=\dimen118
+\LT@head=\box27
+\LT@firsthead=\box28
+\LT@foot=\box29
+\LT@lastfoot=\box30
+\LT@cols=\count93
+\LT@rows=\count94
+\c@LT@tables=\count95
+\c@LT@chunks=\count96
+\LT@p@ftn=\toks18
+)
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (483.69684pt) is ignored.
@@ -161,19 +179,19 @@ LaTeX Warning: Label `fig:figure7' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 109.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -212,20 +230,20 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen118
+\big@size=\dimen119
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen119
-\scratchbox=\box27
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen120
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count97
+\scratchdimen=\dimen120
+\scratchbox=\box31
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen121
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -300,7 +318,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--18
 
  []
 
-) (../Acknowledgement/acknowledgement.tex [2]
+) (../Acknowledgment/acknowledgment.tex [2]
 Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
@@ -394,8 +412,8 @@ Overfull \hbox (2.05179pt too wide) detected at line 6
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- (../Introduction/introduction.tex
-[8]
+ (../List of Symbols/listofsymbols.tex
+[8]) (../Introduction/introduction.tex [9]
 Underfull \hbox (badness 10000) in paragraph at lines 7--47
 
  []
@@ -512,7 +530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--208
  []
 
 [7] [8]) (../Literature Review/literaturereview.tex [9]
-<resources/humanear.jpg, id=60, 761.84625pt x 287.0725pt>
+<resources/humanear.jpg, id=63, 761.84625pt x 287.0725pt>
 File: resources/humanear.jpg Graphic file (type jpg)
 
 <use resources/humanear.jpg>
@@ -529,7 +547,7 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [10 <./resources/humanear.jpg>] [11] [12])
 (../Theoretical Background/theoreticalbackground.tex [13] [14]
-<resources/system.jpg, id=78, 429.40425pt x 499.8675pt>
+<resources/system.jpg, id=81, 429.40425pt x 499.8675pt>
 File: resources/system.jpg Graphic file (type jpg)
 
 <use resources/system.jpg>
@@ -592,7 +610,7 @@ Missing character: There is no † in font ptmr7t!
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no † in font ptmr7t!
 
-<resources/audiosample.png, id=92, 1111.15125pt x 720.6925pt>
+<resources/audiosample.png, id=95, 1111.15125pt x 720.6925pt>
 File: resources/audiosample.png Graphic file (type png)
 
 <use resources/audiosample.png>
@@ -606,7 +624,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-<resources/mfcc.jpg, id=98, 218.61674pt x 441.44925pt>
+<resources/mfcc.jpg, id=101, 218.61674pt x 441.44925pt>
 File: resources/mfcc.jpg Graphic file (type jpg)
 
 <use resources/mfcc.jpg>
@@ -616,7 +634,7 @@ Package pdftex.def Info: resources/mfcc.jpg used on input line 166.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] <resources/mfcc.png, id=106, 449.68pt x 337.26pt>
+[20] <resources/mfcc.png, id=109, 449.68pt x 337.26pt>
 File: resources/mfcc.png Graphic file (type png)
 
 <use resources/mfcc.png>
@@ -636,7 +654,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-[24] <resources/intensity.jpg, id=120, 128.27925pt x 188.50426pt>
+[24] <resources/intensity.jpg, id=123, 128.27925pt x 188.50426pt>
 File: resources/intensity.jpg Graphic file (type jpg)
 
 <use resources/intensity.jpg>
@@ -657,7 +675,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
  [27]
-<resources/kmeans.png, id=131, 406.51875pt x 782.925pt>
+<resources/kmeans.png, id=134, 406.51875pt x 782.925pt>
 File: resources/kmeans.png Graphic file (type png)
 
 <use resources/kmeans.png>
@@ -667,7 +685,7 @@ Package pdftex.def Info: resources/kmeans.png used on input line 347.
 tem Design/systemdesign.tex [29])
 (../System Development/systemdevelopment.tex [30])
 (../Result and Analysis/resultandanalysis.tex [31]
-<resources/result11.jpg, id=145, 165.61874pt x 170.13562pt>
+<resources/result11.jpg, id=148, 165.61874pt x 170.13562pt>
 File: resources/result11.jpg Graphic file (type jpg)
 
 <use resources/result11.jpg>
@@ -678,7 +696,7 @@ Package pdftex.def Info: resources/result11.jpg used on input line 8.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [32 <./resources/result11.jpg>]
-<resources/result22.jpg, id=149, 657.95813pt x 89.58469pt>
+<resources/result22.jpg, id=152, 657.95813pt x 89.58469pt>
 File: resources/result22.jpg Graphic file (type jpg)
 
 <use resources/result22.jpg>
@@ -689,7 +707,7 @@ Overfull \hbox (216.9388pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[33] <resources/result33.jpg, id=153, 443.40656pt x 73.02281pt>
+[33] <resources/result33.jpg, id=156, 443.40656pt x 73.02281pt>
 File: resources/result33.jpg Graphic file (type jpg)
 
 <use resources/result33.jpg>
@@ -728,10 +746,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 305 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2699 strings out of 493304
- 39083 string characters out of 6139871
- 108294 words of memory out of 5000000
- 6027 multiletter control sequences out of 15000+600000
+ 2793 strings out of 493304
+ 40202 string characters out of 6139871
+ 110009 words of memory out of 5000000
+ 6114 multiletter control sequences out of 15000+600000
  29231 words of font info for 64 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,43p,478b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -744,10 +762,10 @@ t/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (46 pages, 523553 bytes).
+Output written on main.pdf (47 pages, 523881 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 207 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

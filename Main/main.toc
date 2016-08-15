@@ -4,6 +4,7 @@
 \contentsline {section}{\hbox to\@tempdima {\hfil } TABLE OF CONTENTS}{V}
 \contentsline {section}{\hbox to\@tempdima {\hfil } \fontsize {14pt}{0pt}\selectfont LIST OF FIGURES}{VII}
 \contentsline {section}{\hbox to\@tempdima {\hfil } \fontsize {14pt}{0pt}\selectfont LIST OF TABLES}{VIII}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF SYMBOLS}{IX}
 \contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 1}INTRODUCTION}{1}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.1}Background}{1}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.2}Overview}{3}
