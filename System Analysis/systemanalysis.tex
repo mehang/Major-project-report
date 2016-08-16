@@ -1,2 +1,58 @@
 \newpage
 \section{SYSTEM ANALYSIS}
+\subsection{Requirement Specification}
+\subsubsection{High Level Requirements}
+    Our music classification system will perform classification of audio files on the basis of genre and mood. Genres include:
+    \begin{itemize}
+    \item[$\bullet$] Hip-hop
+    \item[$\bullet$] Rock
+    \item[$\bullet$] Jazz
+    \item[$\bullet$] Classical
+    \item[$\bullet$] Pop
+    \end{itemize}
+    Another classification that has been accomplished is the mood based classification. Under mood based classification, the audio files can be classified along the lines of:
+    \begin{itemize}
+    \item[$\bullet$] Depressive
+    \item[$\bullet$] Frantic
+    \item[$\bullet$] Exuberant
+    \item[$\bullet$] Contentment
+    \end{itemize}
+    The classification of the audio files based on either mood or genre can be then be used in the creation of auto generated playlists.After each high level requirements are identified, corresponding intermediate level requirements
+    (ILRs) are also identified. These list the feature metadata used to classify the audio.
+\subsubsection{Functional Requirements}
+    Our music classification system will classify audio files based on 4 features which include the intensity, pitch, timbre and rhythm. Being either vector or scalar representations, these features will thus first be integrated
+    using a common format (JSON) and finally used as input for the classification. The system should classify the audio file properly amongst the given genres and mood to provide a satisfactory experience for the user
+\newpage
+\subsubsection{Non-Functional Requirements}
+    \begin{itemize}
+    \item[$\bullet$] Serviceability\\
+        Our project supports most popular audio formats from MP3, WAV to AU as well. Support for multiple formats is incorporated using various plugins to java’s default WAV only support. For instance the use of mp3spi plugin to
+         support mp3.
+    \item[$\bullet$] Reliability\\
+        Through the use of two different classifiers : ANN and SVM, we are able to compare the classification output of both classifiers. Also for measures of performance various measures of performance such as
+        accuracy, f-measure, recall, precision have been applied.
+    \end{itemize}
+
+\subsection{Feasibility Assessment}
+\subsubsection{Operational Feasibility}
+    As demonstrated by the output of the measures of performance, we can see that the music classification system gives classifies with reasonable accuracy in bothe genre and mood. For instance, by taking the contribution of each
+    individual feature in the classification process we have selected the best features through which we classify for both genre, arousal and valence. As indicated by our comptutations for genre are:
+    \begin{itemize}
+    \item[$\bullet$] MFCC
+    \item[$\bullet$] Zero Crossing
+    \item[$\bullet$] Compactness
+    \end{itemize}
+    As for arousal, the features taken are:
+    \begin{itemize}
+    \item[$\bullet$] MFCC
+    \item[$\bullet$] Zero Crossing
+    \item[$\bullet$] Compactness
+    \end{itemize}
+    As for valence,
+    \begin{itemize}
+    \item[$\bullet$] Rhythm
+    \item[$\bullet$] Zero Crossing
+    \item[$\bullet$] Compactness
+    \end{itemize}
+\newpage
+\subsubsection{Technical Feasibility}

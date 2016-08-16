@@ -2,9 +2,9 @@
 \contentsline {section}{\hbox to\@tempdima {\hfil } ACKNOWLEDGMENT}{III}
 \contentsline {section}{\hbox to\@tempdima {\hfil } ABSTRACT}{IV}
 \contentsline {section}{\hbox to\@tempdima {\hfil } TABLE OF CONTENTS}{V}
-\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF FIGURES}{VII}
-\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF TABLES}{VIII}
-\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF SYMBOLS}{IX}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF FIGURES}{VI}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF TABLES}{VII}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF SYMBOLS}{VIII}
 \contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 1}INTRODUCTION}{1}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.1}Background}{1}
 \contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.2}Overview}{3}
@@ -36,12 +36,29 @@
 \contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.4}Distance Metric}{27}
 \contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.4.5}Reading the Data Points}{28}
 \contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 4}SYSTEM ANALYSIS}{29}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}SYSTEM DESIGN}{30}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}SYSTEM DEVELOPMENT}{31}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}RESULTS AND ANALYSIS}{32}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.1}Results Overview}{32}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.2}Validation Process}{32}
-\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.3}Results and Discussion}{33}
-\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 8}CONCLUSION}{35}
-\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{36}
-\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{38}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1}Requirement Specification}{29}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1.1}High Level Requirements}{29}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1.2}Functional Requirements}{29}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1.3}Non-Functional Requirements}{30}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.2}Feasibility Assessment}{30}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.2.1}Operational Feasibility}{30}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.2.2}Technical Feasibility}{32}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}SYSTEM DESIGN}{33}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}SYSTEM DEVELOPMENT}{34}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1}Data processing}{34}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.2}Workflow}{34}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.3}Tools and Environment}{35}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4}Problems and Solutions}{35}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4.1}Solved Problems}{35}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4.2}Unsolved Problems}{35}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}RESULTS AND ANALYSIS}{36}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.1}Results Overview}{36}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.2}Validation Process}{36}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.3}Results and Discussion}{37}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 8}CONCLUSION}{39}
+\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{40}
+\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{42}
