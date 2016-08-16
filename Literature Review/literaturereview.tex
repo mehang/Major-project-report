@@ -100,26 +100,85 @@ In music the most important qualities of sound are: pitch, duration, loudness, a
 
 \end{itemize}
 
-These types of low dimensional features extracted from the acoustical signals are more popular than higher dimensional representations such as
+Again, these types of low dimensional features extracted from the acoustical signals are more popular than higher dimensional representations such as
 Spectrograms for Classification purposes. \cite{prasad2007}
 
-\subsection{Classification}
+\subsection{Genre Based Classification}
+
+\subsubsection{Overview}
+Automatic Music Genre Classification (AMGC) is one of the tasks focused by MIR. However, it is not straightforward one.
+
+In \cite{Scaringella2006}, Scaringella et al. discuss how and why musical genres are a poorly defined concept making the task of automatic classification non-trivial.
+Still, although the boundaries between genres are fuzzy and there are no well-defined definitions, it is still one of the widely used method of classification of music. 
+If we look at human capability in genre classification, Perrot et al \cite{Perrot1999} found that people classified songs--in a ten-way classification setup--with an accuracy of 70\% after listening to 3s excerpts.
+
+\subsubsection{Features}
+The features used for genre based classification have been heavily influenced by the related field of speech recognition. 
+For instance, Mel-frequency Cepstral Coefficients (MFCC), a set of perceptually motivated features that is widely used in music classification, was first used in speech recognition.
+
+The seminal paper on musical genre classification by Tzanetakis et al. \cite{Tzanetakis2002} presented three feature sets for representing timbral texture, rhythmic content and pitch content. 
+With the proposed feature set, they achieved a classification accuracy of 61\% for ten musical genre.
+
+Timbral features are usually calculated for every short-time frame of sound based on the Short Time Fourier Transform (STFT). 
+So, these are low-level features. 
+Typical examples are Spectral Centroid, Spectral Rolloff, Spectral Flux, Energy, Zero Crossings, and the afore-mentioned Mel-Frequency Cepstral Coefficients (MFCCs).
+Among these, MFCC is the most widely preferred feature \cite{Lippens2004}\cite{Kour2015}. Logan \cite{Logan2000} investigated the applicability of MFCCs to music modeling and found it to be "at least not harmful".
+
+Rhythmic features capture the recurring pattern of tension and release in music while pitch is the perceived fundamental frequency of the sound. 
+These are usually termed as mid-level features.
+
+Apart from these, many non-standard features have been proposed in the literature. 
+
+Li et al.\cite{Li2003} proposed a new set of features based on Daubechies Wavelet Coefficient Histograms (DWCH), and also presented a comparative study with the features included in the MARSYAS framework.
+They showed that it significantly increased the accuracy of the classifier.
+
+Anglade, Amélie, et al.\cite{Anglade2010} propose the use of Harmony as a high-level descriptor of music, focusing on the structure, progression, and relation of chords.
+
+\subsubsection{Classification}
 
 A variety of methods have been used for music classification. Some of the popular ones are SVM, K Nearest Neighbours and variants of Neural Networks.
 
-The results are also widely different. In \cite{Neumayer2004} 61 per cent accuracy has been achieved using a Multilayer Perceptron based approach while
-in \cite{Kour2015}, the authors have managed 95 per cent (for Back Propagation Neural Network) and 83 per cent (for SVM).
+The results are also widely different. In \cite{Neumayer2004}, 61 per cent accuracy has been achieved using a Multilayer Perceptron based approach. 
 
-In \cite{Koerich2013}, the authors have achieved 71 per cent accuracy using an additional rejection and verification stage.
+While in \cite{Koerich2013}, the authors have achieved 71 per cent accuracy through the use of an additional rejection and verification stage.
 
-In \cite{Haggblade2011}, simpler and more naive approaches (k-NN and k-Means); and more sophisticated neural networks and SVMs have been compared. The
-author found the latter gave better performance.
+Haggblade et al. \cite{Haggblade2011}, compared simpler and more naive approaches (k-NN and k-Means) with more sophisticated neural networks and SVMs. 
+They found that the latter gave better results.
+
+Standard statistical pattern recognition classifiers are also used for AMGC.
+They may be simple Gaussian Classifiers or Gaussian mixture model (GMM) classifier, where each class pdf is assumed to consist of a mixture of a specific number of multidimensional Gaussian distributions.
+In such an approach, the parameters of each Gaussian component and the mixture weights are estimated using the iterative EM algorithm.
 
 However, lots of unique methods -- either completely novel or a variation of a standard method -- have been put into use too. In \cite{Nasridinov2014}, the authors
 propose a method that uses Chord labeling (ones and zeros) in conjunction with a k-windowSubsequenceMatching algorithm used to find subsequence in music sequence
 and a Decision tree for the actual genre classification.
 
 It is also noted that high-level and contextual concepts can be as important as low-level content descriptors. \cite{Anglade2010} 
+
+\subsubsection{Dataset}
+
+In \cite{Downie2003}, Downie presents the problem of a lack of a proper baseline dataset for the AMGC problem, which meant research teams couldn't scientifically compare and contrast their different approaches.
+
+However, the publicly available GTZAN dataset introduced in \cite{Tzanetakis2002}, solved most parts of the issue by soon becoming the standard dataset used by researchers across the world.
+We too used this dataset for this project.
+The dataset contains 100 representative excerpts from ten different genre.
+They were taken from radio, compact disks, and MP3 compressed audio files. All the files are stored as 22 050 Hz, 16-bit, mono audio files. 
+The Genres dataset has the following classes: classical, country, disco, hiphop, jazz, rock, blues, reggae, pop, metal.
+Among them we were only concerned with five genre as mentioned in Chapter 1: classical, hiphop, jazz, rock, and pop, So, we had a total of 500 songs in our dataset. 
+
+\subsection{Mood Based Classification}
+
+\subsubsection{Overview}
+
+\subsubsection{Thayer Mood Model}
+
+\subsubsection{Features}
+
+\subsubsection{Classifiers}
+
+\subsubsection{Dataset}
+
+
 
 \subsection{Factors affecting accuracy}
 Some of the factors that affect the accuracy are: 
