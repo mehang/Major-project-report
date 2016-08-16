@@ -32,6 +32,48 @@ This data is conducted through neurons in the brain; cells specialized in transm
 The output of these neurons connects to the high-level processing units located in the frontal lobe of the brain. It is important to note that this process
 is not linear. The different regions of the brain constantly update each other with new information. 
 
+\subsection{History of MIR and Music Classification}
+
+The field of Music Information Retrieval (MIR) can be traced back to the 60s with reference to the works done by Kassler in \cite{kassler1966}.
+Even Automatic Transcription of Music was attempted as early as the 70s \cite{andel1975}. However, there were two limiting factors that prevented progress in the field at the time.
+Firstly, the high computational requirements of the problem domain was simply not available. 
+And secondly, other related fields of study such as Digital Signal Processing, Speech Processing, and Machine Learning were also not advanced enough.  
+So, the field stalled for the next few decades.
+
+In the 1990s, the field regained prominence as computational resources improved greatly and the rise of the internet resulted in massive online music collection. So, there was both an opportunity and demand for MIR systems.
+The organization of the first International Symposium on Music Information Retrieval (ISMIR 1) in 2000 highlights this resurgence of interest in the field. 
+280 people from 25 different countries participated in ISMIR Conference Malaga 2015.
+
+As for the methodologies used, MIR in the 90s was influenced by the field of Text Information Retrieval (IR), techniques for searching and retrieving text documents based on user queries.
+So, most of the algorithms were developed based on symbolic representations such as MIDI files \cite{Tzanetakis2002a}. One such method is described in \cite{alghoniemy1999}.
+
+However, as mentioned in \cite{byrd2002}, identifying approximate units of meaning in MIR, as done by the majority of text-IR methods (words serve as such units) was not easy.
+
+Instead, statistical non-transcriptive approaches for non-speech audio signals started being adopted in the second half on the 90s \cite{Tzanetakis2002a}.
+This was probably influenced by progress of such methods in other fields of speech processing. 
+For example, in \cite{saunders1996}, the authors reported 98\% accuracy in distinguishing music from speech in commercial radio broadcasts.
+This was based on the statistics of the energy contour and the zero-crossing rate.
+
+In \cite{wold1996}, the authors introduced similar statistical methods for retrieval and classification of isolated sounds.
+Similarly, in \cite{scheirer1997}, an algorithm for music-speech classification based on spectral feature was introduced. 
+It was trained using supervised learning. 
+
+And so, starting in the 2000s, instead of methods attempting note-level transcriptions, researchers focused on direct extraction of information of audio signals using Signal Processing and Machine Learning techniques.
+
+Currently, three basic strategies are being applied in MIR: \cite{Casey2008}
+
+\begin{itemize}
+        \item \textbf{Based on Conceptual Metadata} - Suited for low-specificity queries.
+
+        \item \textbf{Using High-level Descriptions} - Suited for mid-specificity queries.
+
+        \item \textbf{Using Low-level Signal-based Properties} - Used for all specificities.
+
+\end{itemize}
+
+But still most of the MIR techniques being employed at present use low-level signal features instead of high-level descriptors \cite{Kaminskas2012}.
+Thus, there exists a semantic gap between human perception of music and how MIR systems work.
+
 \subsection{Audio Processing}
 
 General Audio signal processing is an engineering field that focuses on the computational methods for intentionally altering sounds, methods that
