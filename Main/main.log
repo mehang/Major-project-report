@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.25)  16 AUG 2016 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.25)  16 AUG 2016 22:08
 entering extended mode
 **./main.tex
 (main.tex
@@ -188,7 +188,14 @@ Package geometry Warning: Over-specification in `h'-direction.
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
 
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `fig:figure7' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure8' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -205,8 +212,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 109.
 
-
-("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ ("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -336,23 +342,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
  []
 
-) [4] (main.toc)
+) [4] (main.toc
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
+
+
+("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
+"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 1.
+
+
+("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
+"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 1.
+
+
+("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
+"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 1.
+
+
+("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
+"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+Overfull \hbox (2.05179pt too wide) detected at line 6
+ \OT1/ptm/m/n/12 VIII
+ []
+
+[5
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [5
-
-] (main.lof)
+ [6] (main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [6] (main.lot)
+ [7] (main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-
-("../List of Symbols/listofsymbols.tex" [7]) (../Introduction/introduction.tex
-[8]
+ ("../List of Symbols/listofsymbols.tex"
+[8]) (../Introduction/introduction.tex [9]
 Underfull \hbox (badness 10000) in paragraph at lines 7--47
 
  []
@@ -378,10 +421,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--47
  []
 
 [1] [2]
-
-LaTeX Warning: Citation `Tzanetakis1992' on page 3 undefined on input line 63.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 50--74
 
  []
@@ -474,10 +513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--208
  []
 
 [7] [8]) ("../Literature Review/literaturereview.tex" [9]
-
-LaTeX Warning: Citation `smith2013' on page 10 undefined on input line 7.
-
-<resources/humanear.jpg, id=59, 761.84625pt x 287.0725pt>
+<resources/humanear.jpg, id=62, 761.84625pt x 287.0725pt>
 File: resources/humanear.jpg Graphic file (type jpg)
 
 <use resources/humanear.jpg>
@@ -492,57 +528,9 @@ Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [10 <./resources/humanear.jpg>]
-
-LaTeX Warning: Citation `muller2011' on page 11 undefined on input line 42.
-
-
-LaTeX Warning: Citation `dooling2014' on page 11 undefined on input line 44.
-
-[11]
-
-LaTeX Warning: Citation `prasad2007' on page 12 undefined on input line 62.
-
-
-LaTeX Warning: Citation `Neumayer2004' on page 12 undefined on input line 68.
-
-
-LaTeX Warning: Citation `Kour2015' on page 12 undefined on input line 69.
-
-
-LaTeX Warning: Citation `Koerich2013' on page 12 undefined on input line 71.
-
-
-LaTeX Warning: Citation `Haggblade2011' on page 12 undefined on input line 73.
-
-
-LaTeX Warning: Citation `Nasridinov2014' on page 12 undefined on input line 76.
-
-
-
-LaTeX Warning: Citation `Anglade2010' on page 12 undefined on input line 80.
-
-[12]) ("../Theoretical Background/theoreticalbackground.tex" [13]
-
-LaTeX Warning: Citation `LiTao2003' on page 14 undefined on input line 6.
-
-
-LaTeX Warning: Citation `Haggblade2011' on page 14 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Tzanetakis1992' on page 14 undefined on input line 10.
-
-
-
-LaTeX Warning: Citation `Apon2006' on page 14 undefined on input line 11.
-
-
-LaTeX Warning: Citation `Jain2010' on page 14 undefined on input line 11.
-
-
-LaTeX Warning: Citation `Hamerly2002' on page 14 undefined on input line 11.
-
-[14] <resources/system.jpg, id=77, 429.40425pt x 499.8675pt>
+ [10 <./resources/humanear.jpg>] [11] [12])
+("../Theoretical Background/theoreticalbackground.tex" [13] [14]
+<resources/system.jpg, id=80, 429.40425pt x 499.8675pt>
 File: resources/system.jpg Graphic file (type jpg)
 
 <use resources/system.jpg>
@@ -605,7 +593,7 @@ Missing character: There is no † in font ptmr7t!
 Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no † in font ptmr7t!
 
-<resources/audiosample.png, id=91, 1111.15125pt x 720.6925pt>
+<resources/audiosample.png, id=94, 1111.15125pt x 720.6925pt>
 File: resources/audiosample.png Graphic file (type png)
 
 <use resources/audiosample.png>
@@ -619,7 +607,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-<resources/mfcc.jpg, id=97, 218.61674pt x 441.44925pt>
+<resources/mfcc.jpg, id=100, 218.61674pt x 441.44925pt>
 File: resources/mfcc.jpg Graphic file (type jpg)
 
 <use resources/mfcc.jpg>
@@ -629,38 +617,7 @@ Package pdftex.def Info: resources/mfcc.jpg used on input line 166.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 17
-7.
-("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
-"
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 17
-7.
-
-("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
-"
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 17
-7.
-
-("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
-"
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 17
-7.
-
-("C:\Users\Ayush\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
-"
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
- [20] <resources/mfcc.png, id=105, 449.68pt x 337.26pt>
+[20] <resources/mfcc.png, id=108, 449.68pt x 337.26pt>
 File: resources/mfcc.png Graphic file (type png)
 
 <use resources/mfcc.png>
@@ -671,12 +628,7 @@ Overfull \hbox (8.66116pt too wide) in paragraph at lines 199--200
  [][] 
  []
 
-[21 <./resources/mfcc.jpg>]
-
-LaTeX Warning: Citation `Tzanetakis2002' on page 22 undefined on input line 212
-.
-
-[22 <./resources/mfcc.png (PNG copy)>]
+[21 <./resources/mfcc.jpg>] [22 <./resources/mfcc.png (PNG copy)>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -684,8 +636,8 @@ Missing character: There is no ì in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [24]
-<resources/intensity.jpg, id=119, 128.27925pt x 188.50426pt>
+
+[24] <resources/intensity.jpg, id=122, 128.27925pt x 188.50426pt>
 File: resources/intensity.jpg Graphic file (type jpg)
 
 <use resources/intensity.jpg>
@@ -706,7 +658,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
  [27]
-<resources/kmeans.png, id=130, 406.51875pt x 782.925pt>
+<resources/kmeans.png, id=133, 406.51875pt x 782.925pt>
 File: resources/kmeans.png Graphic file (type png)
 
 <use resources/kmeans.png>
@@ -722,37 +674,37 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-<resources/featureextraction.jpg, id=150, 86.12175pt x 290.88675pt>
+<resources/featureextraction.jpg, id=153, 86.12175pt x 290.88675pt>
 File: resources/featureextraction.jpg Graphic file (type jpg)
 
 <use resources/featureextraction.jpg>
 Package pdftex.def Info: resources/featureextraction.jpg used on input line 9.
 (pdftex.def)             Requested size: 71.13188pt x 240.26859pt.
  [34 <./resources/featureextraction.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
 
-Overfull \hbox (6.8175pt too wide) in paragraph at lines 14--15
+Overfull \hbox (6.8175pt too wide) in paragraph at lines 16--17
 [] \OT1/ptm/m/n/12 Sam-pling the au-dio and fix-ing the au-dio for-mat(Bit dept
 h, num-ber of chan-nels etc)Audio
  []
 
 
-Overfull \hbox (34.7046pt too wide) in paragraph at lines 17--18
+Overfull \hbox (34.7046pt too wide) in paragraph at lines 19--20
 [] \OT1/ptm/m/n/12 Fea-ture ex-trac-tion in-volves the cal-cu-la-tion of the fo
 l-low-ing fea-tures:Root Mean Square(RMS),
  []
 
 
-Overfull \hbox (37.22478pt too wide) in paragraph at lines 20--21
+Overfull \hbox (37.22478pt too wide) in paragraph at lines 22--23
 \OT1/ptm/m/n/12 sion, re-call and f mea-sure to de-ter-mine which fea-ture is t
 he best to cal-cu-late the genre/arousal/valence
  []
 
 ) ("../Result and Analysis/resultandanalysis.tex" [35]
-<resources/result11.jpg, id=158, 165.61874pt x 170.13562pt>
+<resources/result11.jpg, id=161, 165.61874pt x 170.13562pt>
 File: resources/result11.jpg Graphic file (type jpg)
 
 <use resources/result11.jpg>
@@ -763,7 +715,7 @@ Package pdftex.def Info: resources/result11.jpg used on input line 8.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36 <./resources/result11.jpg>]
-<resources/result22.jpg, id=162, 657.95813pt x 89.58469pt>
+<resources/result22.jpg, id=165, 657.95813pt x 89.58469pt>
 File: resources/result22.jpg Graphic file (type jpg)
 
 <use resources/result22.jpg>
@@ -774,7 +726,7 @@ Overfull \hbox (216.9388pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[37] <resources/result33.jpg, id=166, 443.40656pt x 73.02281pt>
+[37] <resources/result33.jpg, id=169, 443.40656pt x 73.02281pt>
 File: resources/result33.jpg Graphic file (type jpg)
 
 <use resources/result33.jpg>
@@ -784,9 +736,6 @@ Package pdftex.def Info: resources/result33.jpg used on input line 67.
 Overfull \hbox (2.38774pt too wide) in paragraph at lines 67--68
  [][] 
  []
-
-
-LaTeX Warning: Citation `Haggblade2011' on page 38 undefined on input line 72.
 
 ) ("../Conclusion and Future Enhancements/conclusionandfutureenhancements.tex"
 [38 <./resources/result22.jpg> <./resources/result33.jpg>]
@@ -808,10 +757,7 @@ Missing character: There is no ì in font ptmr7t!
 
 ] (main.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred inside a group at level 1)
@@ -819,11 +765,11 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### simple group (level 1) entered at line 305 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2463 strings out of 493634
- 35495 string characters out of 3135239
- 101012 words of memory out of 3000000
+ 2464 strings out of 493634
+ 35501 string characters out of 3135239
+ 101135 words of memory out of 3000000
  5736 multiletter control sequences out of 15000+200000
- 28153 words of font info for 63 fonts, out of 3000000 for 9000
+ 29231 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  27i,11n,43p,841b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Ayush/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
@@ -838,9 +784,9 @@ ers/Ayush/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:
 ><C:/Users/Ayush/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Users/Ayush/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on main.pdf (50 pages, 559842 bytes).
+Output written on main.pdf (51 pages, 561941 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
+ 218 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
