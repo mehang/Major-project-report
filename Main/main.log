@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  16 AUG 2016 02:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  17 AUG 2016 00:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -172,11 +172,7 @@ Package geometry Warning: Over-specification in `h'-direction.
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (731.23582pt) is ignored.
 
-(./main.aux
-
-LaTeX Warning: Label `fig:figure7' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -394,7 +390,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 
-Overfull \hbox (2.05179pt too wide) detected at line 6
+Overfull \hbox (2.05179pt too wide) detected at line 7
  \OT1/ptm/m/n/12 VIII
  []
 
@@ -546,146 +542,282 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [10 <./resources/humanear.jpg>] [11] [12])
-(../Theoretical Background/theoreticalbackground.tex [13] [14]
-<resources/system.jpg, id=81, 429.40425pt x 499.8675pt>
-File: resources/system.jpg Graphic file (type jpg)
-
-<use resources/system.jpg>
-Package pdftex.def Info: resources/system.jpg used on input line 28.
-(pdftex.def)             Requested size: 341.43306pt x 397.4843pt.
- [15 <./resources/system.jpg>]
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
+(../Theoretical Background/theoreticalbackground.tex
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no î in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+
+Overfull \hbox (11.9977pt too wide) detected at line 10
+\OML/ztmcm/m/it/12 compactness \OT1/ztmcm/m/n/12 = [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 26--36
+
+ []
+
+<resources/melscale.jpeg, id=81, 686.565pt x 234.8775pt>
+File: resources/melscale.jpeg Graphic file (type jpg)
+
+<use resources/melscale.jpeg>
+Package pdftex.def Info: resources/melscale.jpeg used on input line 54.
+(pdftex.def)             Requested size: 426.79134pt x 146.00601pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14]
 Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--85
+
+ []
+
+[15 <./resources/melscale.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 112--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--121
+
+ []
+
+[16]
+Overfull \hbox (10.10564pt too wide) in paragraph at lines 151--153
+\OT1/ptm/m/n/12 The root mean square(abbreviated RMS of rms) is de-fined as the
+ square root of mean square(the
+ []
+
+[17]
+Overfull \hbox (5.8102pt too wide) in paragraph at lines 162--165
+\OT1/ptm/m/n/12 The cen-troid is a mea-sure of spec-tral shape and higher cen-t
+roid val-ues cor-re-spond to "brighter"
+ []
+
+[18]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no î in font ptmr7t!
- [16]
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
- [17]
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
- [18]
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-Missing character: There is no ¬ in font ptmr7t!
-Missing character: There is no † in font ptmr7t!
-
-<resources/audiosample.png, id=95, 1111.15125pt x 720.6925pt>
-File: resources/audiosample.png Graphic file (type png)
-
-<use resources/audiosample.png>
-Package pdftex.def Info: resources/audiosample.png used on input line 149.
-(pdftex.def)             Requested size: 284.52756pt x 184.53844pt.
- [19 <./resources/audiosample.png>]
+Missing character: There is no ì in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--233
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 236--249
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 254--259
+
+ []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
 
-<resources/mfcc.jpg, id=101, 218.61674pt x 441.44925pt>
-File: resources/mfcc.jpg Graphic file (type jpg)
+Underfull \hbox (badness 10000) in paragraph at lines 270--292
 
-<use resources/mfcc.jpg>
-Package pdftex.def Info: resources/mfcc.jpg used on input line 166.
-(pdftex.def)             Requested size: 218.6162pt x 441.44815pt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--292
+
+ []
+
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 297--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--316
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 332--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--359
+
+ []
+
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 390--401
+
+ []
+
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+)
+Underfull \hbox (badness 10000) in paragraph at lines 404--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--145
+
+ []
+
+[26] [27] (../System Analysis/systemanalysis.tex [28])
+(../System Design/systemdesign.tex [29]
+<resources/contextlevel(0).jpeg, id=135, 330.23375pt x 285.065pt>
+File: resources/contextlevel(0).jpeg Graphic file (type jpg)
+
+<use resources/contextlevel(0).jpeg>
+Package pdftex.def Info: resources/contextlevel(0).jpeg used on input line 8.
+(pdftex.def)             Requested size: 213.39566pt x 184.21567pt.
+
+<resources/level1b.jpeg, id=136, 1059.96pt x 472.76625pt>
+File: resources/level1b.jpeg Graphic file (type jpg)
+
+<use resources/level1b.jpeg>
+Package pdftex.def Info: resources/level1b.jpeg used on input line 15.
+(pdftex.def)             Requested size: 492.23267pt x 219.54547pt.
+
+Overfull \hbox (51.21494pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+[30 <./resources/contextlevel(0).jpeg> <./resources/level1b.jpeg>]
+<resources/preprocessing.jpeg, id=140, 443.6575pt x 97.36375pt>
+File: resources/preprocessing.jpeg Graphic file (type jpg)
+
+<use resources/preprocessing.jpeg>
+Package pdftex.def Info: resources/preprocessing.jpeg used on input line 24.
+(pdftex.def)             Requested size: 426.79134pt x 93.66125pt.
+
+<resources/feature.jpeg, id=141, 967.615pt x 553.06625pt>
+File: resources/feature.jpeg Graphic file (type jpg)
+
+<use resources/feature.jpeg>
+Package pdftex.def Info: resources/feature.jpeg used on input line 31.
+(pdftex.def)             Requested size: 426.79134pt x 243.94063pt.
+
+<resources/classifier.jpeg, id=142, 697.60625pt x 209.78375pt>
+File: resources/classifier.jpeg Graphic file (type jpg)
+
+<use resources/classifier.jpeg>
+Package pdftex.def Info: resources/classifier.jpeg used on input line 37.
+(pdftex.def)             Requested size: 426.79134pt x 128.34561pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] <resources/mfcc.png, id=109, 449.68pt x 337.26pt>
-File: resources/mfcc.png Graphic file (type png)
+<resources/validation.jpeg, id=143, 882.29625pt x 419.5675pt>
+File: resources/validation.jpeg Graphic file (type jpg)
 
-<use resources/mfcc.png>
-Package pdftex.def Info: resources/mfcc.png used on input line 199.
-(pdftex.def)             Requested size: 449.6789pt x 337.25917pt.
+<use resources/validation.jpeg>
+Package pdftex.def Info: resources/validation.jpeg used on input line 43.
+(pdftex.def)             Requested size: 426.79134pt x 202.95862pt.
 
-Overfull \hbox (8.66116pt too wide) in paragraph at lines 199--200
- [][] 
- []
 
-[21 <./resources/mfcc.jpg>] [22 <./resources/mfcc.png (PNG copy)>]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
- [23]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] <resources/intensity.jpg, id=123, 128.27925pt x 188.50426pt>
-File: resources/intensity.jpg Graphic file (type jpg)
-
-<use resources/intensity.jpg>
-Package pdftex.def Info: resources/intensity.jpg used on input line 267.
-(pdftex.def)             Requested size: 128.27893pt x 188.50378pt.
-
-Overfull \hbox (6.24612pt too wide) in paragraph at lines 280--291
-\OT1/ptm/m/n/12 [ 20.7403817933,-.1448360237883,-.10059620606765,....,0.6199336
-41865,2.75522298062], 
- []
-
-[25 <./resources/intensity.jpg>]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
- [26]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
- [27]
-<resources/kmeans.png, id=134, 406.51875pt x 782.925pt>
-File: resources/kmeans.png Graphic file (type png)
-
-<use resources/kmeans.png>
-Package pdftex.def Info: resources/kmeans.png used on input line 347.
-(pdftex.def)             Requested size: 223.586pt x 430.61008pt.
-) (../System Analysis/systemanalysis.tex [28 <./resources/kmeans.png>]) (../Sys
-tem Design/systemdesign.tex [29])
-(../System Development/systemdevelopment.tex [30])
-(../Result and Analysis/resultandanalysis.tex [31]
-<resources/result11.jpg, id=148, 165.61874pt x 170.13562pt>
+) (../System Development/systemdevelopment.tex [31 <./resources/preprocessing.j
+peg> <./resources/feature.jpeg>]) (../Result and Analysis/resultandanalysis.tex
+[32 <./resources/classifier.jpeg> <./resources/validation.jpeg>]
+<resources/result11.jpg, id=150, 165.61874pt x 170.13562pt>
 File: resources/result11.jpg Graphic file (type jpg)
 
 <use resources/result11.jpg>
@@ -695,8 +827,8 @@ Package pdftex.def Info: resources/result11.jpg used on input line 8.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32 <./resources/result11.jpg>]
-<resources/result22.jpg, id=152, 657.95813pt x 89.58469pt>
+[33 <./resources/result11.jpg>]
+<resources/result22.jpg, id=154, 657.95813pt x 89.58469pt>
 File: resources/result22.jpg Graphic file (type jpg)
 
 <use resources/result22.jpg>
@@ -707,7 +839,7 @@ Overfull \hbox (216.9388pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-[33] <resources/result33.jpg, id=156, 443.40656pt x 73.02281pt>
+[34] <resources/result33.jpg, id=159, 443.40656pt x 73.02281pt>
 File: resources/result33.jpg Graphic file (type jpg)
 
 <use resources/result33.jpg>
@@ -719,7 +851,7 @@ Overfull \hbox (2.38774pt too wide) in paragraph at lines 67--68
  []
 
 ) (../Conclusion and Future Enhancements/conclusionandfutureenhancements.tex
-[34 <./resources/result22.jpg> <./resources/result33.jpg>]
+[35 <./resources/result22.jpg> <./resources/result33.jpg>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -727,32 +859,28 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 )
-(../Reference and Bibliography/referencebibliography.tex [35]
+(../Reference and Bibliography/referencebibliography.tex [36]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
- [36])
-(../Appendix/appendix.tex [37]) [38
+ [37])
+(../Appendix/appendix.tex [38]) [39
 
-] (./main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
+] (./main.aux) )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 305 ({)
+### simple group (level 1) entered at line 258 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2793 strings out of 493304
- 40202 string characters out of 6139871
- 110009 words of memory out of 5000000
- 6114 multiletter control sequences out of 15000+600000
+ 2805 strings out of 493304
+ 40552 string characters out of 6139871
+ 110989 words of memory out of 5000000
+ 6122 multiletter control sequences out of 15000+600000
  29231 words of font info for 64 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,43p,478b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,43p,478b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -762,10 +890,10 @@ t/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (47 pages, 523831 bytes).
+Output written on main.pdf (48 pages, 547808 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 209 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,11 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Functional Diagram of Human Ear}}{10}
-\contentsline {figure}{\numberline {2}{\ignorespaces System Block Diagram}}{15}
-\contentsline {figure}{\numberline {3}{\ignorespaces Sampling of an audio signal}}{19}
-\contentsline {figure}{\numberline {4}{\ignorespaces MFCC component}}{21}
-\contentsline {figure}{\numberline {5}{\ignorespaces MFCC Calculation spectrum}}{22}
-\contentsline {figure}{\numberline {6}{\ignorespaces Flowchart for intensity calculation}}{25}
-\contentsline {figure}{\numberline {7}{\ignorespaces K-means clustering}}{28}
-\contentsline {figure}{\numberline {8}{\ignorespaces Result Overview}}{32}
-\contentsline {figure}{\numberline {9}{\ignorespaces Cross-Validation}}{34}
-\contentsline {figure}{\numberline {10}{\ignorespaces Inter-cluster Distance}}{34}
+\contentsline {figure}{\numberline {2}{\ignorespaces Mel scale filter bank}}{15}
+\contentsline {figure}{\numberline {3}{\ignorespaces Context Level Zero}}{30}
+\contentsline {figure}{\numberline {4}{\ignorespaces Level One}}{30}
+\contentsline {figure}{\numberline {5}{\ignorespaces Pre-processing}}{31}
+\contentsline {figure}{\numberline {6}{\ignorespaces Feature}}{31}
+\contentsline {figure}{\numberline {7}{\ignorespaces Classifier}}{32}
+\contentsline {figure}{\numberline {8}{\ignorespaces Validation}}{32}
+\contentsline {figure}{\numberline {9}{\ignorespaces Result Overview}}{33}
+\contentsline {figure}{\numberline {10}{\ignorespaces Cross-Validation}}{35}
+\contentsline {figure}{\numberline {11}{\ignorespaces Inter-cluster Distance}}{35}
