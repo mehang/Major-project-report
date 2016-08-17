@@ -1,8 +1,7 @@
 \newpage
 \section{SYSTEM DESIGN}
-
+\addcontentsline{toc}{section}{\numberline{} SYSTEM DESIGN}
 \subsection{Data Flow Diagram}
-
 \subsubsection{Level Zero}
 \begin{figure}[h]
         \centering

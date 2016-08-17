@@ -1,4 +1,9 @@
+\newpage
+\section{THEORETICAL BACKGROUND}
+\addcontentsline{toc}{section}{\numberline{} THEORETICAL BACKGROUND}
+
 \subsection{Features}
+
 \subsubsection{Compactness}
 It is the measure of the noisiness of a signal. It is found by comparing the 
 components of a window’s magnitude spectrum with the magnitude spectrum of its  
