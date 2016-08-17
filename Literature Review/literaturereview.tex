@@ -106,7 +106,7 @@ Spectrograms for Classification purposes. \cite{prasad2007}
 \subsection{Genre Based Classification}
 
 \subsubsection{Overview}
-Automatic Music Genre Classification (AMGC) is one of the tasks focused by MIR. However, it is not straightforward one.
+Automatic Music Genre Classification (AMGC) is one of the tasks focused by MIR. However, it is not a straightforward one.
 
 In \cite{Scaringella2006}, Scaringella et al. discuss how and why musical genres are a poorly defined concept making the task of automatic classification non-trivial.
 Still, although the boundaries between genres are fuzzy and there are no well-defined definitions, it is still one of the widely used method of classification of music. 
@@ -170,15 +170,85 @@ Among them we were only concerned with five genre as mentioned in Chapter 1: cla
 
 \subsubsection{Overview}
 
-\subsubsection{Thayer Mood Model}
+As mood is a very human thing, Mood Based Classification, also known as Mood Emotion Recognition (MER), requires knowledge of both technical aspects as well as the human emotional system.
+So, the conceptualization of emotion and understanding of the associated emotion taxonomy is vital. However, it is a difficult thing to do, because 
+
+a) It is subjective and 
+
+b) We cannot agree on a model to depict emotional states.
+
+Usually, two approaces to emotion conceptualization are taken: 
+
+\begin{itemize}
+    \item \textbf{Categorical Conceptualization} - This approach to MER categorizes emotions into a number of distinct classes. 
+        It requires the belief of base emotions (happiness, anger, sadness, etc) from which all other secondary emotion classes can be derived.\cite{Ekman1992}
+
+        However, the major drawback of the categorical approach is that the number of primary emotion classes is too small in comparison with the richness of music emotion perceived by humans.
+
+    \item \textbf{Dimensional Conceptualization} - It defines Musical Values as numerical values over a number of emotion dimensions. 
+        So, the focus is on distinguishing emotions based on their position on a predefined space.
+        Most of these conceptualizations map to three axes of emotions: valence (pleasantness), arousal (activation) and potency (dominance).
+        By placing emotions on a continuum instead of trying to label them as discrete, this approach can encompass a wide variety of general emotions.
+
+\end{itemize}
+
+\subsubsection{Circumplex and Thayer Mood Model}
+
+One of the Dimensional conceptualization was proposed by Russell (1980) \cite{Russell1980}.
+As shown in \textit{Figure 2}, the model consists of a two-dimensional structure involving the dimensions of valence and arousal. 
+General emotions are placed within thic circular framework.
+
+\begin{figure}[hlvt!]
+        \centering
+        \includegraphics[width=120mm]{resources/circumplex.jpg}
+        \caption{A graphical representation of the circumplex model of affect with the horizontal axis representing the valence dimension and the vertical axis representing the arousal or activation dimension.}
+        \label{fig:figure2}
+\end{figure}
+
+As shown in \textit{Figure 3}, Thayer \cite{Thayer1990} proposed a similar two-dimensional approach that adopts the theory that mood is entailed from two factors: -Stress (happy/anxious) -Energy (calm/ energetic). 
+This divides music mood into four clusters: Contentment, Depression, Exuberance and Anxious/Frantic.
+
+Although, the two-dimensional approach has been criticized as deficient (leading to a proposal of the third dimension of potency), it seems to offer the right balance between sufficient "verbosity" and low complexity \cite{Juslin2001}.
+
+\begin{figure}[hlvt!]
+        \centering
+        \includegraphics[width=120mm]{resources/thayerModel.jpg}
+        \caption{Thayer's two-dimensional model of mood}
+        \label{fig:figure3}
+\end{figure}
 
 \subsubsection{Features}
 
+Some of the commonly used features in MER are:
+
+\begin{itemize}
+    \item \textbf{Energy}: Energy related features such as audio power, loudness, specific loudness sensation coefficients (SONE), are correlated to the perception of arousal. 
+        Lu et al. \cite{Lu2006} used it to classify arousal.
+
+    \item \textbf{Rhythm}: Flowing/fluent rhythm is associated with positive valence while firm rhythms with negative valence.
+
+    \item \textbf{Melody}: These include features such as Pitch (perceived fundamental frequency), chromogram centroid, etc.
+
+    \item \textbf{Timbre}: As with the AMGC problem, MFCC is widely used in MER too. Apart from MFCC, octave-based spectral contrast as well as DWCH (Daubechies wavelets coefficient histogram) are also proposed in literature.
+        
+\end{itemize}
+
+So, we see that the features used in MER are almost the same as those in AMGC. However, Fu et al. note in their extensive survey on Audio-based Music Classification \cite{Fu2011} that although their effectiveness is debatable, mid-level features such as Rhythm seem to be more popular in MER.
+
+
 \subsubsection{Classifiers}
+
+The algorithms used in AMGC are also popular in MER. So, support vector machines, Gaussian mixture models, neural networks, and k-nearest neighbor are the ones regularly used.
 
 \subsubsection{Dataset}
 
+Due to the high variability in the emotional models adopted (whether categorical or dimensional), there have been no popular baseline dataset for MER task.
 
+So, to tackle the issue, in 2013, Soleymani et al. \cite{Soleymani2013} created a 1000 songs dataset for emotional analysis of music which uses the Valence-Arousal axes for representing emotional values for songs.
+We have used a filtered version (with some redundancies removed) of that dataset resulting in a final set of 744 songs.
+
+The songs, in the dataset, each 45 seconds long, were collected from FMA. They used Amazon Mechanical Turk as a crowdsourcing platform for collecting more than 20,000 annotations on the 1,000 songs. 
+Furthermore, their analysis on the annotations revealed a higher agreement in arousal ratings compared to the valence ratings.
 
 \subsection{Factors affecting accuracy}
 Some of the factors that affect the accuracy are: 
