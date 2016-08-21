@@ -1,0 +1,100 @@
+\contentsline {section}{\hbox to\@tempdima {\hfil } PAGE OF APPROVAL}{II}
+\contentsline {section}{\hbox to\@tempdima {\hfil } COPYRIGHT}{III}
+\contentsline {section}{\hbox to\@tempdima {\hfil } ACKNOWLEDGMENT}{IV}
+\contentsline {section}{\hbox to\@tempdima {\hfil } ABSTRACT}{V}
+\contentsline {section}{\hbox to\@tempdima {\hfil } TABLE OF CONTENTS}{VI}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF FIGURES}{X}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF SYMBOLS}{XII}
+\contentsline {section}{\hbox to\@tempdima {\hfil } LIST OF ABBREVIATIONS}{XIV}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 1}INTRODUCTION}{1}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.1}Background}{1}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.2}Overview}{3}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.3}Problem Statement}{5}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.4}Motivation}{6}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.5}Aims and Objectives}{6}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.6}Scope of Project}{7}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 1.7}Organization of Report}{7}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 2}LITERATURE REVIEW}{10}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.1}Human Audio Perception}{10}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.2}History of MIR and Music Classification}{11}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.3}Audio Processing}{13}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4}Theoretical Background}{14}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1}Features}{14}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.1}Compactness.}{14}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.2}Mel-Frequency Cepstral Coefficients.}{14}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.3}Pitch.}{16}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.4}Tempo.}{17}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.5}Root Mean Square.}{19}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.6}Spectral Centroid.}{19}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.7}Spectral Flux.}{19}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.8}Spectral Roll-off Point.}{19}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.9}Spectral Variability.}{20}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.1.10}Zero Crossing.}{20}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.2}Classifier}{20}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.2.1}K-means Clustering.}{21}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.2.2}Artificial Neural Network.}{24}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4.2.3}Support Vector Machine.}{28}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.5}Testing and Validation}{31}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.5.1}Cross-validation}{32}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.5.2}Measure of Performance}{33}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6}Related Works}{35}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.1}Genre Based Classification}{35}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.1.1}Overview.}{35}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.1.2}Features.}{35}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.1.3}Classifer.}{36}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.2}Mood Based Classification}{37}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.2.1}Overview.}{37}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.2.2}Circumplex and Thayer Mood Model.}{38}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.2.3}Features.}{38}
+\contentsline {paragraph}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6.2.4}Classifiers.}{39}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 3}SYSTEM ANALYSIS}{40}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.1}Requirement Specification}{40}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.1.1}High Level Requirements}{40}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.1.2}Functional Requirements}{41}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.1.3}Non-Functional Requirements}{42}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2}Feasibility Assessment}{42}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2.1}Technical Feasibility}{43}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2.2}Economic feasibility}{43}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2.3}Operational Feasibility}{44}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2.4}Schedule feasibility}{44}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 3.2.5}Legal feasibility}{45}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 4}METHODOLOGY}{46}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1}System Block Diagram}{46}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.2}Audio Sampling}{46}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 5}SYSTEM DEVELOPMENT}{48}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1}Data Flow Diagram}{48}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1.1}Level Zero}{48}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1.2}Level One}{48}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1.3}Level Two}{49}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2}Sequence Diagram}{51}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2.1}Feature Extraction}{51}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2.2}Classification}{52}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2.3}Training}{53}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2.4}Testing}{54}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3}Tools and Environment}{54}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.1}Java Programming Language}{54}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.2}SMILE - Statistical Machine Intelligence and Learning Engine}{55}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.3}TarsosDSP}{56}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.4}Google Gson}{56}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.5}Xstream}{56}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.6}MP3SPI}{56}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3.7}Python Programming Language}{57}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 6}RESULTS AND ANALYSIS}{58}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1}Dataset pre-processing}{58}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1.1}Genre Dataset}{58}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1.2}Mood Dataset}{58}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.2}SVM}{58}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.3}ANN}{62}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4}Problems and Solutions}{62}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4.1}Solved Problems}{66}
+\contentsline {subsubsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4.2}Unsolved Problems}{67}
+\contentsline {section}{\numberline {\fontsize {14pt}{0pt}\selectfont 7}CONCLUSION}{68}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.1}Project Conclusion}{68}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 7.2}Future Enhancements}{68}
+\contentsline {section}{\hbox to\@tempdima {\hfil }REFERENCES}{70}
+\contentsline {section}{\hbox to\@tempdima {\hfil } APPENDIX A}{74}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.3}Signal Processsing}{74}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.4}Spectral Analysis}{74}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.5}Windowing}{75}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.6}Filter Bank}{76}
+\contentsline {subsection}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.7}GUI}{76}

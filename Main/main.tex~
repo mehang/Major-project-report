@@ -156,9 +156,11 @@
 
 \input{../"Literature Review"/literaturereview}
 
+%\input{../"Theoretical Background"/theoreticalbackground}
+
 \input{../"System Analysis"/systemanalysis}
 
-\input{../"Methodology"/methodology}
+\input{../"System Design"/systemdesign}
 
 \input{../"System Development"/systemdevelopment}
 

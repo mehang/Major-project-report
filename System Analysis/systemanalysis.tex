@@ -20,19 +20,29 @@
     The classification of the audio files based on either mood or genre can be then be used in the creation of auto generated playlists.After each high level requirements are identified, corresponding intermediate level requirements
     (ILRs) are also identified. These list the feature metadata used to classify the audio.
 \subsubsection{Functional Requirements}
-    Our music classification system will classify audio files based on 4 features which include the intensity, pitch, timbre and rhythm. Being either vector or scalar representations, these features will thus first be integrated
-    using a common format (JSON) and finally used as input for the classification. The system should classify the audio file properly amongst the given genres and mood to provide a satisfactory experience for the user
+\begin{itemize}
+        \item The classification of music based on genre and mood.
+        \item The classification will work on various music file format like mp3, wav, etc.
+        \end{itemize}
+
 \newpage
 \subsubsection{Non-Functional Requirements}
-    \begin{itemize}
-    \item[$\bullet$] Serviceability\\
-        Our project supports most popular audio formats from MP3, WAV to AU as well. Support for multiple formats is incorporated using various plugins to java’s default WAV only support. For instance the use of mp3spi plugin to
-         support mp3.
-    \item[$\bullet$] Reliability\\
-        Through the use of two different classifiers : ANN and SVM, we are able to compare the classification output of both classifiers. Also for measures of performance various measures of performance such as
-        accuracy, f-measure, recall, precision have been applied.
-    \end{itemize}
-
+Non­functional requirement is a requirement that specifies criteria that can be used to judge the 
+operation of a system, rather than specific behaviors.\\ 
+\\
+The non­functional requirement in our project are: 
+\begin{itemize}
+        \item Code Documentation
+        \item Project Documentation
+        \item Code Quality
+        \item Performance
+        \item Fault Tolerance
+        \item Log Maintenance
+        \item Scalability
+        \item Testability
+        \item Maintainability
+        \end{itemize}
+                
 \subsection{Feasibility Assessment}
 A feasibility assessment or feasibility analysis is a preliminary study undertaken before the real work of a project starts to ascertain the likelihood fo the project's success.
 It is an analysis of possible alternative solutions to a problem and a recommendation on the best alternative. It, for example, can decide whether an order processing be carried out by a new system more 
@@ -41,29 +51,45 @@ efficiently than the previous one. It can be thought as an assessment of the pra
 A feasibility study aims to objectively and raitonally uncover the strengths and weakness of an existing project paradigm, opportunities and threats present in the environment, the resources required to carry through, and ultimately the prospects
 of success. In simplest terms, the two criteria to judge feasibility are cost required and value to be attained. A well-designed feasibility study should provide a historical background of the project,
 a description of the project and details of operations and technicality needed.Generally feasibility studies always precede technical development and project implementation. A feasibility study evaluates the project's potential for success. It must there be
-conducted with an objective, unbiased approach to provide information upon which decisions can be based.
+conducted with an objective, unbiased approach to provide information upon which decisions can be based.\\
+\\
+The acronym TELOS refer to the five areas of feasibility:
+\begin{itemize}
+        \item Technical feasibility
+        \item Economic feasibility
+        \item Legal feasibility
+        \item Operational feasibility
+        \item Scheduling feasibility
+        \end{itemize}
+
+\subsubsection{Technical Feasibility}
+This assessment is based on an outline design of system requirements, to determine whether the company has the technical expertise to handle completion of the project.
+After our thorough research we decided to go with the features mentioned above. We also chose simple but powerful algorithm to do the classification.
+Since our first priority is to do all the coding from the scratch, hence we might face somewhat difficulty as we don't have that much experience of that of library developer.
+Moreover, doing so we might face difficulty in validating the feature extraction process.
+But based on our experience we can do most of the most by coding ourselves or at least try and then analyze the result. Based on our novice nature in software development, the project might also be somewhat not highy optimized
+
+\subsubsection{Economic feasibility}
+The purpose of the economic feasibility assessment is to determine the positive economic benefits to the organization that the proposed system will provide.
+This assessment typically involves a cost/ benefits analysis.\\ 
+\\
+Since our project is just the beginning portion which could be a huge leading factor in future and bring
+revolution in music industry. Our current product might not be able to provide that much of montary benefit but sure it is contributing to a huge research ahead in future.
+Then, talking about the cost, as no hardware is required in our project so we can say there is almost no loss involved in monetary terms but we are surely obtaining huge amount of knowledge and insight.
 
 \subsubsection{Operational Feasibility}
-    As demonstrated by the output of the measures of performance, we can see that the music classification system gives classifies with reasonable accuracy in bothe genre and mood. For instance, by taking the contribution of each
-    individual feature in the classification process we have selected the best features through which we classify for both genre, arousal and valence. As indicated by our comptutations for genre are:
-    \begin{itemize}
-    \item[$\bullet$] MFCC
-    \item[$\bullet$] Zero Crossing
-    \item[$\bullet$] Compactness
-    \end{itemize}
-    As for arousal, the features taken are:
-    \begin{itemize}
-    \item[$\bullet$] MFCC
-    \item[$\bullet$] Zero Crossing
-    \item[$\bullet$] Compactness
-    \end{itemize}
-    As for valence,
-    \begin{itemize}
-    \item[$\bullet$] Rhythm
-    \item[$\bullet$] Zero Crossing
-    \item[$\bullet$] Compactness
-    \end{itemize}
-\newpage
-\subsubsection{Technical Feasibility}
-    Some feature extraction processes such as RMS are lightweight wheras rhythm extraction is very compatation expensive. Hence even though proper optimization has been done, the nature of computation itself has introduced a lot of
-    hurdles in creating a optimized system and this becomes more obvious after using ANNs and SVM.
+Operational feasibility is a measure of how well a proposed system solves the problems, and takes advantage of the opportunities identified during scope definition and how it satisfies the requirements identified in the requirements analysis phase of system development.
+The operational feasibility assessment focuses on the degree to which the proposed development projects fits in with the existing business environment. Since our project is one of the most talked about project in the music industry,
+hence we can say that it will surely contribute to the music industry. The possibility of automated song management, smart playlist,etc. might be new thing in future.
+Our research has already pointed to the prominent feature to be included like MFCC, pitch,etc. The design of the data flow diagram shows feature extraction not to so hard and same goes for the classfication.
+Moreover as we are developing in the LINUX system so we are contributing towards it's environment.
+
+\subsubsection{Schedule feasibility}
+A project will fail if it takes too long to be completed before it is useful. Typically this means estimating how long the system will take to develop, and if it can be completed in a given time period using some methods like payback period. 
+The gantt chart in our proposal is pretty much convincing to move along with but however somewhat delay might be obtained if any problem like lack of accuracy and misleading feature value arises.
+
+\subsubsection{Legal feasibility}
+Legal feasibility determines whether the proposed system conflicts with legal requirements.
+After our research, we found that our conflicting factor may only be on the use of the database provided provided we misuse it or violate some conditions.
+
+

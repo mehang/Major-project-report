@@ -18,15 +18,16 @@ However, we had to generate the labels for the song from the numerical values gi
 Each song had two associated numerical values in the range of 1-9. 
 We used empirically determined values close to 5 to separate the dataset based on arousal and valence using a Python script.
 
-\subsection{SVM}
+
+\subsection{Genre Based Classification}
+
+\subsubsection{SVM}
 
 \begin{figure}[h!]
         \centering
         \includegraphics[width=125mm]{resources/result/genreandsvm.jpeg}
         \caption{Genre using SVM}
 \end{figure}
-
-
 \begin{figure}[h!]
         \centering
         \includegraphics[width=125mm]{resources/result/arousalandsvm.jpeg}
@@ -91,7 +92,7 @@ For Valence, we left out MFCC and retained the three other good performers.
  \item Zero Crossing
 \end{itemize}
 
-\subsection{ANN}
+\subsubsection{ANN}
 \begin{figure}[h!]
         \centering
         \includegraphics[width=150mm]{resources/result/genreandann.jpeg}
@@ -141,31 +142,3 @@ For valence too, MFCC performed well but it is only a little better than random.
 This is probably because, the people annotating the dataset had the most disagreement on valence. 
 
 So, in the final classsifier, we used MFCC and RMS for all classifiers as they gave the best result. 
-
-
-\subsection{Problems and Solutions}
-
-We faced the following problems during the project:
-
-\begin{itemize}
-    \item Decoding Mp3: Mp3 files are lossy compression of audio. So, we had a hard time decoding mp3 files on our custom implementation. 
-    \item Distance Metric: We couldn't find a decent distance metric between songs.
-    \item Data Refining: Our mood based dataset was not directly labeled. They had numerical values instead.
-    \item Computational Intensiveness For Preprocessing: As the samples of the song needed to be kept in memory during pre-processing, for long songs, this resulted in a lot of memory being consumed.
-    \item Computational Intensiveness For Classification: Some classifiers such as those based on GMM were computationally intensive in nature.
-\end{itemize}
-
-\subsubsection{Solved Problems}
-\begin{itemize}
-    \item Decoding Mp3: We solved it by using the MP3SPI library.
-    \item Data Refining: We wrote custom Python scripts to generate the dataset.
-    \end{itemize}
-
-\subsubsection{Unsolved Problems}
-\begin{itemize}
-    \item Distance Metric: We circumvented the problem by using classifiers that didn't need distance metrics. So, we didn't use K-NN and K-means.
-    \item Computational Intensiveness For Preprocessing: We still have this problem. And so, we might get Heap error for long songs ($>$5 mins).
-    \item Computational Intensiveness For Classification: Instead of decreasing the computational intensiveness of the implementation, we used other classifiers instead.
-    \end{itemize}
-
-

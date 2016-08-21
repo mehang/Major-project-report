@@ -1,34 +1,166 @@
 \newpage
 \section{SYSTEM DEVELOPMENT}
-\addcontentsline{toc}{section}{\numberline{} SYSTEM DEVELOPMENT}
-\subsection{Data processing}
-First of all to extract any features from a audio, samples are first taken out of it. Theses samples are then fine tuned to the correct audio format. This process involves converting to mono signals if they are stereo and adjusting bit depths if it is deemed to be necessary. Sample extraction and audio format is correction is achieved through the java sound API.\\
-Audio Sampling is then followed by audio framing and then a hamming window is used. Windows are necessary because whenever we do a finite Fourier transform, it is implicitly being applied to an infinitely repeating signal. So, for instance, if the start and end of a finite sample doesn’t match then that will look just like a discontinuity in the signal, and show up as lots of high-frequency nonsense in the Fourier transform, which is harmful. If the sample happens to be a perfect sinusoid but with an integer number of periods then it doesn't fit exactly into the finite sample and the FT will show appreciable energy in all sorts of places nowhere near the real frequency. Windowing the data makes sure that the ends match up while keeping everything reasonably smooth.
-\subsection{Workflow}
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=25mm]{resources/featureextraction.jpg}
-            \caption{General workflow}
-            \label{fig:figure8}
-        \end{figure}
+
+
 \newpage
-    Pre processing the audio signal involves the following sub steps:\\
-    \paragraph{}
-    Sampling the audio and fixing the audio format(Bit depth, number of channels etc)Audio framing to carry out feature extraction in each frame individually. Finally the use a hamming window to minimize the signal side lobe (unwanted radiation). Thus improving the quality or harmonics of the sound
+\subsection{Data Flow Diagram}
 
-    \paragraph{}
-    Feature extraction involves the calculation of the following features:Root Mean Square(RMS), Compactness, MFCC, Rhythm, Pitch, Zero Crossing, Spectral variability, Spectral roll off point, Spectral centroid and Spectral flux.
+\subsubsection{Level Zero}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=75mm]{resources/contextlevel(0)}
+        \caption{Context Level Zero}
+        \label{fig:contextlevel}
+\end{figure}
+\subsubsection{Level One}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=173mm]{resources/level1b}
+        \caption{Level One}
+        \label{fig:level1b}
+\end{figure}
+\newpage
+\subsubsection{Level Two}
+\vspace{20mm}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=150mm]{resources/preprocessing}
+        \caption{Pre-processing}
+        \label{fig:pre-processing}
+\end{figure}
+\vspace{20mm}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=150mm]{resources/feature}
+        \caption{Feature}
+        \label{fig:feature}
+\end{figure}
+\vspace{90mm}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=170mm]{resources/classifier}
+        \caption{Classifier}
+        \label{fig:classifier}
+\end{figure}
+\vspace{50mm}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=150mm]{resources/validation}
+        \caption{Validation}
+        \label{fig:validation}
+\end{figure}
+\newpage
+\newpage
+\subsection{Sequence Diagram}
+\subsubsection{Feature Extraction}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=160mm]{resources/sequence_featureextraction}
+        \caption{Sequence diagram of extracting feature}
+        \label{fig:sequence_featureextraction}
+\end{figure}
+\newpage
+\subsubsection{Classification}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=160mm]{resources/sequence_classify}
+        \caption{Sequence diagram of classification}
+        \label{fig:sequence_classify}
+\end{figure}
+\newpage
+\subsubsection{Training}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=170mm]{resources/sequence_training}
+        \caption{Sequence diagram of training}
+        \label{fig:sequence_training}
+\end{figure}
+\newpage
+\newpage
+\subsubsection{Testing}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=160mm]{resources/sequence_test}
+        \caption{Sequence diagram of testing}
+        \label{fig:sequence_test}
+\end{figure}
 
-    \paragraph{}
-    Feature selection involves the use of various measures of performance such as precision, recall and f measure to determine which feature is the best to calculate the genre/arousal/valence of an audio signal.  The result of this step is determined by the accuracy produced by each feature when used in the SVM classifier.
 
-    \paragraph{}
-    Finally in the classification part of the system, we have utilized two different types of classifiers, Artificial Neural networks and Support Vector machines to classify the audio signals and find the proper label for each based on genre/arousal/valence.
 \subsection{Tools and Environment}
-    Platform : Linux\\
-	Editor: Vim/Atom\\
-	Programming language: java\\
-	Drawing tools : draw.io, Inkscape
+
+\subsubsection{Java Programming Language}
+
+Java is a general-purpose computer programming language that is concurrent class-based, object-oriented. 
+We chose java due to many reasons:
+
+\begin{itemize}
+    \item We were familiar with Java having worked on pretty decent sized Java projects.
+    \item Although Java may be too verbose for small applications, we believe it is 
+    \item Portability - Java runs well on all the popular platforms.
+    \item Speed - The latest JIT compilers for Suns JVM approach the speed of C/C++ code, and in some memory allocation intensive circumstances, exceed it.
+    \item Standard APIs that encompass lots of common funcionalities.
+    \item GarbageCollection - the programmer doesn't have to worry about memory (most of the time).
+    \item Availability of lots of Libraries, tools and frameworks in Java.
+\end{itemize}
+
+\subsubsection{SMILE - Statistical Machine Intelligence and Learning Engine}
+
+Smile (Statistical Machine Intelligence and Learning Engine) is a fast and comprehensive machine learning system. With advanced data structures and algorithms, Smile delivers state-of-art performance.
+As mentioned in its documentation:
+"Smile covers every aspect of machine learning, including classification, regression, clustering, association rule mining, feature selection, manifold learning, multidimensional scaling, genetic algorithms, missing value imputation, efficient nearest neighbor search, etc."
+
+\subsubsection{TarsosDSP}
+
+    TarsosDSP is a Java library for audio processing. 
+    Its aim is to provide an easy-to-use interface to practical music processing algorithms implemented, as simply as possible, in pure Java and without any other external dependencies. 
+    The library tries to hit the sweet spot between being capable enough to get real tasks done but compact and simple enough to serve as a demonstration on how DSP algorithms works.
+    We used TarsosDSP to process the low level song features.
+
+\subsubsection{Google Gson}
+
+Gson is a Java library that can be used to convert Java Objects into their JSON representation. 
+It can also be used to convert a JSON string to an equivalent Java object. 
+Gson can work with arbitrary Java objects including pre-existing objects that you do not have source-code of.  
+We used Gson to store the features as JSON and read them back. 
+We chose JSON because it is easily readable through a lot of methods, libraries and languages.
+
+\subsubsection{Xstream}
+
+XStream is a simple library to serialize objects to XML and back again.
+We used XStream to store the model as a XML file so that it can be read back. 
+
+\subsubsection{MP3SPI}
+MP3SPI is a Java Service Provider Interface that adds MP3 (MPEG 1/2/2.5 Layer 1/2/3) audio format support for Java Platform.
+We used it to add a more reliable support for mp3 files.
+
+\subsubsection{Python Programming Language}
+
+Python is a high-level, general-purpose, interpreted, dynamic programming language.
+We used Python scripts to handle the audio files and modify them to create the mood based dataset.
+
 \subsection{Problems and Solutions}
+
+We faced the following problems during the project:
+
+\begin{itemize}
+    \item Decoding Mp3: Mp3 files are lossy compression of audio. So, we had a hard time decoding mp3 files on our custom implementation. 
+    \item Distance Metric: We couldn't find a decent distance metric between songs.
+    \item Data Refining: Our mood based dataset was not directly labeled. They had numerical values instead.
+    \item Computational Intensiveness For Preprocessing: As the samples of the song needed to be kept in memory during pre-processing, for long songs, this resulted in a lot of memory being consumed.
+    \item Computational Intensiveness For Classification: Some classifiers such as those based on GMM were computationally intensive in nature.
+\end{itemize}
+
 \subsubsection{Solved Problems}
+\begin{itemize}
+    \item Decoding Mp3: We solved it by using the MP3SPI library.
+    \item Data Refining: We wrote custom Python scripts to generate the dataset.
+    \end{itemize}
+
 \subsubsection{Unsolved Problems}
+\begin{itemize}
+    \item Distance Metric: We circumvented the problem by using classifiers that didn't need distance metrics. So, we didn't use K-NN and K-means.
+    \item Computational Intensiveness For Preprocessing: We still have this problem. And so, we might get Heap error for long songs (>5 mins).
+    \item Computational Intensiveness For Classification: Instead of decreasing the computational intensiveness of the implementation, we used other classifiers instead.
+    \end{itemize}
+
+

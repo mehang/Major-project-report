@@ -1,0 +1,34 @@
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.1}{\ignorespaces Functional Diagram of Human Ear}}{10}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.2}{\ignorespaces Mel scale filter bank}}{16}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.3}{\ignorespaces General structure of artificial neural network}}{25}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4}{\ignorespaces Misleading hyperplane}}{29}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.5}{\ignorespaces Support vector machine with maximum-margin hyperplane}}{30}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6}{\ignorespaces Support vector machine with kernel function}}{31}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.7}{\ignorespaces A graphical representation of the circumplex model of affect with the horizontal axis representing the valence dimension and the vertical axis representing the arousal or activation dimension.}}{38}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.8}{\ignorespaces Thayer's two-dimensional model of mood}}{39}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1}{\ignorespaces General workflow}}{46}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1}{\ignorespaces Context Level Zero}}{48}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2}{\ignorespaces Level One}}{49}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3}{\ignorespaces Pre-processing}}{49}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.4}{\ignorespaces Feature}}{50}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.5}{\ignorespaces Classifier}}{50}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.6}{\ignorespaces Validation}}{51}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.7}{\ignorespaces Sequence diagram of extracting feature}}{52}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.8}{\ignorespaces Sequence diagram of classification}}{53}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.9}{\ignorespaces Sequence diagram of training}}{54}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.10}{\ignorespaces Sequence diagram of testing}}{55}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1}{\ignorespaces Genre using SVM}}{59}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.2}{\ignorespaces Arousal using SVM}}{59}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.3}{\ignorespaces Valence using SVM}}{60}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4}{\ignorespaces Accuracy of SVM}}{60}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.5}{\ignorespaces Recall of SVM}}{61}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.6}{\ignorespaces F-measure of SVM}}{61}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.7}{\ignorespaces Precision of SVM}}{62}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.8}{\ignorespaces Genre using ANN}}{63}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.9}{\ignorespaces Arousal Using ANN}}{63}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.10}{\ignorespaces Valence Using ANN}}{64}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.11}{\ignorespaces Accuracy of ANN}}{64}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.12}{\ignorespaces F-measure of ANN}}{65}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.13}{\ignorespaces Precision of ANN}}{65}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.14}{\ignorespaces Recall of ANN}}{66}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.1}{\ignorespaces Graphics user interface}}{77}

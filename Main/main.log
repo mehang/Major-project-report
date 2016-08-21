@@ -1,0 +1,1586 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.17)  22 AUG 2016 01:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen113
+\ttl@minus=\dimen114
+\ttl@toksa=\toks17
+\titlewidth=\dimen115
+\titlewidthlast=\dimen116
+\titlewidthfirst=\dimen117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count92
+\LTcapwidth=\dimen118
+\LT@head=\box27
+\LT@firsthead=\box28
+\LT@foot=\box29
+\LT@lastfoot=\box30
+\LT@cols=\count93
+\LT@rows=\count94
+\c@LT@tables=\count95
+\c@LT@chunks=\count96
+\LT@p@ftn=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (483.69684pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (731.23582pt) is ignored.
+
+(./main.aux
+
+LaTeX Warning: Label `fig:figure10' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure11' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure11' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure12' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 125.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 441.01773pt, 56.9055pt)
+* v-part:(T,H,B)=(99.58464pt, 688.5567pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=441.01773pt
+* \textheight=688.5567pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\big@size=\dimen119
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen120
+\scratchbox=\box31
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen121
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks20
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(../Cover Page/coverpage.tex
+<resources/tu-logo.jpg, id=1, 51.04218pt x 51.04218pt>
+File: resources/tu-logo.jpg Graphic file (type jpg)
+
+<use resources/tu-logo.jpg>
+Package pdftex.def Info: resources/tu-logo.jpg used on input line 5.
+(pdftex.def)             Requested size: 142.26378pt x 142.29323pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./resources/tu-logo.jpg>] 
+(../Certificate of Approval/certificateofapproval.tex
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--27
+
+ []
+
+) (../Copyright/copyright.tex [2]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--18
+
+ []
+
+) (../Acknowledgment/acknowledgment.tex [3]
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+) (../Abstract/abstract.tex [4]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+) [5] (./main.toc
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 1.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 1.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 1.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 1.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+Overfull \hbox (2.72383pt too wide) detected at line 8
+ \OT1/ptm/m/n/12 XIV
+ []
+
+[6
+
+] [7] [8])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [9] (./main.lof [10])
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+ (../List of Symbols/listofsymbols.tex
+[11]
+Underfull \hbox (badness 7433) in paragraph at lines 13--14
+[]|\OT1/ptm/m/n/12 Daubechies Wavelet Co-ef-fi-cient His-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[]|\OT1/ptm/m/n/12 Statistical Ma-chine In-tel-li-gence and
+ []
+
+[12] [13]) (../Introduction/introduction.tex [14]
+Underfull \hbox (badness 10000) in paragraph at lines 7--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--47
+
+ []
+
+[1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 50--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--74
+
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 75.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
+
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--129
+
+ []
+
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--208
+
+ []
+
+[7] [8]) (../Literature Review/literaturereview.tex [9]
+<resources/humanear.jpg, id=82, 761.84625pt x 287.0725pt>
+File: resources/humanear.jpg Graphic file (type jpg)
+
+<use resources/humanear.jpg>
+Package pdftex.def Info: resources/humanear.jpg used on input line 16.
+(pdftex.def)             Requested size: 426.79134pt x 160.81644pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--20
+
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--34
+
+ []
+
+[10 <./resources/humanear.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--64
+
+ []
+
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 79--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--87
+
+ []
+
+[13]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+
+ []
+
+
+Overfull \hbox (11.9977pt too wide) detected at line 116
+\OML/ztmcm/m/it/12 compactness \OT1/ztmcm/m/n/12 = [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 132--142
+
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+<resources/melscale.jpeg, id=102, 686.565pt x 234.8775pt>
+File: resources/melscale.jpeg Graphic file (type jpg)
+
+<use resources/melscale.jpeg>
+Package pdftex.def Info: resources/melscale.jpeg used on input line 168.
+(pdftex.def)             Requested size: 426.79134pt x 146.00601pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--199
+
+ []
+
+[16 <./resources/melscale.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--235
+
+ []
+
+[17] [18]
+Overfull \hbox (5.8102pt too wide) in paragraph at lines 276--279
+\OT1/ptm/m/n/12 The cen-troid is a mea-sure of spec-tral shape and higher cen-t
+roid val-ues cor-re-spond to "brighter"
+ []
+
+
+Overfull \hbox (3.43764pt too wide) in paragraph at lines 297--299
+$[]$[] \OT1/ptm/m/n/12 Spec-tral vari-abil-ity is the stan-dard de-vi-a-tion of
+ the mag-
+ []
+
+[19]
+Overfull \hbox (7.45508pt too wide) in paragraph at lines 306--307
+$[]$[] \OT1/ptm/m/n/12 The zero cross-ing is de-fined as the num-ber of times t
+he wave-
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--347
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 350--363
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 368--373
+
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--406
+
+ []
+
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 411--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--430
+
+ []
+
+[24] <resources/ann.png, id=136, 1353.29118pt x 571.0747pt>
+File: resources/ann.png Graphic file (type png)
+
+<use resources/ann.png>
+Package pdftex.def Info: resources/ann.png used on input line 447.
+(pdftex.def)             Requested size: 426.79134pt x 180.09862pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--459
+
+ []
+
+[25 <./resources/ann.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 461--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--477
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 508--519
+
+ []
+
+[27]
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+ <resources/misleadinghyperplane.png, id=146, 894.34125pt x 558.085pt>
+File: resources/misleadinghyperplane.png Graphic file (type png)
+
+<use resources/misleadinghyperplane.png>
+Package pdftex.def Info: resources/misleadinghyperplane.png used on input line 
+536.
+(pdftex.def)             Requested size: 426.79134pt x 266.32791pt.
+
+<resources/svm.png, id=147, 1262.59941pt x 787.8847pt>
+File: resources/svm.png Graphic file (type png)
+ <use resources/svm.png>
+Package pdftex.def Info: resources/svm.png used on input line 540.
+(pdftex.def)             Requested size: 426.79134pt x 266.31438pt.
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+
+Overfull \hbox (21.05078pt too wide) in paragraph at lines 522--558
+$[]$[] \OT1/ptm/m/n/12 In ma-chine learn-ing, sup-port vec-tor ma-chines (SVM)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--558
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28] <resources/kernel.png, id=151, 3094.85648pt x 1460.98764pt>
+File: resources/kernel.png Graphic file (type png)
+
+<use resources/kernel.png>
+Package pdftex.def Info: resources/kernel.png used on input line 560.
+(pdftex.def)             Requested size: 426.79134pt x 201.46046pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+[29 <./resources/misleadinghyperplane.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 578--588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--588
+
+ []
+
+[30 <./resources/svm.png>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no à in font ptmr7t!
+Missing character: There is no í in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--612
+
+ []
+
+
+Overfull \hbox (1.334pt too wide) in paragraph at lines 590--612
+\OT1/ptm/m/n/12 method out there like leave-p-out cross-validation, leave-one-o
+ut cross validation,2-fold cross
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--612
+
+ []
+
+[31 <./resources/kernel.png>] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 614--623
+
+ []
+
+[33]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 650--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--666
+
+ []
+
+[34]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--689
+
+ []
+
+[35]
+Overfull \hbox (0.15768pt too wide) in paragraph at lines 692--707
+$[]$[] \OT1/ptm/m/n/12 A va-ri-ety of meth-ods have been used for mu-sic clas-s
+i-fi-ca-tion. Some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--707
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--707
+
+ []
+
+[36]
+Overfull \hbox (4.44131pt too wide) in paragraph at lines 736--739
+$[]$[] \OT1/ptm/m/n/12 One of the Di-men-sional con-cep-tu-
+ []
+
+[37] <resources/circumplex.jpg, id=182, 289.08pt x 212.4738pt>
+File: resources/circumplex.jpg Graphic file (type jpg)
+
+<use resources/circumplex.jpg>
+Package pdftex.def Info: resources/circumplex.jpg used on input line 742.
+(pdftex.def)             Requested size: 341.43306pt x 250.96654pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--751
+
+ []
+
+<resources/thayerModel.jpg, id=183, 145.0234pt x 68.64441pt>
+File: resources/thayerModel.jpg Graphic file (type jpg)
+
+<use resources/thayerModel.jpg>
+Package pdftex.def Info: resources/thayerModel.jpg used on input line 754.
+(pdftex.def)             Requested size: 341.43306pt x 161.63695pt.
+
+Overfull \hbox (0.85278pt too wide) in paragraph at lines 767--768
+[]\OT1/ptm/b/n/12 Rhythm\OT1/ptm/m/n/12 : Flow-ing/fluent rhythm is as-so-ci-at
+ed with pos-i-tive va-lence while firm rhythms
+ []
+
+[38 <./resources/circumplex.jpg>]) (../System Analysis/systemanalysis.tex
+[39 <./resources/thayerModel.jpg>] [40] [41]
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--57
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
+
+ []
+
+[43] [44]) (../Methodology/methodology.tex [45]
+<resources/generalworkflow.jpeg, id=209, 559.08875pt x 581.17125pt>
+File: resources/generalworkflow.jpeg Graphic file (type jpg)
+
+<use resources/generalworkflow.jpeg>
+Package pdftex.def Info: resources/generalworkflow.jpeg used on input line 8.
+(pdftex.def)             Requested size: 284.52756pt x 295.77266pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--17
+
+ []
+
+[46 <./resources/generalworkflow.jpeg>]
+Overfull \hbox (22.95473pt too wide) in paragraph at lines 28--39
+[]\OT1/ptm/m/n/12 Feature ex-trac-tion in-volves the cal-cu-la-tion of the fol-
+low-ing fea-tures:Root Mean Square(RMS),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--39
+
+ []
+
+
+Overfull \hbox (5.14836pt too wide) in paragraph at lines 28--39
+\OT1/ptm/m/n/12 call and F mea-sure to de-ter-mine which fea-ture is the best t
+o cal-cu-late the genre/arousal/valence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--39
+
+ []
+
+) (../System Development/systemdevelopment.tex [47]
+<resources/contextlevel(0).jpeg, id=217, 330.23375pt x 279.0425pt>
+File: resources/contextlevel(0).jpeg Graphic file (type jpg)
+
+<use resources/contextlevel(0).jpeg>
+Package pdftex.def Info: resources/contextlevel(0).jpeg used on input line 7.
+(pdftex.def)             Requested size: 213.39566pt x 180.32378pt.
+
+<resources/level1b.jpeg, id=218, 1081.03876pt x 508.90125pt>
+File: resources/level1b.jpeg Graphic file (type jpg)
+
+<use resources/level1b.jpeg>
+Package pdftex.def Info: resources/level1b.jpeg used on input line 14.
+(pdftex.def)             Requested size: 492.23267pt x 231.7135pt.
+
+Overfull \hbox (51.21494pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[48 <./resources/contextlevel(0).jpeg>]
+<resources/preprocessing.jpeg, id=222, 443.6575pt x 97.36375pt>
+File: resources/preprocessing.jpeg Graphic file (type jpg)
+
+<use resources/preprocessing.jpeg>
+Package pdftex.def Info: resources/preprocessing.jpeg used on input line 23.
+(pdftex.def)             Requested size: 426.79134pt x 93.66125pt.
+
+<resources/feature.jpeg, id=223, 967.615pt x 553.06625pt>
+File: resources/feature.jpeg Graphic file (type jpg)
+
+<use resources/feature.jpeg>
+Package pdftex.def Info: resources/feature.jpeg used on input line 30.
+(pdftex.def)             Requested size: 426.79134pt x 243.94063pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<resources/classifier.jpeg, id=224, 697.60625pt x 209.78375pt>
+File: resources/classifier.jpeg Graphic file (type jpg)
+
+<use resources/classifier.jpeg>
+Package pdftex.def Info: resources/classifier.jpeg used on input line 37.
+(pdftex.def)             Requested size: 483.69684pt x 145.45836pt.
+
+Overfull \hbox (42.67911pt too wide) in paragraph at lines 37--38
+ [][] 
+ []
+
+[49 <./resources/level1b.jpeg> <./resources/preprocessing.jpeg>]
+<resources/validation.jpeg, id=228, 882.29625pt x 419.5675pt>
+File: resources/validation.jpeg Graphic file (type jpg)
+
+<use resources/validation.jpeg>
+Package pdftex.def Info: resources/validation.jpeg used on input line 44.
+(pdftex.def)             Requested size: 426.79134pt x 202.95862pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50 <./resources/feature.jpeg> <./resources/classifier.jpeg>]
+<resources/sequence_featureextraction.jpeg, id=232, 1166.3575pt x 846.16125pt>
+File: resources/sequence_featureextraction.jpeg Graphic file (type jpg)
+
+<use resources/sequence_featureextraction.jpeg>
+Package pdftex.def Info: resources/sequence_featureextraction.jpeg used on inpu
+t line 54.
+(pdftex.def)             Requested size: 455.24408pt x 330.2598pt.
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 54--55
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51 <./resources/validation.jpeg>]
+<resources/sequence_classify.jpeg, id=236, 1041.8925pt x 846.16125pt>
+File: resources/sequence_classify.jpeg Graphic file (type jpg)
+
+<use resources/sequence_classify.jpeg>
+Package pdftex.def Info: resources/sequence_classify.jpeg used on input line 62
+.
+(pdftex.def)             Requested size: 455.24408pt x 369.71692pt.
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 62--63
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52 <./resources/sequence_featureextraction.jpeg>]
+<resources/sequence_training.jpeg, id=240, 786.94pt x 464.73625pt>
+File: resources/sequence_training.jpeg Graphic file (type jpg)
+
+<use resources/sequence_training.jpeg>
+Package pdftex.def Info: resources/sequence_training.jpeg used on input line 70
+.
+(pdftex.def)             Requested size: 483.69684pt x 285.65154pt.
+
+Overfull \hbox (42.67911pt too wide) in paragraph at lines 70--71
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53 <./resources/sequence_classify.jpeg>]
+<resources/sequence_test.jpeg, id=245, 805.0075pt x 671.50874pt>
+File: resources/sequence_test.jpeg Graphic file (type jpg)
+
+<use resources/sequence_test.jpeg>
+Package pdftex.def Info: resources/sequence_test.jpeg used on input line 79.
+(pdftex.def)             Requested size: 455.24408pt x 379.74129pt.
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 79--80
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54 <./resources/sequence_training.jpeg>] [55 <./resources/sequence_test.jpeg>]
+[56]) (../Result and Analysis/resultandanalysis.tex [57]
+Underfull \hbox (badness 10000) in paragraph at lines 14--20
+
+ []
+
+<resources/result/genreandsvm.jpeg, id=258, 1204.5pt x 803.0pt>
+File: resources/result/genreandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/genreandsvm.jpeg>
+Package pdftex.def Info: resources/result/genreandsvm.jpeg used on input line 2
+5.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/arousalandsvm.jpeg, id=259, 1204.5pt x 803.0pt>
+File: resources/result/arousalandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/arousalandsvm.jpeg>
+Package pdftex.def Info: resources/result/arousalandsvm.jpeg used on input line
+ 32.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/valenceandsvm.jpeg, id=260, 1204.5pt x 803.0pt>
+File: resources/result/valenceandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/valenceandsvm.jpeg>
+Package pdftex.def Info: resources/result/valenceandsvm.jpeg used on input line
+ 38.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/accuracyandsvm.jpeg, id=261, 1204.5pt x 803.0pt>
+File: resources/result/accuracyandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/accuracyandsvm.jpeg>
+Package pdftex.def Info: resources/result/accuracyandsvm.jpeg used on input lin
+e 44.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[58] <resources/result/Recallandsvm.jpeg, id=265, 1204.5pt x 803.0pt>
+File: resources/result/Recallandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/Recallandsvm.jpeg>
+Package pdftex.def Info: resources/result/Recallandsvm.jpeg used on input line 
+51.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/F-measureandsvm.jpeg, id=266, 1204.5pt x 803.0pt>
+File: resources/result/F-measureandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/F-measureandsvm.jpeg>
+Package pdftex.def Info: resources/result/F-measureandsvm.jpeg used on input li
+ne 57.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/precisionaandsvm.jpeg, id=267, 1204.5pt x 803.0pt>
+File: resources/result/precisionaandsvm.jpeg Graphic file (type jpg)
+
+<use resources/result/precisionaandsvm.jpeg>
+Package pdftex.def Info: resources/result/precisionaandsvm.jpeg used on input l
+ine 63.
+(pdftex.def)             Requested size: 355.65944pt x 237.1035pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[59 <./resources/result/genreandsvm.jpeg> <./resources/result/arousalandsvm.jpe
+g>] [60 <./resources/result/valenceandsvm.jpeg> <./resources/result/accuracyand
+svm.jpeg>] [61 <./resources/result/Recallandsvm.jpeg> <./resources/result/F-mea
+sureandsvm.jpeg>]
+<resources/result/genreandann.jpeg, id=278, 1204.5pt x 803.0pt>
+File: resources/result/genreandann.jpeg Graphic file (type jpg)
+
+<use resources/result/genreandann.jpeg>
+Package pdftex.def Info: resources/result/genreandann.jpeg used on input line 9
+7.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/arousalandann.jpeg, id=279, 1204.5pt x 803.0pt>
+File: resources/result/arousalandann.jpeg Graphic file (type jpg)
+
+<use resources/result/arousalandann.jpeg>
+Package pdftex.def Info: resources/result/arousalandann.jpeg used on input line
+ 103.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/valenceandann.jpeg, id=280, 1204.5pt x 803.0pt>
+File: resources/result/valenceandann.jpeg Graphic file (type jpg)
+
+<use resources/result/valenceandann.jpeg>
+Package pdftex.def Info: resources/result/valenceandann.jpeg used on input line
+ 109.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/Accuracyandann.jpeg, id=281, 1204.5pt x 803.0pt>
+File: resources/result/Accuracyandann.jpeg Graphic file (type jpg)
+
+<use resources/result/Accuracyandann.jpeg>
+Package pdftex.def Info: resources/result/Accuracyandann.jpeg used on input lin
+e 115.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/F-MeasureandANN.jpeg, id=282, 1204.5pt x 803.0pt>
+File: resources/result/F-MeasureandANN.jpeg Graphic file (type jpg)
+
+<use resources/result/F-MeasureandANN.jpeg>
+Package pdftex.def Info: resources/result/F-MeasureandANN.jpeg used on input li
+ne 121.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/precisionandANN.jpeg, id=283, 1204.5pt x 803.0pt>
+File: resources/result/precisionandANN.jpeg Graphic file (type jpg)
+
+<use resources/result/precisionandANN.jpeg>
+Package pdftex.def Info: resources/result/precisionandANN.jpeg used on input li
+ne 127.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<resources/result/RecallandANN.jpeg, id=284, 1204.5pt x 803.0pt>
+File: resources/result/RecallandANN.jpeg Graphic file (type jpg)
+
+<use resources/result/RecallandANN.jpeg>
+Package pdftex.def Info: resources/result/RecallandANN.jpeg used on input line 
+133.
+(pdftex.def)             Requested size: 426.79134pt x 284.534pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[62 <./resources/result/precisionaandsvm.jpeg>]
+
+LaTeX Warning: Text page 63 contains only floats.
+
+[63 <./resources/result/genreandann.jpeg> <./resources/result/arousalandann.jpe
+g>]
+
+LaTeX Warning: Text page 64 contains only floats.
+
+[64 <./resources/result/valenceandann.jpeg> <./resources/result/Accuracyandann.
+jpeg>]
+
+LaTeX Warning: Text page 65 contains only floats.
+
+[65 <./resources/result/F-MeasureandANN.jpeg> <./resources/result/precisionandA
+NN.jpeg>] [66 <./resources/result/RecallandANN.jpeg>])
+(../Conclusion and Future Enhancements/conclusionandfutureenhancements.tex
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
+
+ []
+
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+[68]) (../Reference and Bibliography/referencebibliography.tex [69] [70]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+
+[71]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [72]) (../Appendix/appendix.tex [73]
+Underfull \hbox (badness 10000) in paragraph at lines 7--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--24
+
+ []
+
+Missing character: There is no œ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no ¬ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no œ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--32
+
+ []
+
+[74
+
+]
+Missing character: There is no œ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no œ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no œ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no œ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ü in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--89
+
+ []
+
+[75] <resources/gui.png, id=329, 773.89125pt x 456.70625pt>
+File: resources/gui.png Graphic file (type png)
+
+<use resources/gui.png>
+Package pdftex.def Info: resources/gui.png used on input line 91.
+(pdftex.def)             Requested size: 426.79134pt x 251.87215pt.
+) [76] [77 <./resources/gui.png>] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 372 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 2968 strings out of 493304
+ 45172 string characters out of 6139871
+ 111956 words of memory out of 5000000
+ 6259 multiletter control sequences out of 15000+600000
+ 29400 words of font info for 65 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 38i,11n,43p,827b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symb
+ol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (91 pages, 2062194 bytes).
+PDF statistics:
+ 375 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+
