@@ -119,7 +119,7 @@ The Frame-size needs to be small enough to be statistically invariant but big en
 As seen in the figure, frame size of 11.5ms and 23ms performed considerably better than the bigger frame sizes. We chose the 23ms (1024 samples) frame size because the smaller 512 sample frame size would lead to higher number of frames and hence necessitate more computation.
 
 \subsubsection{Effect of Frame Overlap}
-We explored four different overlapping schemes: 0 per cent, 25 per cent, 50 per cent and 75 per cent overlap.\\
+We explored four different overlapping schemes: zero per cent, 25 per cent, 50 per cent and 75 per cent overlap.\\
 \\
 In each of the cases, we received almost the same accuracy (75.4 per cent on No-overlap, 75.8 per cent on Quarter overlap, 76 per cent on half-overlap, and 75.2 per cent on three-quarters overlap). And so, as it seemed to indicate that the overlapping didn’t have any bearing on our results, we chose the less computationally intensive option of using no overlap at all. 
 
@@ -874,7 +874,7 @@ The results are given below:\\
 
                         Functions
                         &
-                        Accuracy
+                        Accuracy(percent)
                         &
                         Precision
                         &
@@ -883,7 +883,7 @@ The results are given below:\\
 
 ross Entropy Error with Softmax Activation
 &
-85.80%
+85.80
 &
 0.92
 &
@@ -892,7 +892,7 @@ ross Entropy Error with Softmax Activation
 
 Least Mean Squares Error with Logistic Sigmoid Activation 
 &
-83.60%
+83.60
 &
 0.87
 &
@@ -910,7 +910,7 @@ So, the first combination slightly outperforms the second in all three metrics.
 
                         Functions
                         &
-                        Accuracy
+                        Accuracy(per cent)
                         &
                         Precision
                         &
@@ -919,7 +919,7 @@ So, the first combination slightly outperforms the second in all three metrics.
 
                         Cross Entropy Error with Softmax Activation
                         &
-                        69.31%
+                        69.31
                         &
                         0.72
                         &
@@ -928,7 +928,7 @@ So, the first combination slightly outperforms the second in all three metrics.
                         
                         Least Mean Squares Error with Logistic Sigmoid Activation 
                         &
-                        70.34%
+                        70.34
                         &
                         0.72
                         &
@@ -946,7 +946,7 @@ So, the first combination slightly outperforms the second in all three metrics.
 
                         Functions
                         &
-                        Accuracy
+                        Accuracy(per cent)
                         &
                         Precision
                         &
@@ -955,7 +955,7 @@ So, the first combination slightly outperforms the second in all three metrics.
 
                         Cross Entropy Error with Softmax Activation
                         &
-                        63.27%
+                        63.27
                         &
                         0.67
                         &
@@ -964,7 +964,7 @@ So, the first combination slightly outperforms the second in all three metrics.
                         
                         Least Mean Squares Error with Logistic Sigmoid Activation 
                         &
-                        64.31%
+                        64.31
                         &
                         0.68
                         &
@@ -986,7 +986,7 @@ Here, the two combinations are almost inseparable in terms of performance.
 \end{figure}
 
 We used only one hidden layer as it should be enough for our problem domain. 
-As seen in the figure, for any number of hidden numbers after 6 or so, we get almost the same accuracy. As a rule of thumb, it is usually recommended that the number of nodes be around the mean of the number of inputs and outputs, so we chose 30 as our final number of hidden nodes.\\
+As seen in the figure, for any number of hidden numbers after six or so, we get almost the same accuracy. As a rule of thumb, it is usually recommended that the number of nodes be around the mean of the number of inputs and outputs, so we chose 30 as our final number of hidden nodes.\\
 \\
 The number of nodes had minimal effect in regard to mood classification. 
 
