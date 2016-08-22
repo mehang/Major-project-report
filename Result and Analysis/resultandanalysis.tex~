@@ -5,140 +5,1221 @@
 \subsection{Dataset pre-processing}
 
 \subsubsection{Genre Dataset}
-
-The GTZAN dataset for genre classification didn't require any special treatment as it is one of the most widely used dataset in Automatic Music Classification. 
-So, the format of the songs (22 050 Hz, 16-bit, mono audio files) didn't require any special pre-processing.
+In \cite{Downie2003}, Downie presents the problem of a lack of a proper baseline dataset for the AMGC problem, which meant research teams couldn’t scientifically compare and contrast their different approaches.\\
+\\
+However, the publicly available GTZAN dataset introduced in \cite{Tzanetakis2002}, solved most parts of the issue by soon becoming the standard dataset used by researchers across the world. We too used this dataset for this project. The dataset contains 100 representative excerpts from ten different genre. They were taken from radio, compact disk, and MP3 compressed audio files. All the files are stored as 22 050 Hz, 16-bit, mono audio files. The Genres dataset has the following classes: classical, country, disco, hiphop, jazz, rock, blues, reggae, pop, metal. Among them we were only concerned with five genre as mentioned in Chapter 1: classical, hiphop, jazz, rock, and pop, So, we had a total of 500 songs in our dataset.
 
 \subsubsection{Mood Dataset}
-
-We acquired a filtered version (with some redundancies removed) of the 1000 songs dataset for emotional analysis resulting in a final set of 744 songs. \\
+Due to the high variability in the emotional models adopted (whether categorical or dimensional), there have been no popular baseline dataset for MER task.\\
 \\
-Each of the songs were of optimum length (45 seconds), and in suitable format too. 
-However, we had to generate the labels for the song from the numerical values given in the dataset.
-Each song had two associated numerical values in the range of 1-9. 
-We used empirically determined values close to 5 to separate the dataset based on arousal and valence using a Python script.
+So, to tackle the issue, in 2013, Soleymani et al. \cite{Soleymani2013} created a 1000 songs dataset for emotional analysis of music which uses the Valence-Arousal axes for representing emotional values for songs.\\
+\\
+The songs, in the dataset, each 45 seconds long, were collected from FMA. They used Amazon Mechanical Turk as a crowdsourcing platform for collecting more than 20,000 annotations on the 1,000 songs.\\
+\\
+Furthermore, their analysis on the annotations revealed a higher agreement in arousal ratings compared to the valence ratings.\\
+\\
+We have used a filtered version (with some redundancies removed) of that dataset resulting in a final set of 744 songs. We further labeled them as high/low arousal and high/low valence songs based on the numerical values in the dataset. To achieve equal number of songs in each class, we finally used 600 songs of those 744 songs. 
+
+\subsection{Testing and Validation}
+
+\subsection{Audio Pre-processing}
+\subsubsection{Effect of Window Functions}
+We tried out five window functions to smoothen the data frames obtained from the samples. 
+
+>>>Figure[window.jpeg]<<<
+
+As seen from the figure, Hanning window gave the best performance. 
+
+\subsubsection{Effect of Frame Size}
+The Frame-size needs to be small enough to be statistically invariant but big enough to capture sufficient information. Generally, 20-40ms is taken as the frame size. We tested the frame size according to the number of samples per frame: 512, 1024, 1536 and 2048 samples which correspond to roughly 11.5ms, 23ms, 34.5ms and 46 ms for our songs which have a sampling rate of 44.1 KHz.
+
+>>>Figure[Frame.jpeg]<<<
+
+As seen in the figure, frame size of 11.5ms and 23ms performed considerably better than the bigger frame sizes. We chose the 23ms (1024 samples) frame size because the smaller 512 sample frame size would lead to higher number of frames and hence necessitate more computation.
+
+\subsubsection{Effect of Frame Overlap}
+We explored four different overlapping schemes: 0 per cent, 25 per cent, 50 per cent and 75 per cent overlap.\\
+\\
+In each of the cases, we received almost the same accuracy (75.4 per cent on No-overlap, 75.8 per cent on Quarter overlap, 76 per cent on half-overlap, and 75.2 per cent on three-quarters overlap). And so, as it seemed to indicate that the overlapping didn’t have any bearing on our results, we chose the less computationally intensive option of using no overlap at all. 
+
+\subsubsection{Effect of Pre-Emphasis}
+Pre-emphasis decreased the accuracy from 75.4 per cent to 62.6 per cent.
+
+\subsection{Analysis of Features}
+\subsubsection{Genre}
+\begin{table}[h]
+        \caption{Genre classification using ANN}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|l|}
+                        \hline Feature & Classical & Hiphop & Jazz & Pop & Rock & Overall\\
+                        \hline Spectral Centroid & 47.54 & 11.92 & 11.61 & 51.25 & 18.89 & 28.40\\ 
+                        \hline MFCC & 92.45 & 83.42 & 91.57 & 82.98 & 74.44 & 84.20 \\
+                        \hline Zero Crossing & 63.29 & 48.31 & 39.83 & 52.65 & 52.00 & 51.20\\
+                        \hline Pitch & 37.83 & 15.00 & 34.80 & 61.73 & 1.67 & 28.00\\
+                        \hline Compactness & 81.53 & 81.75 & 57.67 & 28.39 & 45.55 & 58.60\\
+                        \hline Timbre&
+                        6.25
+                        &
+                        20.00
+                        &
+                        30.00
+                        &
+                        20.00
+                        &
+                        28.46
+                        &
+                        20.60
+                        \\
+                        \hline RMS&
+
+                        85.52
+                        &
+                        34.99
+                        &
+                        19.85
+                        &
+                        47.89
+                        &
+                        70.46
+                        &
+                        51.20
+                        \\
+
+                        \hline Spectral Flux&
+
+                        87.94
+                        &
+                        26.71
+                        &
+                        19.77
+                        &
+                        43.63
+                        &
+                        57.45
+                        &
+                        46.40
+                        \\
+
+                        \hline Spectral Roll off point&
+
+                        84.10
+                        &
+                        54.11
+                        &
+                        22.14
+                        &
+                        43.74
+                        &
+                        13.18
+                        &
+                        41.60
+                        \\
+
+                        \hline Spectral Variability&
+
+                        83.10
+                        &
+                        32.98
+                        &
+                        25.98
+                        &
+                        51.24
+                        &
+                        71.76
+                        &
+                        52.40
+                        \\\hline
+
+                \end{tabular}
+        \end{center}
+\end{table}
+
+ \begin{table}[h]
+        \caption{Genre classification using SVM}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|l|}
+                        \hline
+
+                      Feature 
+                      &
+                        Classical
+                        &
+                        Hiphop
+                        &
+                        Jazz
+                        &
+                        Pop
+                        &
+                        Rock
+                        &
+                        Overall
+                        \\\hline
+                        Spectral Centroid
+                        &
+                        58.95
+                        &
+                        1.11
+                        &
+                        69.09
+                        &
+                        7.50
+                        &
+                        0.00
+                        &
+                        26.40
+\\
+\hline
+MFCC
+&
+91.79
+&
+85.25
+&
+87.98
+&
+85.62
+&
+77.61
+&
+85.80
+\\
+\hline
+
+Zero Crossing
+&
+63.20
+&
+48.86
+&
+41.47
+&
+58.51
+&
+44.31
+&
+50.00
+\\
+\hline
+
+Pitch
+&
+59.95
+&
+38.37
+&
+36.04
+&
+35.77
+&
+13.64
+&
+36.20
+\\
+\hline
+
+Compactness
+&
+67.18
+&
+66.13
+&
+42.30
+&
+47.93
+&
+53.60
+&
+55.60
+\\
+\hline
+
+Timbre
+&
+1.67
+&
+37.83
+&
+34.80
+&
+61.73
+&
+15.00
+&
+28.00
+\\
+\hline
+
+RMS
+&
+20.00
+&
+40.00
+&
+30.00
+&
+20.00
+&
+0.00
+&
+21.60
+\\\hline
+
+Spectral Flux
+&
+59.17
+&
+10
+&
+20.91
+&
+33.06
+&
+0.00
+&
+27.20
+\\\hline
+
+Spectral Roll off point
+&
+34.34
+&
+52.60
+&
+29.07
+&
+14.29
+&
+0.00
+&
+24.40
+\\\hline
+
+Spectral Variability
+&
+28.46
+&
+20.00
+&
+30.00
+&
+20.00
+&
+6.25
+&
+20.60
+\\\hline
+                 \end{tabular}
+        \end{center}
+\end{table}
+
+\begin{table}[h]
+        \caption{Mood classification(Arousal) using ANN}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|l|}
+                        \hline
+                        Feature
+                        &
+                        Low Arousal
+                        &
+                        High Arousal
+                        &
+                        Overall
+                        \\\hline
+
+                        Spectral Centroid
+                        &
+                        70.07
+                        &
+                        26.20
+                        &
+                        50.34
+                        \\\hline
+                        MFCC
+                        &
+                        69.32
+                        &
+                        75.09
+                        &
+                        71.38
+                        \\\hline
+
+                        Zero Crossing
+                        &
+                        70.70
+                        &
+                        64.03
+                        &
+                        67.24
+                        \\\hline
+
+                        Pitch
+                        &
+                        44.27
+                        &
+                        64.62
+                        &
+                        54.83
+                        \\\hline
+
+                        Compactness
+                        &
+                        59.73
+                        &
+                        51.71
+                        &
+                        57.24
+                \\\hline
+
+                Timbre
+                &
+                58.96
+                &
+                61.10
+                &
+                58.28
+                \\\hline
+                
+                RMS
+                &
+                70.76
+                &
+                67.28
+                &
+                68.97
+                \\\hline
+
+                Spectral Flux
+                &
+                76.58
+                &
+                58.87
+                &
+                67.93
+                \\\hline
+
+                Spectral Roll off point
+                &
+                50.79
+                &
+                47.67
+                &
+                50.34
+                \\\hline
+
+                Spectral Variability
+                &
+                73.28
+                &
+                62.51
+                &
+                67.24
+                \\\hline
+                 \end{tabular}
+        \end{center}
+\end{table}
+\begin{table}[h]
+        \caption{Mood classification(Arousal) using SVM}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|l|}
+                        \hline
+                        Feature
+                        &
+                        Low Arousal
+                        &
+                        High Arousal
+                        &
+                        Overall
+                        \\\hline
+
+                        Spectral Centroid
+                        &
+                        50.00
+                        &
+                        50.00
+                        &
+                        44.14
+                        \\\hline
+
+                        MFCC
+                        &
+                        73.22
+                        &
+                        71.77
+                        &
+                        72.41
+                        \\\hline
+
+                        Zero Crossing
+                        &
+                        74.00
+                        &
+                        67.07
+                        &
+                        70.69
+                        \\\hline
+
+                        Pitch
+                        &
+                        59.00
+                        &
+                        55.01
+                        &
+                        56.55
+                        \\\hline
+
+                        Compactness
+                        &
+                        47.22
+                        &
+                        78.45
+                        &
+                        62.76
+                        \\\hline
+
+                        Timbre
+                        &
+                        62.58
+                        &
+                        53.87
+                        &
+                        56.55
+                        \\\hline
+
+                        RMS
+                        &
+                        50.00
+                        &
+                        50.00
+                        &
+                        42.76
+                        \\\hline
+
+                        Spectral Flux
+                        &
+                        40.00
+                        &
+                        60.00
+                        &
+                        45.86
+                        \\\hline
+
+                        Spectral Roll off point
+                        &
+                        70.00
+                        &
+                        30.00
+                        &
+                        41.38
+                        \\\hline
+
+                        Spectral Variability
+                        &
+                        50.00
+                        &
+                        50.00
+                        &
+                        40.00
+                        \\\hline
+
+                 \end{tabular}
+        \end{center}
+\end{table}
+\begin{table}[h]
+        \caption{Mood classification(Valence) using ANN}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|l|}
+                        \hline
+                        
+                        Feature
+                        &
+                        Low Valence
+                        &
+                        High Valence
+                        &
+                        Overall\\\hline
+
+                        Spectral Centroid
+                        &
+                        37.69
+                        &
+                        60.63
+                        &
+                        51.38
+                        \\\hline
+
+                        MFCC
+                        &
+                        60.04
+                        &
+                        65.45
+                        &
+                        63.79
+                        \\\hline
+
+                        Zero Crossing
+                        &
+                        62.74
+                        &
+                        57.80
+                        &
+                        59.66
+                        \\\hline
+
+                        Pitch
+                        &
+                        66.29
+                        &
+                        35.46
+                        &
+                        50.69
+                        \\\hline
+
+                        Compactness
+                        & 
+                        50.67
+                        &
+                        58.79
+                        &
+                        52.76
+                        \\\hline
+
+                        Timbre
+                        &
+                        61.75
+                        &
+                        57.69
+                        &
+                        56.90
+                        \\\hline
+
+                        RMS
+                        &
+                        63.85
+                        &
+                        44.87
+                        &
+                        53.79
+\\\hline
+
+                        Spectral Flux
+                        &
+                        70.19
+                        &
+                        47.50
+                        &
+                        59.31
+                        \\\hline
+
+                        Spectral Roll off point
+                        &
+                        57.56
+                        &
+                        44.94
+                        &
+                        48.28
+                        \\\hline
+
+                        Spectral Variability
+                        &
+                        63.99
+                        &
+                        45.13
+                        &
+                        51.03
+                        \\\hline
 
 
-\subsection{Genre Based Classification}
+                 \end{tabular}
+        \end{center}
+\end{table}
+\begin{table}[h]
+        \caption{Mood classification(Valence) using SVM}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|l|}
+                        \hline
 
+                        Feature
+                        &
+                        Low Valence
+                        &
+                        High Valence
+                        &
+                        Overall
+                        \\\hline
+
+                        Spectral Centroid
+                        &
+                        40.00
+                        &
+                        60.00
+                        &
+                        44.83
+                        \\\hline
+
+                        MFCC
+                        &
+                        45.37
+                        &
+                        72.06
+                        &
+                        58.62
+                        \\\hline
+
+                        Zero Crossing
+                        &
+                        70.34
+                        &
+                        52.46
+                        &
+                        60.34
+                        \\\hline
+
+                        Pitch
+                        &
+                        53.56
+                        &
+                        52.53
+                        &
+                        49.66
+                        \\\hline
+
+                        Compactness
+                        &
+                        57.25
+                        &
+                        62.40
+                        &
+                        58.97
+                        \\\hline
+
+                        Timbre
+                        &
+                        60.50
+                        &
+                        61.19
+                        &
+                        60.34
+                        \\\hline
+
+                        RMS
+                        &
+                        50.00
+                        &
+                        50.00
+                        &
+                        44.83
+                        \\\hline
+
+                        Spectral Flux
+                        &
+                        60.00
+                        &
+                        40.00
+                        &
+                        40.34
+                        \\\hline
+
+                        Spectral Roll off point
+                        &
+                        60.00
+                        &
+                        40.00
+                        &
+                        41.72
+                        \\\hline
+
+                        Spectral Variability
+                        &
+                        50.00
+                        &
+                        50.00
+                        &
+                        41.83
+                        \\\hline
+
+                 \end{tabular}
+        \end{center}
+\end{table}
+
+\subsubsection{Effect of Number of MFCCs on Result}
+>>>Figure: MFCCNum.png
+The results indicate that once we use more than 10 MFCC Coefficients, the accuracy plateaus and doesn’t increase at all. So, using around 15 coefficients is found to be good enough for the problem domain.  
+
+\subsection{Analysis of Classifiers}
 \subsubsection{SVM}
+\paragraph{Selection of Kernels.}
+>>>Figure: SVMKernel.jpeg<<<
 
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/genreandsvm.jpeg}
-        \caption{Genre using SVM}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/arousalandsvm.jpeg}
-        \caption{Arousal using SVM}
-        \label{fig:figure6}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/valenceandsvm.jpeg}
-        \caption{Valence using SVM}
-        \label{fig:figure7}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/accuracyandsvm.jpeg}
-        \caption{Accuracy of SVM}
-        \label{fig:figure8}
-\end{figure}
-\newpage
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/Recallandsvm.jpeg}
-        \caption{Recall of SVM}
-        \label{fig:figure9}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/F-measureandsvm.jpeg}
-        \caption{F-measure of SVM}
-        \label{fig:figure10}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=125mm]{resources/result/precisionaandsvm.jpeg}
-        \caption{Precision of SVM}
-        \label{fig:figure10}
-\end{figure}
-\newpage
-\newpage
+Linear Kernel performed best for the Genre Classification Problem and so we selected it for Genre Classification.\\
+\\
+As for the Mood Classification problem, both Gaussian and Laplacian out-performed the Linear Kernel in both arousal and valence classification. So, we selected Laplacian Kernel (based on its slightly superior performance) as our Kernel for Mood Classification.
 
-We found MFCC to give the best accuracy for Genre and Arousal. For valence, tempo gave the best result.
-
-So, for Genre, we only took the following features into consideration in our final model:
-\begin{itemize}
- \item Compactness
- \item MFCC
- \item Zero Crossing
-\end{itemize}
-
-For Arousal, we also factored in Tempo as it also provided good results.
-\begin{itemize}
- \item Compactness
- \item MFCC
- \item Tempo
- \item Zero Crossing
-\end{itemize}
-
-For Valence, we left out MFCC and retained the three other good performers. 
-\begin{itemize}
- \item Compactness
- \item Tempo
- \item Zero Crossing
-\end{itemize}
+\paragraph{Effect of Learning Iterations.}
+We tested three iteration values to train SVM: one, 10 and 100.\\ 
+\\
+For Genre Classification, all three of them resulted in a similar performance of around 77 per cent accuracy.\\ 
+\\
+For Arousal, the performance increased when going from one (61 per cent) to 10 (69 per cent) iterations but increasing it further to 100 iterations didn’t increase the performance. We still received an accuracy of around 69 per cent.
 
 \subsubsection{ANN}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/genreandann.jpeg}
-        \caption{Genre using ANN}
-        \label{fig:figure11}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/arousalandann.jpeg}
-        \caption{Arousal Using ANN}
-        \label{fig:figure11}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/valenceandann.jpeg}
-        \caption{Valence Using ANN}
-        \label{fig:figure11}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/Accuracyandann.jpeg}
-        \caption{Accuracy of ANN}
-        \label{fig:figure12}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/F-MeasureandANN.jpeg}
-        \caption{F-measure of ANN}
-        \label{fig:figure12}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/precisionandANN.jpeg}
-        \caption{Precision of ANN}
-        \label{fig:figure13}
-\end{figure}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=150mm]{resources/result/RecallandANN.jpeg}
-        \caption{Recall of ANN}
-        \label{fig:figure14}
-\end{figure}
+\paragraph{Activation and Error Functions.}
+We tried out two sets of Activation and Error Functions for the Neural Network with a 1000 iteration training.\\
+\\
+The results are given below:\\
+
+\begin{table}[h]
+        \caption{Genre}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|}
+                        \hline
+
+                        Functions
+                        &
+                        Accuracy
+                        &
+                        Precision
+                        &
+                        Recall
+                        \\\hline
+
+ross Entropy Error with Softmax Activation
+&
+85.80%
+&
+0.92
+&
+0.92
+\\\hline
+
+Least Mean Squares Error with Logistic Sigmoid Activation 
+&
+83.60%
+&
+0.87
+&
+0.89
+\\\hline
+                 \end{tabular}
+        \end{center}
+\end{table}
+So, the first combination slightly outperforms the second in all three metrics. 
+\begin{table}[h]
+        \caption{Arousal}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|}
+                        \hline
+
+                        Functions
+                        &
+                        Accuracy
+                        &
+                        Precision
+                        &
+                        Recall
+                        \\\hline
+
+                        Cross Entropy Error with Softmax Activation
+                        &
+                        69.31%
+                        &
+                        0.72
+                        &
+                        0.64
+                        \\\hline
+                        
+                        Least Mean Squares Error with Logistic Sigmoid Activation 
+                        &
+                        70.34%
+                        &
+                        0.72
+                        &
+                        0.65
+                        \\\hline
+
+                 \end{tabular}
+        \end{center}
+\end{table}
+\begin{table}[h]
+        \caption{Valence}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|}
+                        \hline
+
+                        Functions
+                        &
+                        Accuracy
+                        &
+                        Precision
+                        &
+                        Recall
+                        \\\hline
+
+                        Cross Entropy Error with Softmax Activation
+                        &
+                        63.27%
+                        &
+                        0.67
+                        &
+                        0.60
+                        \\\hline
+                        
+                        Least Mean Squares Error with Logistic Sigmoid Activation 
+                        &
+                        64.31%
+                        &
+                        0.68
+                        &
+                        0.60
+                        \\\hline
+
+                 \end{tabular}
+        \end{center}
+\end{table}
+
+Here, the two combinations are almost inseparable in terms of performance. 
+
+\paragraph{Number of Nodes in Hidden Layer.}
+
+<<<Fig:ANNHiddenNodes.jpeg
+
+We used only one hidden layer as it should be enough for our problem domain. 
+As seen in the figure, for any number of hidden numbers after 6 or so, we get almost the same accuracy. As a rule of thumb, it is usually recommended that the number of nodes be around the mean of the number of inputs and outputs, so we chose 30 as our final number of hidden nodes.\\
+\\
+The number of nodes had minimal effect in regard to mood classification. 
+
+\paragraph{Number of Iterations.}
+>>>Fig: ANNIterations.jpeg
+As seen in the figure, for genre classification, the number of iterations has an effect on the accuracy up to a certain point (around 20 iterations).\\
+\\
+As for Arousal, the increase in iterations had no effect on the accuracy. 
+
+\paragraph{Learning Rate.}
+>>>Fig: ANNLearning.jpeg
+
+A learning rate of 0.1 was enough to get a decent amount of accuracy. A lower rate than that affected the accuracy while a higher rate didn’t have any influence at all.
+
+\subsection{Final Results}
+\subsubsection{Genre Classification}
+Fig: FinalSVMANNGenre.jpeg
+
+\begin{table}[h]
+        \caption{Genre classification performance measure}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|}
+                        \hline
+
+                        Classifier
+                        &
+                        Precision 
+                        &
+                        Recall 
+                        &
+                        F-Measure
+                        &
+                        Accuracy
+                        \\\hline
+
+                        SVM
+                        &
+                        0.87
+                        &
+                        0.94
+                        &
+                        0.89
+                        &
+                        83.00
+                        \\\hline
 
 
-MFCC performed well in Genre Classification as well as for Arousal Classification. 
-For valence too, MFCC performed well but it is only a little better than random. 
-This is probably because, the people annotating the dataset had the most disagreement on valence. 
+                        ANN
+                        &
+                        0.94
+                        &
+                        0.92
+                        &
+                        0.92
+                        &
+                        88.80
+                        \\\hline
+                \end{tabular}
+        \end{center}
+\end{table}
 
-So, in the final classsifier, we used MFCC and RMS for all classifiers as they gave the best result. 
+For our final model we used ANN with these feature: MFCC, Spectral Centroid, Zero Crossing, Compactness and RMS.
+
+\begin{table}[h]
+        \caption{Genre classification confusion matrix}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|l|}
+                        \hline
+                        &
+                        Classical
+                        &
+                        Hiphop
+                        &
+                        Jazz
+                        &
+                        Pop
+                        &
+                        Rock
+                        \\\hline
+
+                        Classical
+                        &
+                        93
+                        &
+                        1
+                        &
+                        4
+                        &
+                        0
+                        &
+                        2
+                        \\\hline
+
+                        Hiphop
+                        &
+                        0
+                        &
+                        88
+                        &
+                        0
+                        &
+                        3
+                        &
+                        9
+                        \\\hline
+
+
+                        Jazz
+                        &
+                        5
+                        &
+                        0
+                        &
+                        90
+                        &
+                        1
+                        &
+                        4
+                        \\\hline
+
+
+                        Pop
+                        &
+                        2
+                        &
+                        7
+                        &
+                        0
+                        &
+                        86
+                        &
+                        5
+                        \\\hline
+
+                        Rock
+                        &
+                        0
+                        &
+                        4
+                        &
+                        4
+                        &
+                        5
+                        &
+                        87
+                        \\\hline
+                \end{tabular}
+        \end{center}
+\end{table}
+
+\subsubsection{Mood Classification}
+Fig: FinalSVMANNArousal.jpeg
+
+
+\begin{table}[h]
+        \caption{Arousal classification performance measure}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|}
+                        \hline
+
+                        Classifier
+                        &
+                        Precision 
+                        &
+                        Recall 
+                        &
+                        F-Measure
+                        &
+                        Accuracy
+                        \\\hline
+
+                        SVM
+                        &
+                        0.70
+                        &
+                        0.74
+                        &
+                        0.72
+                        &
+                        70.69
+                        \\\hline
+
+                        ANN
+                        &
+                        0.75
+                        &
+                        0.72
+                        &
+                        0.72
+                        &
+                        73.10
+                        \\\hline
+
+                \end{tabular}
+        \end{center}
+\end{table}
+
+For our final model we used ANN with these feature: Spectral centroid, MFCC, Zero Crossing, Compactness, Rhythm, Spectral Flux, RMS and Spectral Variability.
+
+\begin{table}[h]
+        \caption{Arousal classification confusion matrix}
+        \begin{center}
+                \begin{tabular}{|l|l|l|}
+                        \hline
+                        &
+                        Low Arousal
+                        &
+                        High Arousal
+                        \\\hline
+
+                        Low Arousal
+                        &
+                        105
+                        &
+                        40
+                        \\\hline
+
+                        High Arousal
+                        &
+                        38
+                        &
+                        107
+                        \\\hline
+                \end{tabular}
+        \end{center}
+\end{table}
+
+Fig: FinalSVMANNValence.jpeg
+
+
+\begin{table}[h]
+        \caption{Valence performance measure}
+        \begin{center}
+                \begin{tabular}{|l|l|l|l|l|}
+                        \hline
+
+                        Classifier
+                        &
+                        Precision 
+                        &
+                        Recall 
+                        &
+                        F-Measure
+                        &
+                        Accuracy
+                        \\\hline
+
+                        SVM
+                        &
+                        0.68
+                        &
+                        0.69
+                        &
+                        0.68
+                        &
+                        67.59
+                        \\\hline
+
+                        ANN
+                        &
+                        0.68
+                        &
+                        0.64
+                        &
+                        0.65
+                        &
+                        67.24
+                        \\\hline
+
+                \end{tabular}
+        \end{center}
+\end{table}
+
+For our final model we used ANN with these feature: Spectral centroid, MFCC, Zero Crossing, Compactness, Rhythm, Spectral Flux, RMS and Spectral Variability.
+
+\begin{table}[h]
+        \caption{Valence confusion matrix}
+        \begin{center}
+                \begin{tabular}{|l|l|l|}
+                        \hline
+
+                        &
+                        Low Valence
+                        &
+                        High Valence
+                        \\\hline
+
+                        Low Valence
+                        &
+                        95
+                        &
+                        52
+                        \\\hline
+
+                        High Valence
+                        &
+                        43
+                        &
+                        100
+                        \\\hline
+
+                \end{tabular}
+        \end{center}
+\end{table}
+
+
+
+
+
+
+
+                     
+
+ subsection{Problems and Solutions}
+
+We faced the following problems during the project:
+
+\begin{itemize}
+    \item Decoding Mp3: Mp3 files are lossy compression of audio. So, we had a hard time decoding mp3 files on our custom implementation. 
+    \item Distance Metric: We couldn't find a decent distance metric between songs.
+    \item Data Refining: Our mood based dataset was not directly labeled. They had numerical values instead.
+    \item Computational Intensiveness For Preprocessing: As the samples of the song needed to be kept in memory during pre-processing, for long songs, this resulted in a lot of memory being consumed.
+    \item Computational Intensiveness For Classification: Some classifiers such as those based on GMM were computationally intensive in nature.
+\end{itemize}
+
+\subsubsection{Solved Problems}
+\begin{itemize}
+    \item Decoding Mp3: We solved it by using the MP3SPI library.
+    \item Data Refining: We wrote custom Python scripts to generate the dataset.
+    \end{itemize}
+
+\subsubsection{Unsolved Problems}
+\begin{itemize}
+    \item Distance Metric: We circumvented the problem by using classifiers that didn't need distance metrics. So, we didn't use K-NN and K-means.
+    \item Computational Intensiveness For Preprocessing: We still have this problem. And so, we might get Heap error for long songs ($>$5 mins).
+    \item Computational Intensiveness For Classification: Instead of decreasing the computational intensiveness of the implementation, we used other classifiers instead.
+    \end{itemize}
+
+

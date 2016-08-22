@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[a4paper,12pt,oneside]{book}
 %this is for left,right,top,right margin
 \usepackage{enumerate}
 \usepackage{geometry}
@@ -8,6 +8,7 @@
 \usepackage{titlesec}
 \usepackage{longtable}
 \usepackage{chngcntr}
+\usepackage[english]{babel}
 
 \pagestyle{myheadings} \setcounter{secnumdepth}{4} \setcounter{tocdepth}{4}
 \renewcommand{\bibname}{\normalfont\fontsize{14pt}{0pt}\selectfont\bfseries REFERENCES}
@@ -17,7 +18,17 @@
 \titleformat{\section}{\normalfont\fontsize{14pt}{0pt}\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\fontsize{12pt}{0pt}\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\fontsize{12pt}{0pt}\bfseries}{\thesubsubsection}{1em}{}
-
+\titleformat{\chapter}[display]
+{\normalfont\Large\filcenter}
+{\vspace*{\fill}
+         \titlerule[1pt]%
+          \vspace{1pt}%
+           \titlerule
+            \vspace{1pc}%
+             \LARGE\MakeUppercase{\chaptertitlename}~\thechapter}
+             {1pc}
+             {\titlerule\Huge}
+             [\vspace*{\fill}\newpage]
 \titlespacing*{\section}
 {0pt}{7.8ex plus 1ex minus .2ex}{8.8ex plus 1ex minus .2ex}
 \titlespacing*{\subsection}
@@ -26,6 +37,7 @@
 {0pt}{6.3ex plus 1ex minus .2ex}{4.3ex plus .2ex}
 
 \counterwithin{figure}{section}
+\counterwithin{table}{section}
 
 
 \geometry{
@@ -147,6 +159,10 @@
 \newpage
 \addcontentsline{toc}{section}{\numberline{} LIST OF FIGURES}
 \listoffigures{\thispagestyle{fancy}}
+
+\newpage
+\addcontentsline{toc}{section}{\numberline{} LIST OF TABLES}
+\listoftables{\thispagestyle{fancy}}
 
 %\restoregeometry
 

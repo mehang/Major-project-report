@@ -1,0 +1,16 @@
+\select@language {english}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1}{\ignorespaces Genre classification using ANN}}{67}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.2}{\ignorespaces Genre classification using SVM}}{68}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.3}{\ignorespaces Mood classification(Arousal) using ANN}}{68}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4}{\ignorespaces Mood classification(Arousal) using SVM}}{69}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.5}{\ignorespaces Mood classification(Valence) using ANN}}{69}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.6}{\ignorespaces Mood classification(Valence) using SVM}}{70}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.7}{\ignorespaces Genre}}{73}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.8}{\ignorespaces Arousal}}{73}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.9}{\ignorespaces Valence}}{73}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.10}{\ignorespaces Genre classification performance measure}}{76}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.11}{\ignorespaces Genre classification confusion matrix}}{77}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.12}{\ignorespaces Arousal classification performance measure}}{77}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.13}{\ignorespaces Arousal classification confusion matrix}}{78}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.14}{\ignorespaces Valence performance measure}}{78}
+\contentsline {table}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.15}{\ignorespaces Valence confusion matrix}}{79}

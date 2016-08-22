@@ -103,16 +103,132 @@ In music the most important qualities of sound are: pitch, duration, loudness, a
 Again, these types of low dimensional features extracted from the acoustical signals are more popular than higher dimensional representations such as
 Spectrograms for Classification purposes. \cite{prasad2007}
 
-\subsection{Genre Based Classification}
+\subsection{Theoretical Background}
 
-\subsubsection{Overview}
+\subsubsection{Classifier}
+In machine learning and statistics, classification is the problem of identifying to which of a set of categories(sub-populations) a 
+new observation belongs, on the basis of a training set of data containing observations(or instances) whose category membership is known.
+In the terminology of machine learning, classification is considered an instance of supervised learning where a training set of correctly identified observations is available.
+The corresponding unsupervised procedure is known as clustering, and involves grouping data into categories based on some measure of inherent similarity or distance.
+An algorithm that implements classification,especially in a concrete implementation, is known as a classifier.\\
+\\
+A variety of methods have been used for music classification. Some of the popular ones are
+SVM, K-means, K-nearest neighbours and variants of Neural Networks.
+The results are also widely different. In \cite{Neumayer2004} 61 per cent accuracy has been achieved using
+a Multilayer Perceptron based approach while in \cite{Kour2015}, the authors have managed 95 per cent
+(for Back Propagation Neural Network) and 83 per cent (for SVM).
+In \cite{Koerich2013}, the authors have achieved 71 per cent accuracy using an additional rejection and
+verification stage.\\
+\\
+In \cite{Haggblade2011}, simpler and more naive approaches (k-NN and k-Means); and more sophisticated
+neural networks and SVMs have been compared. The author found the latter gave better
+performance.\\
+\\
+However, lots of unique methods – either completely novel or a variation of a standard
+method – have been put into use too. In \cite{Nasridinov2014}, the authors propose a method that uses Chord
+labeling (ones and zeros) in conjunction with a k-windowSubsequenceMatching algorithm
+used to find subsequence in music sequence and a Decision tree for the actual genre classifi-
+cation.\\
+\\
+It is also noted that high-level and contextual concepts can be as important as low-level
+content descriptors\cite{Anglade2010}.\\
+\\
+After these all research, we decided to go with K-means, artificial neural network based on backpropagation
+and support vector machine. Artificial neural network and support vector machine were chosen as they appeared to be famous in the field. Our choice for K-means 
+was based on the fact that it was simple yet powerful unsupervised procedure.
+
+
+\subsection{Testing and Validation}
+While building a software product, the concept of testing and validation plays an important role throughout its development.
+Along with the development of a software product, numerous testing and validation are need to be performed regulary.
+In fact, most of the development period is given to testing and validation. It's important as it conforms to whether we are building
+product right and whether we are building the right product. After series of testing and validation only we can point that the system
+conforms to the desired specifications and need.\\
+\\
+Since our software project is also research oriented, so we need series of rigorous testing. Not only this, being a predictive system/model
+a type of validation and measure for performance is a must, so that it can analyze the result and decide how to progress further accounting the fact.
+For our system, we chose cross-validation after we confronted it's popularity for a predictive model and ease of use. Similarly for measure of performance we chose recall, presicion 
+and F-measure.\\
+
+\subsubsection{Cross-validation}
+Cross-validation is a technique for estimating the performance of a predictive model.
+Cross-validation, sometimes called rotation estimation is a model validation technique for assessing how the
+results of a statistical analysis will generalize to an independent data set. In a predictive problem like our project, a model is usually given a dataset of known data(training dataset) on which 
+the model is trained, and a dataset of unknown data (or first seen data) against which the model is tested (testing dataset). The goal of cross validation is to define a dataset
+to "test" the model in the training phase(validation dataset), in order to limit problems like overfitting, give an insight on how the model will generalize to an independent dataset(and unknown dataset, for instance from 
+a real problem),etc.\\
+\\
+One of the main reasons for using cross-validation instead of using the conventional validation is that there is not enough data available to partition it into separate training and test sets without losing
+significant modelling or testing capability. There are several cross-validation method out there like leave-p-out cross-validation, leave-one-out cross validation,2-fold cross validaiton, repeated random 
+sub-sampling validation, etc. But we decide to got with k-fold cross validation. The main reason for this selection is that k-fold cross-validation estimator can prove to have a lower variance than a single hold-out set 
+estimator if the amount of data available is limited. Our main goal with k-fold cross validation is to estimate the expected level of fit of a model to a dataset that is independent of the data that were
+used to train the model.\\
+\\
+In k-fold cross-validation, the original sample is randomly partitioned into k equal sized subsamples. Of the k subsamples,
+a single subsample is retained as the validation data for testing the model, and the remaining k − 1 subsamples are used as training
+data. The cross-validation process is then repeated k times (the folds), with each of the k subsamples used exactly once as the validation data. The k results from the
+folds can then be averaged to produce a single estimation. The advantage of this method over repeated random sub-sampling (see below) is that all
+observations are used for both training and validation, and each observation is used for validation exactly once. ten-fold cross-validation is currently
+applied in our system. Our music data set is first divided into ten equal samples of songs, and on every run for ten times, a different sample of songs are used for
+testing and the rest for training.\\
+\\
+This k-fold validation validation process is applied with each performance metrics and the appropriate features are taken to classify in our system.
+
+\subsubsection{Measure of Performance}
+In a predictive problem, we always need a measure of performance for that predictive model along with cross validation. Based on the value of different attributes falling under 
+the measure of performance, we can then have the knowledge of how well the system is performing. It is important because as a matter of fact it provides much deeper insight of the performance of
+the predictive model, not only accuracy.\\
+\\
+Our measure of performance include precision, recall and F-measure. We can say our measure of performance are based on the relevant and non-relevent documents. In this case,
+relevant documents are those one which simply belong to the relevant category. Relevant category is also called the true positives. True positive is the number of items correctly
+labeled as belong to the positive class or say which are predicted correctly. The not relevant documents are those one which simply are not relevant to the category or say they are false negative. 
+False negative is the number of negative items which are predicted to fall under the positive class. False Positive is the number of negative items which are predicted to be in true class.
+Similarly, true negative is the number of negative items which are correctly predicted to fall under negative class.
+
+\begin{itemize}
+        \item \textbf{Precision}\\
+                The precision of a measurement system, related to reproducibility and repeatability, is the degree to which repeated measurements under unchanged
+                conditions show the same results. In a classification task, the precision for a class is the number of true positives divided by the total number of elements labeled as 
+                belonging to the positive class. A perfect precision score of 1.0 means that every result retrieved by a search was relevant which means falling to the specified class.
+                But precision does not say whether all items of that class were correctly predicted.
+                \begin{equation}
+                        Precision = \frac{True Positive}{True Positive + False Positive}
+                \end{equation}
+        \item \textbf{Recall}\\
+                Recall literally is how many of the true positives were recalled (found), i.e. how many of the correct hits were also found. Recall is also sometimes called sensitivity or probability of detection.
+                It is the true positive rate as it measure the proportion of positives that are correctly identified as such. Recall is the number of true positives divided by the total number of elements
+                that actually belong to the positive class. A perfect recall score of 1.0 means that all relevant documents were retrieved by search. We can also say that perfect recall shows that all items of a
+                class were labeled fall under same class. But recall does not say that how many other items were misclassified to fall under same class.
+                \begin{equation}
+                        Recall = \frac{True Positive}{True Positive + False Negative}
+                \end{equation}
+        \item \textbf{F measure}
+               A measure that combines precision and recall is the harmonic mean of precision and recall. 
+                F measure is the weighted harmonic mean of its the precision and recall of a system. It is sometimes called as balanced F-score. This measure is approximately the average of the two when they are close, and is more generally
+                the harmonic mean which for the case of two numbers coincides with the square of the geometric mean divided by the arithmetic mean. There are several reasons that the F-score can be criticized in particular 
+                circumstances due to its bias as an evaluation metric. This is also known as the $F_1$ measure, because recall and precision are evenly weighted.
+                \begin{equation}
+                        F = 2*\frac{Precision*Recall}{Precision+Recall}
+                \end{equation}
+        \end{itemize}
+        All three performance metrics have been used to determine the best features to be used for classification in cases of genre, arousal and valence.\\ 
+        \\
+    As depicted in the result and analysis section, we can see that not all the features are suitable for the classification. Some features such as intensity or pitch do not contribute 
+    the classification but some features such as Mel Frequency Cepstral Coefficients(MFCC) contribute greatly to the classifier’s performance. 
+
+
+
+\subsection{Related Works}
+    \subsubsection{Genre Based Classification}
+
+\paragraph{Overview.}
 Automatic Music Genre Classification (AMGC) is one of the tasks focused by MIR. However, it is not a straightforward one.\\
 \\
 In \cite{Scaringella2006}, Scaringella et al. discuss how and why musical genres are a poorly defined concept making the task of automatic classification non-trivial.
 Still, although the boundaries between genres are fuzzy and there are no well-defined definitions, it is still one of the widely used method of classification of music. 
 If we look at human capability in genre classification, Perrot et al \cite{Perrot1999} found that people classified songs--in a ten-way classification setup--with an accuracy of 70\% after listening to 3s excerpts.
 
-\subsubsection{Features}
+\paragraph{Features.}
 The features used for genre based classification have been heavily influenced by the related field of speech recognition. 
 For instance, Mel-frequency Cepstral Coefficients (MFCC), a set of perceptually motivated features that is widely used in music classification, was first used in speech recognition.\\
 \\
@@ -135,7 +251,7 @@ They showed that it significantly increased the accuracy of the classifier.\\
 Anglade, Amélie, et al.\cite{Anglade2010} propose the use of Harmony as a high-level descriptor of music, focusing on the structure, progression, and relation of chords.\\
 \\
 
-\subsubsection{Classification}
+\paragraph{Classifer.}
 
 A variety of methods have been used for music classification. Some of the popular ones are SVM, K Nearest Neighbours and variants of Neural Networks.
 The results are also widely different. In \cite{Neumayer2004}, 61 per cent accuracy has been achieved using a Multilayer Perceptron based approach. 
@@ -152,21 +268,10 @@ propose a method that uses Chord labeling (ones and zeros) in conjunction with a
 and a Decision tree for the actual genre classification.\\
 \\
 It is also noted that high-level and contextual concepts can be as important as low-level content descriptors. \cite{Anglade2010} 
-\subsubsection{Dataset}
 
-In \cite{Downie2003}, Downie presents the problem of a lack of a proper baseline dataset for the AMGC problem, which meant research teams couldn't scientifically compare and contrast their different approaches.\\
-\\
+\subsubsection{Mood Based Classification}
 
-However, the publicly available GTZAN dataset introduced in \cite{Tzanetakis2002}, solved most parts of the issue by soon becoming the standard dataset used by researchers across the world.
-We too used this dataset for this project.
-The dataset contains 100 representative excerpts from ten different genre.
-They were taken from radio, compact disks, and MP3 compressed audio files. All the files are stored as 22 050 Hz, 16-bit, mono audio files. 
-The Genres dataset has the following classes: classical, country, disco, hiphop, jazz, rock, blues, reggae, pop, metal.
-Among them we were only concerned with five genre as mentioned in Chapter 1: classical, hiphop, jazz, rock, and pop, So, we had a total of 500 songs in our dataset. 
-
-\subsection{Mood Based Classification}
-
-\subsubsection{Overview}
+\paragraph{Overview.}
 
 As mood is a very human thing, Mood Based Classification, also known as Mood Emotion Recognition (MER), requires knowledge of both technical aspects as well as the human emotional system.
 So, the conceptualization of emotion and understanding of the associated emotion taxonomy is vital. However, it is a difficult thing to do, because 
@@ -190,7 +295,7 @@ Usually, two approaces to emotion conceptualization are taken:
 
 \end{itemize}
 
-\subsubsection{Circumplex and Thayer Mood Model}
+\paragraph{Circumplex and Thayer Mood Model.}
 
 One of the Dimensional conceptualization was proposed by Russell (1980) \cite{Russell1980}.
 As shown in \textit{Figure 2}, the model consists of a two-dimensional structure involving the dimensions of valence and arousal. 
@@ -215,7 +320,7 @@ Although, the two-dimensional approach has been criticized as deficient (leading
         \label{fig:figure3}
 \end{figure}
 
-\subsubsection{Features}
+\paragraph{Features.}
 
 Some of the commonly used features in MER are:
 
@@ -234,26 +339,7 @@ Some of the commonly used features in MER are:
 So, we see that the features used in MER are almost the same as those in AMGC. However, Fu et al. note in their extensive survey on Audio-based Music Classification \cite{Fu2011} that although their effectiveness is debatable, mid-level features such as Rhythm seem to be more popular in MER.
 
 
-\subsubsection{Classifiers}
+\paragraph{Classifiers.}
 
 The algorithms used in AMGC are also popular in MER. So, support vector machines, Gaussian mixture models, neural networks, and k-nearest neighbor are the ones regularly used.
 
-\subsubsection{Dataset}
-
-Due to the high variability in the emotional models adopted (whether categorical or dimensional), there have been no popular baseline dataset for MER task.
-So, to tackle the issue, in 2013, Soleymani et al. \cite{Soleymani2013} created a 1000 songs dataset for emotional analysis of music which uses the Valence-Arousal axes for representing emotional values for songs.
-We have used a filtered version (with some redundancies removed) of that dataset resulting in a final set of 744 songs.\\
-\\
-The songs, in the dataset, each 45 seconds long, were collected from FMA. They used Amazon Mechanical Turk as a crowdsourcing platform for collecting more than 20,000 annotations on the 1,000 songs. 
-Furthermore, their analysis on the annotations revealed a higher agreement in arousal ratings compared to the valence ratings.
-
-\subsection{Factors affecting accuracy}
-Some of the factors that affect the accuracy are: 
-\begin{enumerate}[(i)] 
-        \item \textbf{Multi-tagging:} A song can belong to multiple genre. So it is sure to consist of features characterizing multiple genre. This might creating a
-                problem for any classification technique applied as it is sure to create ambiguity. 
-        \item \textbf{Noise:} Many of the songs may not be recorded in the studio. Some may be recorded during live music while some in concert. We are sure to find
-                noise in the latter cases which may tamper the original signal of music hence giving a deviated feature vector. This is sure to affect the accuracy of classification system.
-        \item \textbf{Similar feature in different genre:} Some of the feature of different genres may somehow be similar in some aspects. For example: intensity of metal
-                and rock are high, beat is also high in both, and so on. 
-\end{enumerate}

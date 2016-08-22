@@ -1,34 +1,42 @@
+\select@language {english}
 \contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.1}{\ignorespaces Functional Diagram of Human Ear}}{10}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.2}{\ignorespaces Mel scale filter bank}}{16}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.3}{\ignorespaces General structure of artificial neural network}}{25}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.4}{\ignorespaces Misleading hyperplane}}{29}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.5}{\ignorespaces Support vector machine with maximum-margin hyperplane}}{30}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.6}{\ignorespaces Support vector machine with kernel function}}{31}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.7}{\ignorespaces A graphical representation of the circumplex model of affect with the horizontal axis representing the valence dimension and the vertical axis representing the arousal or activation dimension.}}{38}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.8}{\ignorespaces Thayer's two-dimensional model of mood}}{39}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1}{\ignorespaces General workflow}}{46}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1}{\ignorespaces Context Level Zero}}{48}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2}{\ignorespaces Level One}}{49}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3}{\ignorespaces Pre-processing}}{49}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.4}{\ignorespaces Feature}}{50}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.5}{\ignorespaces Classifier}}{50}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.6}{\ignorespaces Validation}}{51}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.7}{\ignorespaces Sequence diagram of extracting feature}}{52}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.8}{\ignorespaces Sequence diagram of classification}}{53}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.9}{\ignorespaces Sequence diagram of training}}{54}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.10}{\ignorespaces Sequence diagram of testing}}{55}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1}{\ignorespaces Genre using SVM}}{59}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.2}{\ignorespaces Arousal using SVM}}{59}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.3}{\ignorespaces Valence using SVM}}{60}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4}{\ignorespaces Accuracy of SVM}}{60}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.5}{\ignorespaces Recall of SVM}}{61}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.6}{\ignorespaces F-measure of SVM}}{61}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.7}{\ignorespaces Precision of SVM}}{62}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.8}{\ignorespaces Genre using ANN}}{63}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.9}{\ignorespaces Arousal Using ANN}}{63}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.10}{\ignorespaces Valence Using ANN}}{64}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.11}{\ignorespaces Accuracy of ANN}}{64}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.12}{\ignorespaces F-measure of ANN}}{65}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.13}{\ignorespaces Precision of ANN}}{65}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.14}{\ignorespaces Recall of ANN}}{66}
-\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.1}{\ignorespaces Graphics user interface}}{77}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.2}{\ignorespaces A graphical representation of the circumplex model of affect with the horizontal axis representing the valence dimension and the vertical axis representing the arousal or activation dimension.}}{17}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 2.3}{\ignorespaces Thayer's two-dimensional model of mood}}{18}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.1}{\ignorespaces System block diagram}}{24}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.2}{\ignorespaces Feature integration}}{28}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.3}{\ignorespaces Principle of frame formation and windowing function}}{29}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.4}{\ignorespaces Feature extraction}}{30}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.5}{\ignorespaces Mel scale filter bank}}{33}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.6}{\ignorespaces Feature integration}}{38}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.7}{\ignorespaces Mean of MFCC of classical}}{39}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.8}{\ignorespaces Mean of MFCC of hiphop}}{40}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.9}{\ignorespaces Standard deviation of MFCC of classical}}{40}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.10}{\ignorespaces Standard deviation of MFCC of hiphop}}{40}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.11}{\ignorespaces Classification}}{41}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.12}{\ignorespaces General structure of artificial neural network}}{43}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.13}{\ignorespaces Misleading hyperplane}}{46}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.14}{\ignorespaces Support vector machine with maximum-margin hyperplane}}{47}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 4.15}{\ignorespaces Support vector machine with kernel function}}{47}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.1}{\ignorespaces Use case diagram}}{49}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.2}{\ignorespaces Context level zero}}{50}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.3}{\ignorespaces Context level one}}{51}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.4}{\ignorespaces Audio signal pre-processing}}{51}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.5}{\ignorespaces Feature extraction}}{52}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.6}{\ignorespaces Feature integration}}{52}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.7}{\ignorespaces Classifier}}{53}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.8}{\ignorespaces Validation}}{53}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.9}{\ignorespaces Sequence diagram of extracting feature}}{54}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.10}{\ignorespaces Sequence diagram of classification}}{55}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.11}{\ignorespaces Sequence diagram of training}}{56}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 5.12}{\ignorespaces Sequence diagram of testing}}{57}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.1}{\ignorespaces Effect of window functions}}{65}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.2}{\ignorespaces Effect of frame size}}{66}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.3}{\ignorespaces Effect of number of MFCCs on result}}{71}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.4}{\ignorespaces SVM Kernel}}{72}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.5}{\ignorespaces Effect of number of hidden nodes}}{74}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.6}{\ignorespaces Effect of number of iterations}}{75}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.7}{\ignorespaces Effect of learning rate}}{76}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.8}{\ignorespaces Final SVM and ANN comparision based on genre}}{77}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.9}{\ignorespaces Final SVM and ANN comparision based on arousal}}{78}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 6.10}{\ignorespaces Final SVM and ANN comparision based on valence}}{79}
+\contentsline {figure}{\numberline {\fontsize {14pt}{0pt}\selectfont 8.1}{\ignorespaces Graphics user interface}}{90}

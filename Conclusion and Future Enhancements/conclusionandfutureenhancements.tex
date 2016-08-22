@@ -1,42 +1,33 @@
 \newpage
-\newpage
-\newpage
-\newpage
-\newpage
-\newpage
-\newpage
 
 \section{CONCLUSION}
-\subsection{Project Conclusion}
-In our musical classification system we have successfully been able to produce satisfactory 
-results in all scenarios of genre,arousal and valence based music classification 
-As with many projects we faced many problems some of which we were able to solve and some 
-which still remain as limitations.\\ 
-\\ 
-So, overall we can say that we have achieved the satisfactory accuracy in various aspects and 
-improving the performance through the continuous integration developmental practice. 
+\subsection{Conclusion}
+Automatic Music classification is an interesting problem that has gained prominence with the rise of the Internet and the subsequent growth in the amount of music available to the general populace.\\
+\\
+Any type of classification of music is difficult simply because the classifications themselves don’t have a clear definition. Still, we can work with fuzzy boundaries between these classes to get good enough results with Music Classification Systems.\\
+\\
+These systems broadly consist of two steps: Feature Extraction and Classification. However, they can be created by combining a variety of techniques and components.\\
+\\
+So, in this project, many such components and approaches were studied such as: types and combinations of features for proper representation of songs, feature integration approaches, classifier types, and their parameters, etc.\\
+\\
+All these studies were done in order to tackle two related but distinct problems: 
+\begin{itemize}
+        \item In Automatic Music Genre Classification (AMGC), very good performances were achieved with both of the classifiers employed: the final SVM model got 83 per cent accuracy and the ANN model getting 88 per cent accuracy for five genres. These results are comparable with the state-of-the-art results, especially involving the same dataset. 
+        \item In Music Mood Classification however, the good results couldn’t be replicated. 
+                The result along both axes of the music mood model used (arousal and valence) were underwhelming. Around 73 per cent accuracy was achieved using ANN for the binary low/high arousal classification. SVM did even worse with around 70 per cent accuracy. For low/high valence classification, both of the classifiers settled on 67 per cent accuracy.  
+\end{itemize}
+
 \subsection{Future Enhancements}
-A person can never be satisfied with one's work and so is our case. Our project is just a beginning phase which will be ultimately leading to 
-huge revolution in future. Hence future enhancements are possible in our project are possible in our project. Mentioning few are:   
-\begin{enumerate}[(i)]
-        \item \textbf{GUI Improvement:}
-                As with the current state of the GUI in our system , it is very basic. With every future iteration we 
-                hope to improve and introduce newer and attractive elements and animations that pleasantly 
-                improve the user experience and encourages user to use our system as much as possible. 
-        \item \textbf{Inclusion of additional genres:}
-                With only five basic recognizable genres we hope to 
-                include further sub genres with these five primary genres such as Pop­Rock, Punk­Rock, 
-                Grunge,Indie­Rock for the Rock songs etc 
-        \item \textbf{Instrumentals:}
-                We also hope to add the ability to add instrumental tracks (i.e tracks 
-                without vocals) in future enhancements 
-        \item \textbf{Preference changes:}
-                Owing to the ever changing nature of music preference of an 
-                average user, we may also provide system with ability to change the various genre and 
-                mood template so that the system also changes with the change in user preference. 
-        \item \textbf{Improve performance:}
-                Performance can be improved by using Multi­thread concept. 
-        \item \textbf{Business Value:}
-        Develop the product as the API so that it can be used in others 
-        commercial sites. 
-        \end{enumerate}
+There are many ways in which the project could be expanded. 
+\begin{itemize}
+        \item Adding many more genres would be a natural enhancement as the five genres used here don’t even come close to encompassing all the variety of musical genres. 
+        \item The mood model could also be made a continuum in the two-dimensional space instead of hard binary classifiers. 
+        \item More features could be added to the feature set and studies conducted as to which combinations of features work best in which problem domain. 
+        \item Smart Playlist Generation System could also be built using these types of Automatic Music Classification Systems. 
+        \item The training set used to build the classifier could be increased in both size and variety to make the models generated more robust. This could also be a topic of study.
+\end{itemize}
+
+
+
+
+
