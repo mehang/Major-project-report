@@ -2,21 +2,22 @@
 \section*{ABSTRACT}
 \addcontentsline{toc}{section}{\numberline{} ABSTRACT}
 
-This report describes and documents all the aspects and working functionality of our final year project titled “Music Classification System
-Based on Genre and Mood”. The project is part for the curriculum for the subject Major Project under the course of final year of B.E. in Computer Engineering.
-As the title itself describes the overall aim of the project is to develop a system capable of classifying music based on Genre and mood, with the availability of large
-number of digital media and the disorder introduced being the primary motivation.\\  
+With the rise of the internet, an overwhelmingly large number of digital media has become available to us in this day and age.
+So, systems and tools to organize or sort through such large audio collections have become a necessity. 
+These tools can also be important for Music Information Retrieval, queries based on audio, music search systems and even to the understanding of music itself.
 \\
-The methodology used is that of a modular system consisting of two main stages. The first stage involves the preprocessing of the raw audio
-data resulting in the extraction of a number of features pertaining to music signal: Intensity, MFCC, rhythm, pitch. Each feature extractor
-reduces the information content in the raw data to a vector in a small number of dimensions. Or in other words we can say that feature extractor 
-analyses the music signal and extracts its respective features compatible for further processing. It requires intensive knowledge of digital signal
-analysis and processing, signal sampling,etc. The second stage comprises of all the machine learning portion. In it, the set of feature vectors are classified(indexed) into certain clusters
-by the use of certain algorithms: K-means, Support Vector Machines and  Artificial Neural Networks. This technically requires knowledge of all those respective algorithms.\\ 
+This project presents one such system capable of classifying music based on Genre and mood.
 \\
-This report also documents our approach towards the system development following the various aspects of Software Engineering. UML diagrams have been
-used to model the entire system and ERD diagrams have been used to show the relationship between the various entities in our system and iterative 
-development method was chosen for the development of our system. Java language along with spring framework was used to build our whole system along
-with the GUI.\\
-
+For the Genre-based classification, we used five genres: Classical, Hiphop, Jazz, Pop. Rock, thus making it a five-way classification problem.
+For the Mood-based classification, we used a mood model that maps mood onto a two dimensional space along the axes of \textit{arousal} and \textit{valence}.
+So, this classification consisted of two binary classification, one for each of the axes.
+\\
+The system consists of two main stages: feature extraction and classification. 
+In the first stage, features that provide a concise representation of information contained in song files, are extracted. 
+We have extracted and studied ten such features in this project.
+In the second stage, machine learning algorithms--Support Vector Machine and Artificial Neural Network--are used to classify the songs using those features.
+\\
+After analyzing the individual and combined effectiveness of the various features, as well as various parameters for the learning algorithms, we managed to achieve
+the maximum overall accuracy of 88 per cent for the Genre Classification problem.
+Similarly, for the mood based classification problem, we achieved around 73 per cent (Arousal) and 67 per cent (Valence) overall accuracy for the two axes.
 

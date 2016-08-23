@@ -4,15 +4,12 @@
 
 \subsection{Background}
 
-Music can be literally defined as the combination of soothing sounds. A more complex definition of music can be, a complex amalgam of 
-melody, harmony, rhythm, timbre and silence in a particular structure. Music if an art form and cultural activity whose medium is sound and silence. It's a 
-form of entertainment that puts sounds together in a way that people like or find interesting. To form a music, requirement of musical instruments are not necessary,
-for example a cappella, barbershop, choral, scat, plainsong, isicathamiya,etc.
-A group a person can simply sing in rhythm and form a music. Sometimes musician may use their voice to make noises similar to a musical intrument.
-Music gives the feeling of relaxation. For some people it momentarily stops the flow of time and
-for some it is a means of passage of time. We can find many music lovers all around the world. Its seems a bit abnormal if a person has no taste in
-music at all. Some might say a guitar is necessary to form a song or music, some might say a piano is a must, but some musicians may find music
-find in the chirping of bird, running water of river or even whistling of train.\\ 
+Music can be literally defined as the combination of soothing sounds. A more complex definition of music can be: an amalgam of 
+melody, harmony, rhythm, timbre and silence in a particular structure. Music is an art form and cultural activity whose medium is sound and silence. It's a 
+form of entertainment that puts sounds together in a way that people like or find interesting. To form music, musical instruments are not necessary,
+for example: a cappella, barbershop, choral, scat, plainsong, isicathamiya, etc don't use instruments at all.
+A group or a person can simply sing in rhythm and form music. Sometimes musician may use their voice to make noises similar to a musical intrument.
+Music is deeply related to human emotions \cite{Juslin2001} and psyche too. It can be relaxing, invigorating or even saddening. \\
 \\
 The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation),
 dynamics (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes termed the "color" of a musical sound). Different styles
@@ -20,14 +17,13 @@ or types of music may emphasize, de-emphasize or omit some of these elements. Mu
 vocal techniques ranging from singing to rapping, and there are solely intrumental pieces, solely vocal pieces. The creation, performance, significance,
 and even the definition of music vary according to culture and social context.\\
 \\
-We may date the advent of music to be centuries year old. We can point it out due to the fact of presence of tribal music which has been passed on
-from generation to generation like the ancient African bushman tribal song, Nepalese traditional/cultural song from each race,etc. But however music can
-be complex. Though some may present a pattern in themselves like a chorus or say rift, some may have an uneven flow. Its perplex nature can not only due to 
-its origination but also due to the evolution of music in different technological era. We have seen the evolution of music from legendary classical 
-Beethoven symphonies to modern day hiphop which is widely popular among the youths nowadays. We have seen the rise of different genres like classical, rock,
-pop, metal,etc. and yet we may even don't know many of others at all and more may be yet too come like lately we have seen the rise of techno music.\\ 
+The advent of music dates back to the primal years of human history. We can point it out due to the fact of presence of tribal music--like the ancient African bushman tribal song--which has been passed on
+from generation to generation, Nepalese traditional/cultural song from each race,etc. 
+But music can be complex not only due to its origins but also due to the evolution of music in different technological era. 
+We have seen the evolution of music from legendary classical Beethoven symphonies to modern day hiphop which is widely popular among the youths nowadays. We have seen the rise of different genres like classical, rock,
+pop, metal,etc. and there are countless others too and many more are sure to be born. For example, The advent of the Techno Genre is pretty recent.\\
 \\
-It is not likely for a single person to listen to each and every genre present out there let alone all those songs. Every person may acquire a different taste 
+It is unlikely for a single person to listen to each and every genre present out there let alone all those songs. Every person may acquire a different taste 
 in music. Some may like clasical music while come may like rock music, it's based on their choice. So a person may probably only distinguish a particular unknown song 
 if those song were to belong to his/her genre of choice and the same goes for the mood. So realising this problem, there has been a increasing amount of research
 and work done in the music sector for the automatic classification of song based on genre. Though classification based on genre has been a popular one,
@@ -82,15 +78,15 @@ Our application took a song as an input from the user computer and classified to
 So we made our classification system to classify that same song based on mood which was truly based on signal analysis and not lyrical features.
 For classification based on mood, we mapped the song among two dimensions: 
 \begin{itemize}
-        \item Energy
-        \item Stress
+        \item Arousal 
+        \item Valence
 \end{itemize}
-So based upon the energy and stress level, our song is classified as:
+So, the Arousal and Valence level can give an overview of a song:
 \begin{itemize}
-        \item High Energy, High Stress = Anxious/Frantic
-        \item High Energy, Low Stress = Exuberance
-        \item Low Energy, High Stress = Depression
-        \item Low Energy, Low Stress = Contentment
+        \item High Arousal, High Valence = Joyful
+        \item High Arousal, Low Valence  = Angry
+        \item Low Arousal, High Valence  = Content
+        \item Low Arousal, Low Valence   = Depressing
 \end{itemize}
 So, we can say that our system first extracted the required features based on the signal analysis and it's manipulation, and then used 
 those features to classify it among one of the combination of five different genres and 4  different mood using the machine learning algorithm
@@ -135,6 +131,8 @@ otherwise manually maintain his/her playlist everytime based on his current mood
 \end{itemize}
 
 \subsection{Scope of Project}
+
+This was the scope of the project as defined at the commencement.
 \begin{enumerate}[(i)]
         \item The project will work on classifying music based on genre and mood. More specifcally, the classifcation will be done on western music only as the data
                 is more easily available and lots of works have been done in the past for it. Also, only five genres will be used for genre classifcation:
@@ -146,17 +144,14 @@ otherwise manually maintain his/her playlist everytime based on his current mood
                         \item Hiphop
                 \end{itemize}
 
-        \item The mood based classifcation will use the Thayer model, a two dimensional model based on Energy and Stress:
+            \item The mood based classification will use the two dimensional mood model based on \textit{arousal} and \textit{valence}.
 
-                \begin{itemize}
-                        \item High Energy, High Stress = Anxious/Frantic
-
-                        \item High Energy, Low Stress = Exuberance
-
-                        \item Low Energy, High Stress = Depression
-
-                        \item Low Energy, Low Stress = Contentment
-                \end{itemize}
+            \begin{itemize}
+                \item High Arousal, High Valence = Joyful
+                \item High Arousal, Low Valence  = Angry
+                \item Low Arousal, High Valence  = Content
+                \item Low Arousal, Low Valence   = Depressing
+            \end{itemize}
 
         \item Also, it is entirely possible for a song or a piece of music to fall into multiple genre or moods. The characteristics that defne the genre
                 and the mood may change within the song itself with one part showing seeming to belong to one class while other parts may seem to belong to

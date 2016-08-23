@@ -55,8 +55,8 @@ The preprocessing in music classification systems is used in order to increase t
 The general preprocessing pipeline is depicted in the following figure.
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=130mm]{resources/mehang/methodology/featureintegration}
-        \caption{Feature integration}
+        \includegraphics[width=130mm]{resources/mehang/methodology/audiosignalpreprocessing}
+        \caption{Block Diagram of Audio Signal Pre-processing}
 \end{figure}
 
 \subsubsection{Framing}
@@ -83,7 +83,7 @@ The feature extraction procedure is depicted in the following figure.
 \begin{figure}[h!]
         \centering
         \includegraphics[width=130mm]{resources/mehang/methodology/featureextraction}
-        \caption{Feature extraction}
+        \caption{Block Diagram of Feature extraction}
 \end{figure}
 
 \subsubsection{Fast Fourier Transform}
@@ -308,7 +308,7 @@ The feature integration procedure is depicted in the following figure.
 \begin{figure}[h!]
         \centering
         \includegraphics[width=130mm]{resources/mehang/methodology/featureintegration}
-        \caption{Feature integration}
+        \caption{Block Diagram of Feature integration}
 \end{figure}
 
 \subsubsection{Feature Selector}
@@ -321,41 +321,45 @@ selection, attribute selection or variable subset selection, is the process of s
 \end{enumerate}
 
 \subsubsection{Feature Integrator}
-Feature integrator perform the feature integration process.Basically the features are temporal, so there is temporal feature integration. Feature integration is the process of combining all the feature vectors in a time window into a single feature vector in order to capture the relevant temporal information in the window. Here the mean and variance are used for temporal feature integration, but they capture neither the temporal dynamics nor dependencies among the individual feature dimensions.
+Feature integrator merges the features selected by Feature Selector into one set for each song.
+As the features are temporal, so the feature integration is also temporal.
+Feature integration is the process of combining all the feature vectors in a time window into a single feature vector in order to capture the relevant temporal information in the window. 
+In this project, the mean and variance of the features have been used for temporal feature integration
+although they capture neither the temporal dynamics nor dependencies among the individual feature dimensions.
+
+As seen below, the mean and standard deviation of MFCCs for a classical and a hiphop songs are sufficiently distinguishable. 
+So, this representation of the features can be used to separate classes of music.
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=100mm]{resources/mehang/4.5.2/MFCC_mean_Classical}
-        \caption{Mean of MFCC of classical}
+        \includegraphics[width=70mm]{resources/mehang/4.5.2/MFCC_mean_Classical}
+        \caption{Mean of MFCC for a  classical song}
 \end{figure}
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=100mm]{resources/mehang/4.5.2/MFCC_mean_Hiphop}
-        \caption{Mean of MFCC of hiphop}
+        \includegraphics[width=70mm]{resources/mehang/4.5.2/MFCC_mean_Hiphop}
+        \caption{Mean of MFCC for a hiphop song}
 \end{figure}
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=100mm]{resources/mehang/4.5.2/MFCC_sd_Classical}
-        \caption{Standard deviation of MFCC of classical}
+        \includegraphics[width=70mm]{resources/mehang/4.5.2/MFCC_sd_Classical}
+        \caption{Standard deviation of MFCC for a classical song}
 \end{figure}
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=100mm]{resources/mehang/4.5.2/MFCC_sd_Hiphop}
-        \caption{Standard deviation of MFCC of hiphop}
+        \includegraphics[width=70mm]{resources/mehang/4.5.2/MFCC_sd_Hiphop}
+        \caption{Standard deviation of MFCC for a hiphop song}
 \end{figure}
 
 
+\newpage
 
 
 \subsection{Classification}
 \begin{figure}[h!]
         \centering
         \includegraphics[width=130mm]{resources/mehang/methodology/classification}
-        \caption{Classification}
+        \caption{Block Diagram of the Classification Step}
 \end{figure}
-\subsubsection{ANN model}
-It stores the relevant parameters obtained from ANN training for future use without having to retrain.
-\subsubsection{SVM model}
-It stores the relevant parameters obtained from SVM training for future use without having to retrain.
 
 \subsubsection{Artificial Neural Network.}
 In machine learning and cognitive science, an artificial neural networks(ANN) is a network inspired by biological neural networks(the central nervous systems of 
@@ -456,6 +460,9 @@ the lower the ratio, the more accurate the training is. $\theta$ is the bias ter
 of a weight indicates where the error is increasing, this is why the weight must be updated in the opposite direction. The algorithm above is
 repeated until performance of the network is satisfactory.
 
+\subsubsection{ANN model}
+It stores the relevant parameters obtained from ANN training for future use without having to retrain.
+
 \subsubsection{Support Vector Machine.}
 
 In machine learning, support vector machines (SVM) are supervised learning models with 
@@ -513,5 +520,6 @@ assigns the instance to one of the two classes, then the vote for the assigned c
 and finally the class with most votes determines the instance classification. To tackle the same multiclass problem \cite{Haggblade2011} has the  
 utilization of DAG(Directed Acyclic Graph) SVMs in which a directed acyclic graph(DAG) of two-class SVMs is trained on each pair of classes in the data set.
 
-
+\subsubsection{SVM model}
+It stores the relevant parameters obtained from SVM training for future use without having to retrain.
 
