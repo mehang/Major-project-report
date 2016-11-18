@@ -869,19 +869,19 @@ The results are given below:\\
 \begin{table}[h!]
         \caption{Genre}
         \begin{center}
-                \begin{tabular}{|l|l|l|l|}
+            \begin{tabular}{|p{8cm}|l|l|l|}
                         \hline
 
-                        Functions
+                        \textbf{Functions}
                         &
-                        Accuracy(percent)
+                        \textbf{Accuracy(percent)}
                         &
-                        Precision
+                        \textbf{Precision}
                         &
-                        Recall
+                        \textbf{Recall}
                         \\\hline
 
-ross Entropy Error with Softmax Activation
+Cross Entropy Error with Softmax Activation
 &
 85.80
 &
@@ -905,16 +905,16 @@ So, the first combination slightly outperforms the second in all three metrics.
 \begin{table}[h!]
         \caption{Arousal}
         \begin{center}
-                \begin{tabular}{|l|l|l|l|}
+            \begin{tabular}{|p{8cm}|l|l|l|}
                         \hline
 
-                        Functions
+                        \textbf{Functions}
                         &
-                        Accuracy(per cent)
+                        \textbf{Accuracy(per cent)}
                         &
-                        Precision
+                        \textbf{Precision}
                         &
-                        Recall
+                        \textbf{Recall}
                         \\\hline
 
                         Cross Entropy Error with Softmax Activation
@@ -941,16 +941,16 @@ So, the first combination slightly outperforms the second in all three metrics.
 \begin{table}[h!]
         \caption{Valence}
         \begin{center}
-                \begin{tabular}{|l|l|l|l|}
+            \begin{tabular}{|p{8cm}|l|l|l|}
                         \hline
 
-                        Functions
+                        \textbf{Functions}
                         &
-                        Accuracy(per cent)
+                        \textbf{Accuracy(per cent)}
                         &
-                        Precision
+                        \textbf{Precision}
                         &
-                        Recall
+                        \textbf{Recall}
                         \\\hline
 
                         Cross Entropy Error with Softmax Activation
@@ -977,7 +977,10 @@ So, the first combination slightly outperforms the second in all three metrics.
 
 Here, the two combinations are almost inseparable in terms of performance. 
 
-\paragraph{Number of Nodes in Hidden Layer.}
+\paragraph{Number of Nodes in Hidden Layer:}
+
+We used only one hidden layer as it should be enough for our problem domain. 
+As seen in the figure, for any number of hidden numbers after six or so, we get almost the same accuracy. As a rule of thumb, it is usually recommended that the number of nodes be around the mean of the number of inputs and outputs, so we chose 30 as our final number of hidden nodes.\\
 
 \begin{figure}[h!]
         \centering
@@ -985,31 +988,28 @@ Here, the two combinations are almost inseparable in terms of performance.
         \caption{Effect of number of hidden nodes}
 \end{figure}
 
-We used only one hidden layer as it should be enough for our problem domain. 
-As seen in the figure, for any number of hidden numbers after six or so, we get almost the same accuracy. As a rule of thumb, it is usually recommended that the number of nodes be around the mean of the number of inputs and outputs, so we chose 30 as our final number of hidden nodes.\\
-\\
 The number of nodes had minimal effect in regard to mood classification. 
 
-\paragraph{Number of Iterations.}
+\paragraph{Number of Iterations:}
+As seen in the figure, for genre classification, the number of iterations has an effect on the accuracy up to a certain point (around 20 iterations).\\
+
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=170mm]{resources/mehang/6.5/ANN_Iterations}
+        \includegraphics[width=130mm]{resources/mehang/6.5/ANN_Iterations}
         \caption{Effect of number of iterations}
 \end{figure}
-As seen in the figure, for genre classification, the number of iterations has an effect on the accuracy up to a certain point (around 20 iterations).\\
-\\
+
 As for Arousal, the increase in iterations had no effect on the accuracy. 
 
 \newpage
-\paragraph{Learning Rate.}
-\begin{figure}[h!]
-        \centering
-        \includegraphics[width=170mm]{resources/mehang/6.5/ANN_Learning}
-        \caption{Effect of learning rate}
-\end{figure}
+\paragraph{Learning Rate:}
 
 A learning rate of 0.1 was enough to get a decent amount of accuracy. A lower rate than that affected the accuracy while a higher rate didn’t have any influence at all.
-
+\begin{figure}[h!]
+        \centering
+        \includegraphics[width=130mm]{resources/mehang/6.5/ANN_Learning}
+        \caption{Effect of learning rate}
+\end{figure}
 \newpage
 \subsection{Final Results}
 \subsubsection{Genre Classification}
