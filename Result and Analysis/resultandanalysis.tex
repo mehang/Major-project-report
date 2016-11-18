@@ -95,6 +95,7 @@ Similarly, true negative is the number of negative items which are correctly pre
         \end{itemize}
         All three performance metrics have been used to determine the best features to be used for classification in cases of genre, arousal and valence.
 
+\newpage
 \subsection{Audio Pre-processing}
 \subsubsection{Effect of Window Functions}
 We tried out five window functions to smoothen the data frames obtained from the samples. 
@@ -118,6 +119,7 @@ The Frame-size needs to be small enough to be statistically invariant but big en
 
 As seen in the figure, frame size of 11.5ms and 23ms performed considerably better than the bigger frame sizes. We chose the 23ms (1024 samples) frame size because the smaller 512 sample frame size would lead to higher number of frames and hence necessitate more computation.
 
+\newpage
 \subsubsection{Effect of Frame Overlap}
 We explored four different overlapping schemes: zero per cent, 25 per cent, 50 per cent and 75 per cent overlap.\\
 \\
@@ -132,6 +134,7 @@ Pre-emphasis decreased the accuracy from 75.4 per cent to 62.6 per cent.
 \begin{table}[h!]
         \caption{Genre classification using ANN}
         \begin{center}
+            \scalebox{0.9}{
                 \begin{tabular}{|l|l|l|l|l|l|l|}
                         \hline Feature & Classical & Hiphop & Jazz & Pop & Rock & Overall\\
                         \hline Spectral Centroid & 47.54 & 11.92 & 11.61 & 51.25 & 18.89 & 28.40\\ 
@@ -212,13 +215,14 @@ Pre-emphasis decreased the accuracy from 75.4 per cent to 62.6 per cent.
                         52.40
                         \\\hline
 
-                \end{tabular}
+                \end{tabular}}
         \end{center}
 \end{table}
 
  \begin{table}[h!]
         \caption{Genre classification using SVM}
         \begin{center}
+            \scalebox{0.9}{
                 \begin{tabular}{|l|l|l|l|l|l|l|}
                         \hline
 
@@ -390,7 +394,7 @@ Spectral Variability
 &
 20.60
 \\\hline
-                 \end{tabular}
+                 \end{tabular}}
         \end{center}
 \end{table}
 
@@ -842,22 +846,20 @@ The results indicate that once we use more than 10 MFCC Coefficients, the accura
 \newpage
 \subsection{Analysis of Classifiers}
 \subsubsection{SVM}
-\paragraph{Selection of Kernels.}
+\paragraph{Selection of Kernels:}
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=170mm]{resources/mehang/6.5/SVM_Kernel}
+        \includegraphics[width=140mm]{resources/mehang/6.5/SVM_Kernel}
         \caption{SVM Kernel}
 \end{figure}
 
-Linear Kernel performed best for the Genre Classification Problem and so we selected it for Genre Classification.\\
-\\
+Linear Kernel performed best for the Genre Classification Problem and so we selected it for Genre Classification. 
 As for the Mood Classification problem, both Gaussian and Laplacian out-performed the Linear Kernel in both arousal and valence classification. So, we selected Laplacian Kernel (based on its slightly superior performance) as our Kernel for Mood Classification.
 
-\paragraph{Effect of Learning Iterations.}
+\paragraph{Effect of Learning Iterations:}
 We tested three iteration values to train SVM: one, 10 and 100.\\ 
 \\
-For Genre Classification, all three of them resulted in a similar performance of around 77 per cent accuracy.\\ 
-\\
+For Genre Classification, all three of them resulted in a similar performance of around 77 per cent accuracy.
 For Arousal, the performance increased when going from one (61 per cent) to 10 (69 per cent) iterations but increasing it further to 100 iterations didn’t increase the performance. We still received an accuracy of around 69 per cent.
 
 \subsubsection{ANN}
@@ -869,6 +871,7 @@ The results are given below:\\
 \begin{table}[h!]
         \caption{Genre}
         \begin{center}
+            \scalebox{0.9}{
             \begin{tabular}{|p{8cm}|l|l|l|}
                         \hline
 
@@ -898,13 +901,14 @@ Least Mean Squares Error with Logistic Sigmoid Activation
 &
 0.89
 \\\hline
-                 \end{tabular}
+                 \end{tabular}}
         \end{center}
 \end{table}
 So, the first combination slightly outperforms the second in all three metrics. 
 \begin{table}[h!]
         \caption{Arousal}
         \begin{center}
+            \scalebox{0.9}{
             \begin{tabular}{|p{8cm}|l|l|l|}
                         \hline
 
@@ -935,12 +939,13 @@ So, the first combination slightly outperforms the second in all three metrics.
                         0.65
                         \\\hline
 
-                 \end{tabular}
+                \end{tabular}}
         \end{center}
 \end{table}
 \begin{table}[h!]
         \caption{Valence}
         \begin{center}
+            \scalebox{0.9}{
             \begin{tabular}{|p{8cm}|l|l|l|}
                         \hline
 
@@ -971,7 +976,7 @@ So, the first combination slightly outperforms the second in all three metrics.
                         0.60
                         \\\hline
 
-                 \end{tabular}
+                \end{tabular}}
         \end{center}
 \end{table}
 
@@ -984,7 +989,7 @@ As seen in the figure, for any number of hidden numbers after six or so, we get 
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=170mm]{resources/mehang/6.5/ANN_HiddenNodes}
+        \includegraphics[width=150mm]{resources/mehang/6.5/ANN_HiddenNodes}
         \caption{Effect of number of hidden nodes}
 \end{figure}
 
@@ -995,21 +1000,19 @@ As seen in the figure, for genre classification, the number of iterations has an
 
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=130mm]{resources/mehang/6.5/ANN_Iterations}
+        \includegraphics[width=150mm]{resources/mehang/6.5/ANN_Iterations}
         \caption{Effect of number of iterations}
 \end{figure}
 
 As for Arousal, the increase in iterations had no effect on the accuracy. 
 
-\newpage
 \paragraph{Learning Rate:}
-
-A learning rate of 0.1 was enough to get a decent amount of accuracy. A lower rate than that affected the accuracy while a higher rate didn’t have any influence at all.
 \begin{figure}[h!]
         \centering
-        \includegraphics[width=130mm]{resources/mehang/6.5/ANN_Learning}
+        \includegraphics[width=150mm]{resources/mehang/6.5/ANN_Learning}
         \caption{Effect of learning rate}
 \end{figure}
+A learning rate of 0.1 was enough to get a decent amount of accuracy. A lower rate than that affected the accuracy while a higher rate didn’t have any influence at all.
 \newpage
 \subsection{Final Results}
 \subsubsection{Genre Classification}
